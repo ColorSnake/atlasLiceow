@@ -1,0 +1,33 @@
+{
+  "muzyka-karlowicz": {
+    "name": "Ogólnokształcąca Szkoła Muzyczna II st. im. Mieczysława Karłowicza",
+    "address": "os. Centrum E 2, 31-934 Kraków",
+    "addressSource": "https://www.gov.pl/web/zpsmkrakow/dane-kontaktowe",
+    "district": "Nowa Huta",
+    "type": "Publiczna",
+    "website": "https://www.gov.pl/web/zpsmkrakow",
+    "profiles": [],
+    "tags": ["Artystyczne"],
+    "specialization": "Kształcenie ogólne połączone z edukacją muzyczną w zespole państwowych szkół muzycznych.",
+    "specializationSource": "https://www.gov.pl/web/zpsmkrakow"
+  },
+  "viii-prywatne": {
+    "specialization": "Szkoła oferuje program międzynarodowej matury IB Diploma Programme.",
+    "specializationSource": "https://ibo.org/programmes/find-an-ib-school/ibaem/v/viii-prywatne-akademickie-liceum-ogolnoksztacce/",
+    "tags": ["Językowe"]
+  },
+  "montessori": {
+    "specialization": "Katolickie liceum pracujące według pedagogiki Montessori, prowadzone przez Fundację Ziarnko Maku.",
+    "specializationSource": "https://liceum.ziarnko-maku.pl/wp-content/uploads/2024/09/STATUT-Katolickiego-Liceum-Montessori.pdf"
+  },
+  "mond": {
+    "address": "os. Szkolne 18, 31-977 Kraków",
+    "addressSource": "https://www.sspn.edu.pl/images/2025/Plakat_2025_2026.pdf",
+    "type": "Niepubliczna",
+    "website": "https://www.sspn.edu.pl/",
+    "tags": ["Sportowe"],
+    "specialization": "Liceum piłkarskie pod patronatem Małopolskiego Związku Piłki Nożnej; oferta łączy naukę z treningami.",
+    "specializationSource": "https://www.sspn.edu.pl/images/2025/Plakat_2025_2026.pdf"
+  },
+  "muzyka-chopin": {"type": "Publiczna", "tags": ["Artystyczne"]}
+}

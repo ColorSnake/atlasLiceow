@@ -1,0 +1,44 @@
+const {chromium}=require('C:/Users/lukasz/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+(async()=>{
+ const data=JSON.parse(fs.readFileSync('licea/dist/data.json','utf8'));
+ assert.equal(data.schools.length,72);
+ for(const s of data.schools){if(s.coords)assert(s.coords[0]>49.9&&s.coords[0]<50.2&&s.coords[1]>19.7&&s.coords[1]<20.3);const r=s.rankings.oto;assert(Math.abs(r.score-(r.passRate/2+r.polish+r.math+r.english))<.011,`Score mismatch ${s.id}`)}
+ assert.equal(data.schools.filter(s=>s.rankings.wasza).length,70);
+ assert.equal(data.schools.filter(s=>s.rankings.pers).length,44);
+ const browser=await chromium.launch({headless:true,channel:'msedge'});
+ const page=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
+ await page.locator('.school-row').first().click();
+ await page.waitForTimeout(1000);
+ assert.match(await page.locator('#detail').innerText(),/Witkowskiego/);
+ assert.equal(await page.locator('.number-marker.is-selected').count(),1);
+ await page.screenshot({path:'licea/research/desktop.png',fullPage:true});
+ await page.selectOption('#ranking','pers');
+ assert.equal(await page.locator('.school-row').count(),44);
+ assert.match(await page.locator('#numberExplanation').innerText(),/w Polsce/);
+ await page.selectOption('#ranking','oto');
+ await page.fill('#search','Wróblewskiego');
+ assert((await page.locator('.school-row').count())>=1);
+ await page.fill('#search','zzzzzzzz');assert.equal(await page.locator('.school-row').count(),0);
+ assert.equal(await page.locator('.number-marker').count(),0);
+ await page.click('#reset');await page.check('#adults');assert.equal(await page.locator('.school-row').count(),72);
+ await page.selectOption('#profile','Biol-chem');
+ assert((await page.locator('.school-row').count())>0);
+ await page.click('#sourcesBtn');assert(await page.locator('#sources').isVisible());await page.keyboard.press('Escape');
+ await page.click('#reset');await page.selectOption('#ranking','wasza');
+ // Verify clicking a map marker uses the same selection and detail state.
+ await page.fill('#search','Witkowskiego');
+ await page.locator('.number-marker').first().click();assert(await page.locator('#detail h2').isVisible());
+ await page.click('#closeDetail');await page.click('#reset');
+ await page.setViewportSize({width:390,height:844});await page.waitForTimeout(300);
+ await page.screenshot({path:'licea/research/mobile.png',fullPage:true});
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+ await page.locator('.school-row').first().click();assert(await page.locator('#detail').isVisible());
+ await page.screenshot({path:'licea/research/mobile-detail.png'});
+ assert.deepEqual(errors,[]);
+ console.log(JSON.stringify({passed:true,schools:data.schools.length,mapped:data.schools.filter(s=>s.coords).length,profiles:data.schools.filter(s=>s.profiles.length).length,rankings:{wasza:70,pers:44,oto:72},browserErrors:errors}));
+ await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});
