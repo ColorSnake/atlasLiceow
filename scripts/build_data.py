@@ -73,7 +73,13 @@ if geo.exists():
  for s in schools:
   g=json.loads(geo.read_text(encoding='utf-8')).get(s['id'])
   if not s['coords'] and g:s['coords']=g['coords'];s['coordSource']=g['source']
-payload=dict(updated='2026-10-04',schools=schools)
-(D/'data.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')
-(D/'data.js').write_text('window.SCHOOL_DATA = '+json.dumps(payload,ensure_ascii=False)+';\n',encoding='utf-8')
+from datasets import validate, write_json
+baseline=json.loads((D/'data/rankings-2026.json').read_text(encoding='utf-8'))
+for school in schools:school['examYear']=2025
+payload=dict(schemaVersion=1,rankingYear=2026,examYear=2025,updated='2026-10-04',sources=baseline['sources'],schools=schools)
+validate(payload)
+# Legacy extractors are specific to the original 2026 cache. Never overwrite
+# the active dataset registry (or accidentally relabel this data as a new year).
+write_json(R/'candidate-2026.json',payload)
+print('Candidate saved to research/candidate-2026.json. Review before datasets.py import --replace.')
 print('Schools',len(schools),'mapped',sum(bool(s['coords']) for s in schools),'profiles',sum(bool(s['profiles']) for s in schools))

@@ -2,6 +2,8 @@
 
 Dynamiczna aplikacja HTML/JavaScript z mapą Leaflet. Nie wymaga frameworka, klucza API, instalowania pakietów ani serwera aplikacyjnego.
 
+**Obsługa roczników:** wybór roku rankingu nad mapą. Każdy rok jest oddzielną migawką JSON. Obecnie opublikowano tylko rzeczywiste dane edycji 2026. Instrukcja importu kolejnych lat: [DANE.md](DANE.md).
+
 ## Uruchomienie
 
 Otwórz `dist/index.html` w przeglądarce albo uruchom w katalogu `licea`:
@@ -40,12 +42,14 @@ Dodatkowo przeanalizowano [egzamin.pl](https://egzamin.pl/licea/krakow/), który
 
 ## Pliki i odtwarzanie danych
 
-- `dist/`: gotowa aplikacja, w tym `data.json` do analizy oraz `data.js` umożliwiający działanie także po otwarciu pliku HTML.
+- `dist/data/rankings-2026.json`: niezależna migawka rocznika; przyszłe edycje mają własne pliki `rankings-ROK.json`.
+- `dist/data/index.json`: katalog dostępnych roczników.
+- `dist/`: gotowa aplikacja; generowany `data.json` zawiera najnowszy rocznik, a `data.js` wszystkie roczniki i umożliwia działanie także po otwarciu pliku HTML.
 - `school_overrides.json`: udokumentowane korekty i informacje ze źródeł oficjalnych.
 - `scripts/`: pobieranie, ekstrakcja, łączenie i weryfikacja danych. To narzędzia do ręcznej aktualizacji, nie automatyczny scraper uruchamiany u odwiedzającego.
 - `research/`: lokalny, ignorowany cache źródeł, współrzędnych i zrzutów testowych; nie jest publikowany.
 
-Skrypty Pythona uruchamiaj z katalogu nadrzędnego (`ranking_liceow`), w kolejności: `inspect_sources.py`, `extract.py`, `download_details.py`, `build_data.py`, `fetch_assets_geo.py`, ponownie `build_data.py`. Przed aktualizacją zachowaj kopię danych i przejrzyj wyniki dopasowania. Istniejący cache kart jest używany ponownie; pełne odświeżenie wymaga jego świadomego zastąpienia. Wydawcy mogą zmienić HTML, rok rankingu lub adresy szkół. Geokodowanie korzysta z cache i wykonuje zapytania kolejno, z przerwą ponad sekundy.
+Skrypty zbierające dane są dostosowane do edycji 2026 i uruchamiane z katalogu nadrzędnego (`ranking_liceow`). Nie są automatycznym importerem kolejnych lat. `build_data.py` zapisuje propozycję zmian w `research/candidate-2026.json`, bez nadpisywania opublikowanych roczników. Do importu nowych zestawów i korekt służy `scripts/datasets.py`, opisany w [DANE.md](DANE.md). Istniejący cache kart jest używany ponownie; pełne odświeżenie wymaga jego świadomego zastąpienia. Wydawcy mogą zmienić HTML, rok rankingu lub adresy szkół. Geokodowanie korzysta z cache i wykonuje zapytania kolejno, z przerwą ponad sekundy.
 
 ## Weryfikacja
 

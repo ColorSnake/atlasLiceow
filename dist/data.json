@@ -36,7 +36,7 @@
           "rank": 1,
           "name": "V LO im. Augusta Witkowskiego w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/292/V-LO-im-Augusta-Witkowskiego",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 81.17,
           "math": 93.78,
           "english": 97.76,
@@ -63,7 +63,8 @@
           "basic": 96.67,
           "advanced": 87.49
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "rita",
@@ -93,7 +94,7 @@
           "rank": 2,
           "name": "LO św. Rity w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3030/LO-sw-Rity",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 80.36,
           "math": 92.4,
           "english": 96.64,
@@ -116,11 +117,12 @@
             "2024": "107",
             "2025": "251"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 95.2,
           "advanced": 61.58
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "i-lo",
@@ -158,7 +160,7 @@
           "rank": 3,
           "name": "I LO im. Bartłomieja Nowodworskiego w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/288/I-LO-im-Bartlomieja-Nowodworskiego",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 81.02,
           "math": 89.88,
           "english": 97.43,
@@ -185,7 +187,8 @@
           "basic": 95.14,
           "advanced": 82.89
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "viii-lo",
@@ -221,7 +224,7 @@
           "rank": 4,
           "name": "VIII LO im. Stanisława Wyspiańskiego w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/295/VIII-LO-im-Stanislawa-Wyspianskiego",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 76.77,
           "math": 93.12,
           "english": 97.59,
@@ -248,7 +251,8 @@
           "basic": 94.58,
           "advanced": 71.67
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "viii-prywatne",
@@ -274,7 +278,7 @@
           "rank": 5,
           "name": "VIII Prywatne Akademickie Liceum Ogólnokształcące w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3267/Viii-Prywatne-Akademickie-Liceum-Ogolnoksztalcace",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 82.05,
           "math": 88.58,
           "english": 96.74,
@@ -303,7 +307,8 @@
         }
       },
       "specialization": "Szkoła oferuje program międzynarodowej matury IB Diploma Programme.",
-      "specializationSource": "https://ibo.org/programmes/find-an-ib-school/ibaem/v/viii-prywatne-akademickie-liceum-ogolnoksztacce/"
+      "specializationSource": "https://ibo.org/programmes/find-an-ib-school/ibaem/v/viii-prywatne-akademickie-liceum-ogolnoksztacce/",
+      "examYear": 2025
     },
     {
       "id": "ii-lo",
@@ -342,7 +347,7 @@
           "rank": 6,
           "name": "II LO im. Króla Jana III Sobieskiego w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/289/II-LO-im-Krola-Jana-III-Sobieskiego",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 77.21,
           "math": 91.35,
           "english": 97.23,
@@ -359,7 +364,7 @@
           "rank": "58=",
           "name": "II LO im. Króla Jana III Sobieskiego",
           "url": "http://sobieski.krakow.pl",
-          "score": 64.0,
+          "score": 64,
           "history": {
             "2023": "56",
             "2024": "48",
@@ -369,7 +374,8 @@
           "basic": 94.09,
           "advanced": 70.85
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "vii-prywatne",
@@ -393,7 +399,7 @@
           "rank": 7,
           "name": "VII Prywatne Liceum Ogólnokształcące im. Mikołaja Reja w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3257/Vii-Prywatne-Liceum-Ogolnoksztalcace-im-Mikolaja-Reja-W-Krakowie",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 81.46,
           "math": 85.65,
           "english": 97.58,
@@ -420,7 +426,8 @@
           "basic": 93.63,
           "advanced": 74.21
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "vii-lo",
@@ -458,7 +465,7 @@
           "rank": 8,
           "name": "VII LO im. Zofii Nałkowskiej w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/294/VII-LO-im-Zofii-Nalkowskiej",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 75.81,
           "math": 89.99,
           "english": 96.53,
@@ -481,11 +488,12 @@
             "2024": "100",
             "2025": "110"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 92.75,
           "advanced": 67.51
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xlii-lo",
@@ -520,7 +528,7 @@
           "rank": 9,
           "name": "XLII LO w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3034/XLII-LO",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 74.46,
           "math": 90.79,
           "english": 96.91,
@@ -547,7 +555,8 @@
           "basic": 92.5,
           "advanced": 55.31
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "x-lo",
@@ -585,7 +594,7 @@
           "rank": 10,
           "name": "X LO im. Komisji Edukacji Narodowej w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/297/X-LO-im-Komisji-Edukacji-Narodowej",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 76.7,
           "math": 88.66,
           "english": 96.46,
@@ -612,7 +621,8 @@
           "basic": 92.58,
           "advanced": 60.39
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "vi-lo",
@@ -652,7 +662,7 @@
           "rank": 10,
           "name": "VI LO im. Adama Mickiewicza w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/293/VI-LO-im-Adama-Mickiewicza",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 76.39,
           "math": 87.84,
           "english": 97.59,
@@ -679,7 +689,8 @@
           "basic": 91.77,
           "advanced": 71.12
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "iii-lo",
@@ -716,7 +727,7 @@
           "rank": 11,
           "name": "III LO im. Jana Kochanowskiego w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/290/III-LO-im-Jana-Kochanowskiego",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 77.29,
           "math": 88.2,
           "english": 94.84,
@@ -743,7 +754,8 @@
           "basic": 91.62,
           "advanced": 58.8
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "muzyka-karlowicz",
@@ -769,7 +781,7 @@
           "rank": 12,
           "name": "Ogólnokształcaca Szkoła Muzyczna II St. w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/6383/Ogolnoksztalcaca-Szkola-Muzyczna-II-St-w-Krakowie",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 78.88,
           "math": 85.88,
           "english": 95.06,
@@ -786,14 +798,15 @@
             "2024": "514",
             "2025": "614"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 91.95,
           "advanced": 40.44
         }
       },
       "addressSource": "https://www.gov.pl/web/zpsmkrakow/dane-kontaktowe",
       "specialization": "Kształcenie ogólne połączone z edukacją muzyczną w zespole państwowych szkół muzycznych.",
-      "specializationSource": "https://www.gov.pl/web/zpsmkrakow"
+      "specializationSource": "https://www.gov.pl/web/zpsmkrakow",
+      "examYear": 2025
     },
     {
       "id": "salezjanie",
@@ -857,7 +870,8 @@
           "basic": 90.23,
           "advanced": 55.75
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "pijarzy",
@@ -893,7 +907,7 @@
           "rank": 14,
           "name": "Liceum Ogólnokształcące Zakonu Pijarów im. Ks. Stanisława Konarskiego w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3285/Liceum-Ogolnoksztalcace-Zakonu-Pijarow-im-Ks-Stanislawa-Konarskiego",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 74.76,
           "math": 87.32,
           "english": 93.38,
@@ -920,7 +934,8 @@
           "basic": 90.55,
           "advanced": 60.77
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "iv-lo",
@@ -959,7 +974,7 @@
           "rank": 15,
           "name": "IV LO im. Tadeusza Kościuszki w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/291/IV-LO-im-Tadeusza-Kosciuszki",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 66.69,
           "math": 90.89,
           "english": 97.62,
@@ -982,11 +997,12 @@
             "2024": "164",
             "2025": "164"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 89.8,
           "advanced": 59.68
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xi-lo",
@@ -1023,7 +1039,7 @@
           "rank": 16,
           "name": "XI LO im. Marii Dąbrowskiej w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/298/XI-LO-im-Marii-Dabrowskiej",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 76.18,
           "math": 81.91,
           "english": 93.31,
@@ -1050,7 +1066,8 @@
           "basic": 89.07,
           "advanced": 43.94
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "noblisci",
@@ -1074,7 +1091,7 @@
           "rank": 17,
           "name": "Prywatne Liceum Ogólnokształcące Z Oddziałami Dwujęzycznymi im. Noblistów Polskich w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/5229/Prywatne-Liceum-Ogolnoksztalcace-Z-Oddzialami-Dwujezycznymi-im-Noblistow-Polskich",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 71.38,
           "math": 83.75,
           "english": 95.5,
@@ -1097,11 +1114,12 @@
             "2024": "473",
             "2025": "-"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 88.75,
           "advanced": 55.58
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xiii-lo",
@@ -1138,7 +1156,7 @@
           "rank": 18,
           "name": "XIII LO im. Obrońców Westerplatte w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/300/XIII-LO-im-Obroncow-Westerplatte",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 67.81,
           "math": 86.48,
           "english": 95.85,
@@ -1161,11 +1179,12 @@
             "2024": "242",
             "2025": "287"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 87.37,
           "advanced": 51.49
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "ix-lo",
@@ -1204,7 +1223,7 @@
           "rank": 19,
           "name": "IX LO im. Zygmunta Wróblewskiego w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/296/IX-LO-im-Zygmunta-Wroblewskiego",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 72.79,
           "math": 82.83,
           "english": 94.26,
@@ -1231,7 +1250,8 @@
           "basic": 88.22,
           "advanced": 51.14
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "michalowski",
@@ -1255,7 +1275,7 @@
           "rank": 19,
           "name": "Liceum Ogólnokształcące Z Oddziałem Dwujęzycznym im. Piotra Michałowskiego Tssp w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/5041/Liceum-Ogolnoksztalcace-Z-Oddzialem-Dwujezycznym-im-Piotra-Michalowskiego-Tssp",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 73.92,
           "math": 79.58,
           "english": 96.38,
@@ -1278,11 +1298,12 @@
             "2024": "314",
             "2025": "215"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 88.04,
           "advanced": 58.92
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "iii-spoleczne",
@@ -1306,9 +1327,9 @@
           "rank": 20,
           "name": "III Społeczne Liceum Ogólnokształcące im. Juliusza Słowackiego Społecznego Towarzystwa Oświatowego w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3269/Iii-Spoleczne-Liceum-Ogolnoksztalcace-im-Juliusza-Slowackiego-Spolecznego-Towarzystwa-Oswiatowego-W-Krakowie",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 66.28,
-          "math": 82.0,
+          "math": 82,
           "english": 97.7,
           "score": 295.98
         },
@@ -1333,7 +1354,8 @@
           "basic": 86.2,
           "advanced": 62.93
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "nazaret",
@@ -1363,7 +1385,7 @@
           "rank": 21,
           "name": "Katolickie LO im. Świętej Rodziny z Nazaretu w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/308/Katolickie-LO-im-Swietej-Rodziny-z-Nazaretu",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 72.24,
           "math": 80.11,
           "english": 91.75,
@@ -1386,11 +1408,12 @@
             "2024": "273",
             "2025": "674"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 84.65,
           "advanced": 43.35
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xliv-lo",
@@ -1425,7 +1448,7 @@
           "rank": 22,
           "name": "XLIV LO w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3039/XLIV-LO",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 70.45,
           "math": 80.49,
           "english": 92.75,
@@ -1452,7 +1475,8 @@
           "basic": 85.81,
           "advanced": 46.09
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "kostka",
@@ -1487,7 +1511,7 @@
           "rank": 23,
           "name": "Liceum Jezuitów im. św. Stanisława Kostki w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3027/Liceum-Jezuitow-im-sw-Stanislawa-Kostki",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 65.83,
           "math": 81.79,
           "english": 94.56,
@@ -1514,7 +1538,8 @@
           "basic": 84.25,
           "advanced": 52.11
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xx-lo",
@@ -1574,11 +1599,12 @@
             "2024": "596",
             "2025": "616"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 83.8,
           "advanced": 43.29
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xvii-lo",
@@ -1613,7 +1639,7 @@
           "rank": 25,
           "name": "XVII LO im. Młodej Polski w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/302/XVII-LO-im-Mlodej-Polski",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 71.33,
           "math": 68.91,
           "english": 92.28,
@@ -1640,7 +1666,8 @@
           "basic": 80.76,
           "advanced": 47.6
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "prezentki",
@@ -1681,7 +1708,7 @@
           "rank": 26,
           "name": "LO Sióstr Prezentek w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/307/LO-Siostr-Prezentek",
-          "passRate": 98.0,
+          "passRate": 98,
           "polish": 70.7,
           "math": 72.36,
           "english": 88.23,
@@ -1704,11 +1731,12 @@
             "2024": "415",
             "2025": "368"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 81.33,
           "advanced": 49.3
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xxxi-lo",
@@ -1761,11 +1789,12 @@
             "2024": "-",
             "2025": "-"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 83.34,
           "advanced": 47.65
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "salezjanki",
@@ -1803,7 +1832,7 @@
           "passRate": 98.48,
           "polish": 66.97,
           "math": 75.88,
-          "english": 85.0,
+          "english": 85,
           "score": 277.09
         },
         "wasza": {
@@ -1823,11 +1852,12 @@
             "2024": "-",
             "2025": "563"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 79.79,
           "advanced": 34.87
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xv-lo",
@@ -1888,11 +1918,12 @@
             "2024": "870",
             "2025": "754"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 78.33,
           "advanced": 38.41
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xii-lo",
@@ -1957,7 +1988,8 @@
           "basic": 78.78,
           "advanced": 35.38
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "plastyczne",
@@ -2007,11 +2039,12 @@
             "2024": "707",
             "2025": "515"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 78.29,
           "advanced": 33.76
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "i-sport",
@@ -2066,11 +2099,12 @@
             "2024": "-",
             "2025": "943"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 79.79,
           "advanced": 31.42
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "muzyka-chopin",
@@ -2098,7 +2132,7 @@
           "rank": 33,
           "name": "Państwowa Ogólnokształcąca Szkoła Muzyczna II St. im. Fryderyka Chopina w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/6362/Panstwowa-Ogolnoksztalcaca-Szkola-Muzyczna-II-St-im-Fryderyka-Chopina-w-Krakowie",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 65.72,
           "math": 65.78,
           "english": 90.86,
@@ -2119,7 +2153,8 @@
           "basic": 78.26,
           "advanced": 37.87
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xxvi-lo",
@@ -2150,7 +2185,7 @@
           "rank": 34,
           "name": "XXVI LO w ZSC im. Marii Skłodowskiej-Curie w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/304/XXVI-LO-w-ZSC-im-Marii-Sklodowskiej-Curie",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 65.34,
           "math": 71.86,
           "english": 83.67,
@@ -2173,11 +2208,12 @@
             "2024": "601",
             "2025": "-"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 78.72,
           "advanced": 34.55
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "montessori",
@@ -2230,7 +2266,8 @@
         }
       },
       "specialization": "Katolickie liceum pracujące według pedagogiki Montessori, prowadzone przez Fundację Ziarnko Maku.",
-      "specializationSource": "https://liceum.ziarnko-maku.pl/wp-content/uploads/2024/09/STATUT-Katolickiego-Liceum-Montessori.pdf"
+      "specializationSource": "https://liceum.ziarnko-maku.pl/wp-content/uploads/2024/09/STATUT-Katolickiego-Liceum-Montessori.pdf",
+      "examYear": 2025
     },
     {
       "id": "xli-lo",
@@ -2266,7 +2303,7 @@
           "rank": 36,
           "name": "XLI LO w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3033/XLI-LO",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 60.91,
           "math": 71.76,
           "english": 86.87,
@@ -2289,11 +2326,12 @@
             "2024": "760",
             "2025": "918"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 76.47,
           "advanced": 36.61
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xxvii-lo",
@@ -2354,11 +2392,12 @@
             "2024": "-",
             "2025": "823"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 75.93,
           "advanced": 37.91
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xliii-lo",
@@ -2393,7 +2432,7 @@
           "rank": 38,
           "name": "XLIII LO w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3035/XLIII-LO",
-          "passRate": 100.0,
+          "passRate": 100,
           "polish": 57.52,
           "math": 67.65,
           "english": 90.87,
@@ -2416,11 +2455,12 @@
             "2024": "695",
             "2025": "-"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 74.86,
           "advanced": 32.54
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xxviii-lo",
@@ -2478,11 +2518,12 @@
             "2024": "946",
             "2025": "-"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 72.58,
           "advanced": 39.54
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xxiii-lo",
@@ -2530,7 +2571,8 @@
           "score": 41.726
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xxiv-lo",
@@ -2581,7 +2623,8 @@
           "score": 40.137
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "i-prywatne",
@@ -2619,7 +2662,8 @@
           "score": 44.878
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "i-spoleczne",
@@ -2666,11 +2710,12 @@
             "2024": "-",
             "2025": "-"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 79.39,
           "advanced": 35.99
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xxi-lo",
@@ -2723,11 +2768,12 @@
             "2024": "531",
             "2025": "-"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 71.12,
           "advanced": 34.85
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "ix-prywatne",
@@ -2765,7 +2811,8 @@
           "score": 41.584
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xviii-lo",
@@ -2815,7 +2862,8 @@
           "score": 38.802
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "iii-prywatne",
@@ -2841,7 +2889,7 @@
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3344/Iii-Prywatne-Liceum-Ogolnoksztalcace",
           "passRate": 97.22,
           "polish": 55.44,
-          "math": 56.0,
+          "math": 56,
           "english": 82.36,
           "score": 242.41
         },
@@ -2853,7 +2901,8 @@
           "score": 36.079
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "v-prywatne",
@@ -2891,7 +2940,8 @@
           "score": 38.598
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "iv-prywatne",
@@ -2938,11 +2988,12 @@
             "2024": "823",
             "2025": "899"
           },
-          "olymp": 0.0,
+          "olymp": 0,
           "basic": 70.53,
           "advanced": 35.01
         }
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xiv-lo",
@@ -2992,7 +3043,8 @@
           "score": 35.451
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "emmanuel",
@@ -3030,7 +3082,8 @@
           "score": 33.912
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xvi-lo",
@@ -3079,7 +3132,8 @@
           "score": 34.748
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "sms",
@@ -3128,7 +3182,8 @@
           "score": 32.592
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "apostolow",
@@ -3179,7 +3234,8 @@
           "score": 36.624
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xxx-lo",
@@ -3228,7 +3284,8 @@
           "score": 30.211
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "gortat",
@@ -3266,7 +3323,8 @@
           "score": 29.937
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "sendzimir",
@@ -3312,7 +3370,8 @@
           "score": 32.946
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "adult-zaoczne",
@@ -3347,7 +3406,8 @@
           "score": 35.74
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "sms-spoleczne",
@@ -3371,7 +3431,7 @@
           "rank": 59,
           "name": "Społeczne Liceum Ogólnokształcące Mistrzostwa Sportowego w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3485/Spoleczne-Liceum-Ogolnoksztalcace-Mistrzostwa-Sportowego",
-          "passRate": 68.0,
+          "passRate": 68,
           "polish": 55.04,
           "math": 40.32,
           "english": 63.76,
@@ -3385,7 +3445,8 @@
           "score": 28.088
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "mond",
@@ -3428,7 +3489,8 @@
       },
       "addressSource": "https://www.sspn.edu.pl/images/2025/Plakat_2025_2026.pdf",
       "specialization": "Liceum piłkarskie pod patronatem Małopolskiego Związku Piłki Nożnej; oferta łączy naukę z treningami.",
-      "specializationSource": "https://www.sspn.edu.pl/images/2025/Plakat_2025_2026.pdf"
+      "specializationSource": "https://www.sspn.edu.pl/images/2025/Plakat_2025_2026.pdf",
+      "examYear": 2025
     },
     {
       "id": "adult-4u",
@@ -3463,7 +3525,8 @@
           "score": 33.563
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "adult-york",
@@ -3487,7 +3550,7 @@
           "passRate": 53.85,
           "polish": 44.3,
           "math": 29.33,
-          "english": 61.0,
+          "english": 61,
           "score": 161.56
         },
         "wasza": {
@@ -3498,7 +3561,8 @@
           "score": 30.128
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "v-dorosli",
@@ -3538,7 +3602,8 @@
           "score": 27.975
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xxv-lo",
@@ -3587,7 +3652,8 @@
           "score": 19.416
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "adult-cosinus",
@@ -3608,7 +3674,7 @@
           "rank": 65,
           "name": "Zaoczne Liceum Ogólnokształcące Dla Dorosłych \"cosinus Plus\" w Krakowie",
           "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/4971/Zaoczne-Liceum-Ogolnoksztalcace-Dla-Doroslych-cosinus-Plus-W-Krakowie",
-          "passRate": 44.0,
+          "passRate": 44,
           "polish": 42.11,
           "math": 28.65,
           "english": 64.75,
@@ -3622,7 +3688,8 @@
           "score": 27.807
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "adult-renoma",
@@ -3657,7 +3724,8 @@
           "score": 23.481
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "xxix-lo",
@@ -3701,7 +3769,8 @@
           "score": 26.58
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "adult-zdz",
@@ -3736,7 +3805,8 @@
           "score": 27.361
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "adult-zak",
@@ -3771,7 +3841,8 @@
           "score": 27.687
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     },
     {
       "id": "viii-dorosli",
@@ -3811,7 +3882,34 @@
           "score": 17.541
         },
         "pers": null
-      }
+      },
+      "examYear": 2025
     }
-  ]
+  ],
+  "schemaVersion": 1,
+  "rankingYear": 2026,
+  "examYear": 2025,
+  "sources": {
+    "wasza": {
+      "name": "WaszaEdukacja",
+      "scope": "w Krakowie",
+      "url": "https://waszaedukacja.pl/ranking/krakow/licea",
+      "description": "Ranking łączy wyniki egzaminów, osiągnięcia olimpijskie i edukacyjną wartość dodaną (EWD). Prezentujemy opublikowane miejsca i punkty, bez własnego przeliczania.",
+      "digits": 3
+    },
+    "pers": {
+      "name": "Perspektywy",
+      "scope": "w Polsce",
+      "url": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+      "description": "Olimpiady: 25%, matura obowiązkowa: 30%, matura dodatkowa: 45%. Edycja 2026 opiera się na osiągnięciach 2024/2025. Nie obejmuje wyników matury IB. Miejsca ex aequo zachowujemy zgodnie z tabelą wydawcy.",
+      "digits": 2
+    },
+    "oto": {
+      "name": "otouczelnie",
+      "scope": "w Krakowie",
+      "url": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2026",
+      "description": "Domyślny ranking 2026 na podstawie matury 2025: połowa procentowej zdawalności + średnie wyniki z polskiego, matematyki i angielskiego na poziomie podstawowym. Prezentujemy oryginalne miejsca wydawcy, także remisy.",
+      "digits": 2
+    }
+  }
 }

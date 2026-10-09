@@ -2,17 +2,30 @@
 const $=id=>document.getElementById(id);
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const normalize=value=>String(value).toLocaleLowerCase('pl').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ł/g,'l');
-const schools=window.SCHOOL_DATA.schools;
-const sources={
- wasza:{name:'WaszaEdukacja',scope:'w Krakowie',url:'https://waszaedukacja.pl/ranking/krakow/licea',description:'Ranking łączy wyniki egzaminów, osiągnięcia olimpijskie i edukacyjną wartość dodaną (EWD). Prezentujemy opublikowane miejsca i punkty, bez własnego przeliczania.',digits:3},
- pers:{name:'Perspektywy',scope:'w Polsce',url:'https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/',description:'Olimpiady: 25%, matura obowiązkowa: 30%, matura dodatkowa: 45%. Edycja 2026 opiera się na osiągnięciach 2024/2025. Nie obejmuje wyników matury IB. Miejsca ex aequo zachowujemy zgodnie z tabelą wydawcy.',digits:2},
- oto:{name:'otouczelnie',scope:'w Krakowie',url:'https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2026',description:'Domyślny ranking 2026 na podstawie matury 2025: połowa procentowej zdawalności + średnie wyniki z polskiego, matematyki i angielskiego na poziomie podstawowym. Prezentujemy oryginalne miejsca wydawcy, także remisy.',digits:2}
-};
+const datasets=window.SCHOOL_DATASETS;
+let year=String(Math.max(...Object.keys(datasets).map(Number)));
+let dataset=datasets[year],schools=dataset.schools,sources=dataset.sources;
+const dateLabel=date=>date.split('-').reverse().join('.');
+const percentage=value=>value==null?'—':fmt(value)+'%';
 let source='wasza',selected=null,visible=[],map=null,markers=new Map(),layer=null;
 const fmt=(n,d=2)=>Number(n).toLocaleString('pl-PL',{maximumFractionDigits:d,minimumFractionDigits:d});
 const safeURL=url=>{try{const u=new URL(url);return ['https:','http:'].includes(u.protocol)?esc(u.href):'#'}catch{return '#'}};
 const external=(url,text,cls='')=>`<a href="${safeURL(url)}" target="_blank" rel="noopener noreferrer" class="${cls}">${esc(text)}</a>`;
-for(const tag of [...new Set(schools.flatMap(s=>s.tags))].sort((a,b)=>a.localeCompare(b,'pl'))){const option=document.createElement('option');option.value=tag;option.textContent=tag;$('profile').append(option)}
+function refreshMetadata(){
+ $('year').innerHTML=Object.keys(datasets).sort((a,b)=>b-a).map(y=>`<option value="${y}">${y}</option>`).join('');$('year').value=year;
+ $('yearNote').textContent=Object.keys(datasets).length===1?`Dostępna edycja ${year}. Kolejne pojawią się po dodaniu danych.`:`Dostępne roczniki: ${Object.keys(datasets).sort().join(', ')}.`;
+ $('editionLabel').textContent=`EDYCJA RANKINGÓW ${year}`;
+ $('ranking').innerHTML=Object.entries(sources).map(([k,v])=>`<option value="${esc(k)}">${esc(v.name)} · ${year}</option>`).join('');
+ if(!sources[source])source=Object.keys(sources)[0];$('ranking').value=source;
+ const oldProfile=$('profile').value;
+ $('profile').innerHTML='<option value="">Wszystkie profile</option>';
+ for(const tag of [...new Set(schools.flatMap(s=>s.tags))].sort((a,b)=>a.localeCompare(b,'pl'))){const option=document.createElement('option');option.value=tag;option.textContent=tag;$('profile').append(option)}
+ if([...$('profile').options].some(o=>o.value===oldProfile))$('profile').value=oldProfile;
+ $('snapshotDate').textContent=`Dane zapisane ${dateLabel(dataset.updated)}`;
+ $('snapshotInfo').textContent=`Edycja ${year}. Zapis danych: ${dateLabel(dataset.updated)}. Rok matury: ${dataset.examYear??'podany przy szkole / niepotwierdzony'}. Rok oferty klas podajemy osobno w każdej karcie. Zestaw nie aktualizuje się automatycznie.`;
+ $('sourceContent').innerHTML=Object.entries(sources).map(([k,s])=>`<div class="source-card"><h3>${external(s.url,s.name+' ↗')}</h3><p>${esc(s.description)}</p><p class="note">W bazie edycji ${year}: ${schools.filter(s=>s.rankings[k]).length} szkół z tego rankingu.</p></div>`).join('');
+ $('dataCompleteness').textContent=`Baza edycji ${year}: ${schools.length} szkół; ${schools.filter(s=>s.coords).length} lokalizacji; ${schools.filter(s=>s.profiles.length).length} kart z profilami. Szkoły bez współrzędnych pozostają na liście. To nie jest pełny rejestr wszystkich działających liceów.`;
+}
 if(window.L){
  map=L.map('map',{zoomControl:false}).setView([50.066,19.965],12);
  L.control.zoom({position:'bottomright'}).addTo(map);
@@ -43,13 +56,17 @@ function closeDetail(){selected=null;$('detail').classList.remove('open');$('det
 function renderDetail(s){
  const r=s.rankings.oto;const p=s.rankings.pers;
  $('detail').innerHTML=`<div class="detail-top"><div class="detail-meta"><span class="type-badge">${esc(s.type)}${s.adult?' · dla dorosłych':''}</span><button class="icon-button" id="closeDetail" aria-label="Zamknij szczegóły szkoły">×</button></div><h2>${esc(s.name)}</h2><div class="address">${esc(s.address||'Brak potwierdzonego adresu')}${!s.coords?'<br>Brak potwierdzonej lokalizacji na mapie.':''}</div><div class="detail-links">${s.website?external(s.website,'Strona szkoły ↗'):''}${s.coords?external(`https://www.google.com/maps/dir/?api=1&destination=${s.coords.join(',')}`,'Sprawdź dojazd ↗','secondary'):''}</div></div>
- <div class="detail-section"><h3 class="section-title">Miejsca w rankingach 2026</h3><div class="rank-comparison">${Object.entries(sources).map(([k,src])=>`<div class="rank-cell${k===source?' current':''}"><small>${esc(src.name)}</small><strong>${esc(s.rankings[k]?.rank??'—')}</strong><em>${src.scope}</em></div>`).join('')}</div><p class="note">Perspektywy: miejsce ogólnopolskie. Pozostałe: Kraków. „—” oznacza brak danych.</p></div>
- <div class="detail-section"><h3 class="section-title">Matura 2025 · poziom podstawowy</h3>${r?[['Język polski',r.polish],['Matematyka',r.math],['Język angielski',r.english]].map(([label,value])=>`<div class="score-line"><span>${label}</span><b>${fmt(value)}%</b></div><div class="bar"><i style="width:${value}%"></i></div>`).join('')+`<div class="score-line" style="margin-top:16px"><span>Zdawalność matury</span><b>${fmt(r.passRate)}%</b></div>${external(r.url,'Wyniki w otouczelnie ↗','source-link')}`:'<p class="note">Brak danych w tym źródle.</p>'}</div>
+ <div class="detail-section"><h3 class="section-title">Miejsca w rankingach ${year}</h3><div class="rank-comparison">${Object.entries(sources).map(([k,src])=>`<div class="rank-cell${k===source?' current':''}"><small>${esc(src.name)}</small><strong>${esc(s.rankings[k]?.rank??'—')}</strong><em>${esc(src.scope)}</em></div>`).join('')}</div><p class="note">Perspektywy: miejsce ogólnopolskie. Pozostałe: Kraków. „—” oznacza brak danych.</p></div>
+ <div class="detail-section"><h3 class="section-title">Matura ${esc(s.examYear??'— rok niepotwierdzony')} · poziom podstawowy</h3>${r?[['Język polski',r.polish],['Matematyka',r.math],['Język angielski',r.english]].map(([label,value])=>`<div class="score-line"><span>${label}</span><b>${percentage(value)}</b></div><div class="bar"><i style="width:${value??0}%"></i></div>`).join('')+`<div class="score-line" style="margin-top:16px"><span>Zdawalność matury</span><b>${percentage(r.passRate)}</b></div>${external(r.url,'Wyniki w otouczelnie ↗','source-link')}`:'<p class="note">Brak danych w tym źródle.</p>'}</div>
  <div class="detail-section"><h3 class="section-title">Profile i rozszerzenia</h3><div class="tags">${s.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div>${s.specialization?`<p class="note">${esc(s.specialization)}</p>${external(s.specializationSource,'Informacje o specjalizacji ↗','source-link')}`:''}<p class="note" style="margin-bottom:10px">Oferta: ${esc(s.profileYear)} · ${s.profileSource.includes('waszaedukacja')?'WaszaEdukacja':'otouczelnie'}</p>${s.profiles.length?`<ul class="profile-list">${s.profiles.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>`:'<p class="note">Brak opublikowanych profili w pobranych danych. Sprawdź ofertę na stronie szkoły.</p>'}${external(s.profileSource,'Źródło oferty klas ↗','source-link')}<p class="note">Kategorie opisują zakres oferty, nie jakość nauczania. Potwierdź dostępność oddziałów u szkoły.</p></div>
- ${p?`<div class="detail-section"><h3 class="section-title">Perspektywy · historia w Polsce</h3><div class="history">${Object.entries(p.history).map(([year,rank])=>`<div><span>${year}</span><strong>${esc(rank)}</strong></div>`).join('')}</div><p class="note">Zmiany miejsc między latami nie są bezpośrednią miarą postępu uczniów.</p></div>`:''}
- <div class="detail-source">Zapis danych: 04.10.2026.<br>${s.coordSource?external(s.coordSource,'Źródło współrzędnych ↗'):''}${s.addressSource?' · '+external(s.addressSource,'Potwierdzenie adresu ↗'):''}<br>${Object.entries(sources).filter(([k])=>s.rankings[k]).map(([k,v])=>external(v.url,v.name+' ↗')).join(' · ')}</div>`;
+ ${p?`<div class="detail-section"><h3 class="section-title">Perspektywy · historia w Polsce</h3><div class="history">${Object.entries(p.history??{}).map(([year,rank])=>`<div><span>${year}</span><strong>${esc(rank)}</strong></div>`).join('')}</div><p class="note">Zmiany miejsc między latami nie są bezpośrednią miarą postępu uczniów.</p></div>`:''}
+ <div class="detail-source">Zapis danych: ${dateLabel(dataset.updated)}.<br>${s.coordSource?external(s.coordSource,'Źródło współrzędnych ↗'):''}${s.addressSource?' · '+external(s.addressSource,'Potwierdzenie adresu ↗'):''}<br>${Object.entries(sources).filter(([k])=>s.rankings[k]).map(([k,v])=>external(v.url,v.name+' ↗')).join(' · ')}</div>`;
  $('closeDetail').onclick=()=>{closeDetail();render()};
 }
+$('year').addEventListener('change',()=>{
+ year=$('year').value;dataset=datasets[year];schools=dataset.schools;sources=dataset.sources;
+ closeDetail();refreshMetadata();render();fit();
+});
 $('list').addEventListener('click',e=>{const row=e.target.closest('[data-id]');if(row)selectSchool(row.dataset.id)});
 $('ranking').addEventListener('change',()=>{source=$('ranking').value;render();fit()});
 for(const id of ['profile','type','adults'])$(id).addEventListener('change',()=>{render();fit()});
@@ -57,8 +74,6 @@ $('search').addEventListener('input',()=>render());
 $('reset').onclick=()=>{$('search').value='';$('type').value='';$('profile').value='';$('adults').checked=false;render();fit()};$('fit').onclick=fit;
 $('sourcesBtn').onclick=()=>$('sources').showModal();$('closeSources').onclick=()=>$('sources').close();$('sources').addEventListener('click',e=>{if(e.target===$('sources')){const r=$('sources').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('sources').close()}});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('sources').open){closeDetail();render()}});
-$('sourceContent').innerHTML=Object.entries(sources).map(([k,s])=>`<div class="source-card"><h3>${external(s.url,s.name+' ↗')}</h3><p>${s.description}</p><p class="note">W bazie: ${schools.filter(s=>s.rankings[k]).length} szkół z tego rankingu.</p></div>`).join('');
-$('dataCompleteness').textContent=`Baza: ${schools.length} szkół; ${schools.filter(s=>s.coords).length} lokalizacji; ${schools.filter(s=>s.profiles.length).length} kart z profilami. Szkoły bez współrzędnych pozostają na liście. To nie jest pełny rejestr wszystkich działających liceów.`;
-render();fit();
+refreshMetadata();render();fit();
 // Optional page-scoped agent navigation; uses the exact same action as the list.
-if(document.modelContext?.registerTool){try{Promise.resolve(document.modelContext.registerTool({name:'show_school',description:'Otwórz szczegóły szkoły widocznej w aktualnie wybranym rankingu i filtrach.',inputSchema:{type:'object',properties:{schoolId:{type:'string'}},required:['schoolId'],additionalProperties:false},annotations:{readOnlyHint:false},execute(input){if(!input||typeof input.schoolId!=='string'||!visible.some(s=>s.id===input.schoolId))throw new Error('Szkoła nie jest widoczna w obecnym widoku.');selectSchool(input.schoolId);return {schoolId:selected,ranking:source}}})).catch(()=>{})}catch{}}
+if(document.modelContext?.registerTool){try{Promise.resolve(document.modelContext.registerTool({name:'show_school',description:'Otwórz szczegóły szkoły widocznej w aktualnie wybranym rankingu i filtrach.',inputSchema:{type:'object',properties:{schoolId:{type:'string'}},required:['schoolId'],additionalProperties:false},annotations:{readOnlyHint:false},execute(input){if(!input||typeof input.schoolId!=='string'||!visible.some(s=>s.id===input.schoolId))throw new Error('Szkoła nie jest widoczna w obecnym widoku.');selectSchool(input.schoolId);return {schoolId:selected,ranking:source,year:Number(year)}}})).catch(()=>{})}catch{}}
