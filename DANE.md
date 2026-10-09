@@ -2,7 +2,17 @@
 
 ## Co jest przechowywane
 
-Każdy rok ma pełną, niezależną migawkę szkół w `dist/data/rankings-ROK.json`. Zachowujemy również ówczesne adresy, profile i źródła: późniejsza zmiana szkoły nie zmienia starszego rocznika. Stabilne `id` szkoły powinno być takie samo w kolejnych latach.
+Każdy rok ma niezależną migawkę szkół w `dist/data/rankings-ROK.json`. Stabilne `id` szkoły powinno być takie samo w kolejnych latach. Dla importowanych archiwów historyczne są wyniki rankingowe i matury. Adresy i współrzędne pochodzą z bazy 2026 (pole `metadataAsOf`), a nie ze zweryfikowanych historycznych lokalizacji. Historyczne profile klas pozostają puste. Aplikacja oznacza to przy wyborze roku i w karcie szkoły.
+
+## Pakiet historyczny 2017–2025
+
+`imports/historical-batch.json` zawiera dziewięć roczników i 667 pozycji: WaszaEdukacja 2017–2025 oraz otouczelnie 2022–2025. `imports/history-audit.json` zawiera adresy archiwów, datę pobrania, liczbę pozycji oraz SHA-256 pobranych stron. Kopie HTML pozostają lokalnie w `research/history` (nie są publikowane).
+
+Uruchom `importuj_historie.bat` lub `python scripts/datasets.py import-batch imports/historical-batch.json`. Pakiet jest już zaimportowany do aplikacji. Ponowny identyczny import jest bezpieczny. Walidacja całego pakietu i konflikty są sprawdzane przed zapisem; zmiana istniejących danych wymaga `--replace`. Operacje zapisu nie są transakcją bazy danych; po awarii dysku należy ponowić import.
+
+Wykres przedstawia jeden wybrany ranking, aby nie mieszać miejsc miejskich i ogólnopolskich. Braki przerywają linię; tabela zawiera dokładne miejsca i źródła. Dla Perspektyw starsze miejsca 2023–2025 pochodzą z tabeli historii edycji 2026, co jest opisane przy linku. Metodologia i liczba szkół mogą zmieniać się między latami.
+
+Odtworzenie pakietu: `python scripts/fetch_history.py`, `python scripts/parse_history.py`, `python scripts/build_history.py`. Pobieranie korzysta z lokalnej pamięci podręcznej. Skrypt tożsamości korzysta z jawnych reguł nazw oraz adresów kart wydawców; nowe nierozpoznane szkoły wymagają przeglądu. Nie dopasowuje nazw rozmycie.
 
 W pliku rozróżniamy:
 

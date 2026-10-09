@@ -106,16 +106,39 @@ def import_snapshot(filename, replace=False, dist=DIST):
     rebuild(dist, snapshots)
     return y
 
+def import_batch(filename, replace=False, dist=DIST):
+    batch = json.loads(Path(filename).read_text(encoding='utf-8'))
+    if batch.get('schemaVersion') != 1 or not isinstance(batch.get('datasets'), list) or not batch['datasets']:
+        raise ValueError('Nieprawidłowy pakiet datasets.')
+    snapshots = read_snapshots(dist / 'data')
+    incoming = {}
+    for raw in batch['datasets']:
+        data = validate(raw)
+        y = str(data['rankingYear'])
+        if y in incoming:
+            raise ValueError(f'Powtórzony rocznik {y}.')
+        if y in snapshots and snapshots[y] != data and not replace:
+            raise ValueError(f'Rocznik {y} już istnieje i ma inne dane. Wymagane --replace.')
+        incoming[y] = data
+    # Validate the whole batch and every conflict before writing any snapshot.
+    (dist / 'data').mkdir(parents=True, exist_ok=True)
+    for y, data in incoming.items():
+        if snapshots.get(y) != data:
+            write_json(dist / 'data' / f'rankings-{y}.json', data)
+    snapshots.update(incoming)
+    rebuild(dist, snapshots)
+    return ', '.join(sorted(incoming))
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Dodaj i sprawdź rocznik rankingu.')
-    parser.add_argument('command', choices=['import', 'build', 'validate'])
+    parser.add_argument('command', choices=['import', 'import-batch', 'build', 'validate'])
     parser.add_argument('file', nargs='?')
     parser.add_argument('--replace', action='store_true', help='Zezwól na korektę istniejącego rocznika.')
     args = parser.parse_args()
     try:
-        if args.command == 'import':
+        if args.command in ('import', 'import-batch'):
             if not args.file: parser.error('Podaj ścieżkę pliku JSON.')
-            print('Dodano rocznik', import_snapshot(args.file, args.replace))
+            print('Zaimportowano:', (import_batch if args.command == 'import-batch' else import_snapshot)(args.file, args.replace))
         elif args.command == 'validate':
             if args.file: validate(json.loads(Path(args.file).read_text(encoding='utf-8')))
             else: read_snapshots(DIST / 'data')

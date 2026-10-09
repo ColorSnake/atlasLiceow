@@ -1,0 +1,909 @@
+{
+  "schemaVersion": 1,
+  "rankingYear": 2020,
+  "examYear": null,
+  "updated": "2026-10-09",
+  "historical": true,
+  "sources": {
+    "wasza": {
+      "name": "WaszaEdukacja",
+      "scope": "w Krakowie",
+      "url": "https://waszaedukacja.pl/ranking/krakow/licea/2020",
+      "digits": 3,
+      "description": "Archiwalna edycja 2020: 33 opublikowanych pozycji. Zachowano miejsca i punkty wydawcy. Metodologia i liczba uwzględnionych szkół mogą różnić się między latami. Rok wyników egzaminacyjnych nie został potwierdzony."
+    }
+  },
+  "schools": [
+    {
+      "id": "v-lo",
+      "name": "V Liceum im. Augusta Witkowskiego Kraków",
+      "address": "ul. Studencka 12, 31-116 Kraków",
+      "coords": [
+        50.062249,
+        19.92864
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 1,
+          "national": null,
+          "name": "V Liceum im. Augusta Witkowskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/v-liceum-im-augusta-witkowskiego-krakow-415",
+          "score": 84.029,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "i-lo",
+      "name": "I Liceum im. Bartłomieja Nowodworskiego Kraków",
+      "address": "pl. Na Groblach 9, 31-101 Kraków",
+      "coords": [
+        50.056987,
+        19.9332
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 2,
+          "national": null,
+          "name": "I Liceum im. Bartłomieja Nowodworskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/i-liceum-im-bartlomieja-nowodworskiego-krakow-413",
+          "score": 79.011,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "ii-lo",
+      "name": "II Liceum im. Króla Jana III Sobieskiego Kraków",
+      "address": "ul. Sobieskiego 9, 31-136 Kraków",
+      "coords": [
+        50.068237,
+        19.931221
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 3,
+          "national": null,
+          "name": "II Liceum im. Króla Jana III Sobieskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/ii-liceum-im-krola-jana-iii-sobieskiego-krakow-79285",
+          "score": 65.929,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "vi-lo",
+      "name": "VI Liceum im. Adama Mickiewicza Kraków",
+      "address": "ul. Wąska 7, 31-057 Kraków",
+      "coords": [
+        50.050452,
+        19.947631
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 4,
+          "national": null,
+          "name": "VI Liceum im. Adama Mickiewicza Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/vi-liceum-im-adama-mickiewicza-krakow-416",
+          "score": 64.109,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "viii-lo",
+      "name": "VIII Liceum im. Stanisława Wyspiańskiego Kraków",
+      "address": "ul. Grzegórzecka 24, 31-531 Kraków",
+      "coords": [
+        50.058679,
+        19.95536
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 5,
+          "national": null,
+          "name": "VIII Liceum im. Stanisława Wyspiańskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/viii-liceum-im-stanislawa-wyspianskiego-krakow-418",
+          "score": 59.277,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "vii-lo",
+      "name": "VII Liceum im. Zofii Nałkowskiej Kraków",
+      "address": "ul. Skarbińskiego 5, 30-071 Kraków",
+      "coords": [
+        50.070891,
+        19.908527
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 6,
+          "national": null,
+          "name": "VII Liceum im. Zofii Nałkowskiej Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/vii-liceum-im-zofii-nalkowskiej-krakow-417",
+          "score": 58.581,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "iii-lo",
+      "name": "III Liceum im. Jana Kochanowskiego Kraków",
+      "address": "os. Wysokie 6, 31-818 Kraków",
+      "coords": [
+        50.089262,
+        20.017631
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 7,
+          "national": null,
+          "name": "III Liceum im. Jana Kochanowskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/iii-liceum-im-jana-kochanowskiego-krakow-394",
+          "score": 58.566,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "iv-lo",
+      "name": "IV Liceum im. Tadeusza Kościuszki Kraków",
+      "address": "ul. Krzemionki 11, 30-525 Kraków",
+      "coords": [
+        50.041104,
+        19.945951
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 8,
+          "national": null,
+          "name": "IV Liceum im. Tadeusza Kościuszki Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/iv-liceum-im-tadeusza-kosciuszki-krakow-396",
+          "score": 57.787,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "x-lo",
+      "name": "X Liceum im. Komisji Edukacji Narodowej Kraków",
+      "address": "ul. Wróblewskiego 8, 31-148 Kraków",
+      "coords": [
+        50.069283,
+        19.940326
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 9,
+          "national": null,
+          "name": "X Liceum im. Komisji Edukacji Narodowej Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/x-liceum-im-komisji-edukacji-narodowej-krakow-420",
+          "score": 51.842,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xvii-lo",
+      "name": "XVII Liceum im. Młodej Polski Kraków",
+      "address": "ul. Złoty Róg 30, 30-095 Kraków",
+      "coords": [
+        50.081513,
+        19.894953
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 10,
+          "national": null,
+          "name": "XVII Liceum im. Młodej Polski Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xvii-liceum-im-mlodej-polski-krakow-403",
+          "score": 51.721,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xiii-lo",
+      "name": "XIII Liceum im. Bohaterów Westerplatte Kraków",
+      "address": "ul. Sądowa 4, 31-542 Kraków",
+      "coords": [
+        50.063102898906955,
+        19.963859790532297
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 11,
+          "national": null,
+          "name": "XIII Liceum im. Bohaterów Westerplatte Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xiii-liceum-im-bohaterow-westerplatte-krakow-421",
+          "score": 51.444,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "salezjanie",
+      "name": "Liceum Salezjańskie Kraków",
+      "address": "os. Osiedle Piastów 34, 31-624 Kraków",
+      "coords": [
+        50.099187,
+        20.018153
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 12,
+          "national": null,
+          "name": "Liceum Salezjańskie Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-salezjanskie-krakow-18862",
+          "score": 49.539,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xi-lo",
+      "name": "XI Liceum im. Marii Dąbrowskiej Kraków",
+      "address": "os. Teatralne 33, 31-948 Kraków",
+      "coords": [
+        50.080977,
+        20.033042
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 13,
+          "national": null,
+          "name": "XI Liceum im. Marii Dąbrowskiej Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xi-liceum-im-marii-dabrowskiej-krakow-391",
+          "score": 48.645,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xii-lo",
+      "name": "XII Liceum im. Cypriana Kamila Norwida Kraków",
+      "address": "os. Kolorowe 29a, 31-941 Kraków",
+      "coords": [
+        50.07612,
+        20.02405
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 14,
+          "national": null,
+          "name": "XII Liceum im. Cypriana Kamila Norwida Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xii-liceum-krakow-399",
+          "score": 48.518,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xv-lo",
+      "name": "XV Liceum im. Marii Skłodowskiej-Curie Kraków",
+      "address": "al. Dygasińskiego 15, 30-820 Kraków",
+      "coords": [
+        50.022256,
+        19.986139
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 15,
+          "national": null,
+          "name": "XV Liceum im. Marii Skłodowskiej-Curie Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xv-liceum-im-marii-sklodowskiej-curie-krakow-405",
+          "score": 46.675,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "ix-lo",
+      "name": "IX Liceum im. Zygmunta Wróblewskiego Kraków",
+      "address": "ul. Czapińskiego 5, 30-048 Kraków",
+      "coords": [
+        50.068908,
+        19.919283
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 16,
+          "national": null,
+          "name": "IX Liceum im. Zygmunta Wróblewskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/ix-liceum-im-zygmunta-wroblewskiego-krakow-419",
+          "score": 46.665,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxx-lo",
+      "name": "XXX Liceum im. św. Brata Alberta-Adama Chmielowskiego Kraków",
+      "address": "os. Dywizjonu 303 66, 31-875 Kraków",
+      "coords": [
+        50.083403,
+        20.006577
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 17,
+          "national": null,
+          "name": "XXX Liceum im. św. Brata Alberta-Adama Chmielowskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxx-liceum-im-sw-brata-alberta-adama-chmielowskiego-krakow-410",
+          "score": 46.014,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "sms",
+      "name": "Liceum Mistrzostwa Sportowego Kraków",
+      "address": "ul. Grochowska 20, 31-521 Kraków",
+      "coords": [
+        50.073631,
+        19.962353
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 18,
+          "national": null,
+          "name": "Liceum Mistrzostwa Sportowego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-mistrzostwa-sportowego-krakow-390",
+          "score": 45.709,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxi-lo",
+      "name": "XXI Liceum im. St. I. Witkiewicza-Witkacego Kraków",
+      "address": "os. Tysiąclecia 15, 31-606 Kraków",
+      "coords": [
+        50.091347,
+        20.002073
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 19,
+          "national": null,
+          "name": "XXI Liceum im. St. I. Witkiewicza-Witkacego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxi-liceum-im-st-i-witkiewicza-witkacego-krakow-423",
+          "score": 45.505,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxviii-lo",
+      "name": "XXVIII Liceum im. Wojciecha Bednarskiego Kraków",
+      "address": "ul. Czackiego 11, 30-501 Kraków",
+      "coords": [
+        50.040994,
+        19.936786
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 20,
+          "national": null,
+          "name": "XXVIII Liceum im. Wojciecha Bednarskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxviii-liceum-im-wojciecha-bednarskiego-krakow-424",
+          "score": 43.825,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xx-lo",
+      "name": "XX Liceum im. Leopolda Staffa Kraków",
+      "address": "ul. Szlak 5, 31-161 Kraków",
+      "coords": [
+        50.070371,
+        19.933474
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 21,
+          "national": null,
+          "name": "XX Liceum im. Leopolda Staffa Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xx-liceum-im-leopolda-staffa-krakow-422",
+          "score": 43.794,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xvi-lo",
+      "name": "XVI Liceum im. Krzysztofa Kamila Baczyńskiego Kraków",
+      "address": "os. Willowe 1, 31-901 Kraków",
+      "coords": [
+        50.07211409350004,
+        20.046799057690805
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 22,
+          "national": null,
+          "name": "XVI Liceum im. Krzysztofa Kamila Baczyńskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xvi-liceum-im-krzysztofa-kamila-baczynskiego-krakow-412",
+          "score": 43.609,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxvi-lo",
+      "name": "XXVI Liceum Kraków",
+      "address": "ul. Krupnicza 44, 31-123 Kraków",
+      "coords": [
+        50.062168,
+        19.924209
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 23,
+          "national": null,
+          "name": "XXVI Liceum Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxvi-liceum-krakow-429",
+          "score": 42.637,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxiii-lo",
+      "name": "XXIII Liceum im. płk. pil. Stanisława Skarżyńskiego Kraków",
+      "address": "ul. Seniorów Lotnictwa 5, 31-455 Kraków",
+      "coords": [
+        50.079778,
+        19.985796
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 24,
+          "national": null,
+          "name": "XXIII Liceum im. płk. pil. Stanisława Skarżyńskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxiii-liceum-im-plk-pil-stanislawa-skarzynskiego-krakow-404",
+          "score": 42.127,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxiv-lo",
+      "name": "XXIV Liceum im. Jana Pawła II Kraków",
+      "address": "ul. Wilka Wyrwińskiego 1, 31-517 Kraków",
+      "coords": [
+        50.072149,
+        19.965338
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 25,
+          "national": null,
+          "name": "XXIV Liceum im. Jana Pawła II Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxiv-liceum-im-jana-pawla-ii-krakow-407",
+          "score": 41.808,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xviii-lo",
+      "name": "XVIII Liceum im. prof. Akademii Krakowskiej św. Jana Kantego Kraków",
+      "address": "ul. Na Błonie 15b, 30-147 Kraków",
+      "coords": [
+        50.077548,
+        19.882569
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 26,
+          "national": null,
+          "name": "XVIII Liceum im. prof. Akademii Krakowskiej św. Jana Kantego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xviii-liceum-krakow-402",
+          "score": 40.46,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "nazaret",
+      "name": "Liceum im. św. Rodziny z Nazaretu Kraków",
+      "address": "ul. Pędzichów 13, 31-152 Kraków",
+      "coords": [
+        50.070388,
+        19.938739
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 27,
+          "national": null,
+          "name": "Liceum im. św. Rodziny z Nazaretu Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-im-sw-rodziny-z-nazaretu-krakow-18860",
+          "score": 40.349,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxvii-lo",
+      "name": "XXVII Liceum im. dr Henryka Jordana Kraków",
+      "address": "ul. Senatorska 35, 30-106 Kraków",
+      "coords": [
+        50.053739,
+        19.916909
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 28,
+          "national": null,
+          "name": "XXVII Liceum im. dr Henryka Jordana Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxvii-liceum-im-dr-henryka-jordana-krakow-411",
+          "score": 39.65,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xiv-lo",
+      "name": "XIV Liceum im. Mikołaja Kopernika Kraków",
+      "address": "ul. Chełmońskiego 24, 31-322 Kraków",
+      "coords": [
+        50.087095,
+        19.913508
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 29,
+          "national": null,
+          "name": "XIV Liceum im. Mikołaja Kopernika Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xiv-liceum-im-mikolaja-kopernika-krakow-398",
+          "score": 39.47,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "prezentki",
+      "name": "Liceum Sióstr Prezentek Kraków",
+      "address": "ul. św. Jana 7, 31-017 Kraków",
+      "coords": [
+        50.063424,
+        19.938886
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 30,
+          "national": null,
+          "name": "Liceum Sióstr Prezentek Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-siostr-prezentek-krakow-18859",
+          "score": 38.675,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxv-lo",
+      "name": "XXV Liceum im. Stefana Żeromskiego Kraków",
+      "address": "ul. Telimeny 9, 30-838 Kraków",
+      "coords": [
+        50.019919,
+        20.016089
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 31,
+          "national": null,
+          "name": "XXV Liceum im. Stefana Żeromskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxv-liceum-im-stefana-zeromskiego-krakow-408",
+          "score": 31.768,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "i-sport",
+      "name": "I Liceum Sportowe Kraków",
+      "address": "os. Teatralne 35, 31-948 Kraków",
+      "coords": [
+        50.079975,
+        20.03408
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 32,
+          "national": null,
+          "name": "I Liceum Sportowe Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/i-liceum-ogolnoksztalcace-sportowe-krakow-18799",
+          "score": 30.506,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "sendzimir",
+      "name": "Liceum Huty im. Tadeusza Sendzimira Kraków",
+      "address": "os. Złotej Jesieni 2, 31-826 Kraków",
+      "coords": [
+        50.090655,
+        20.023384
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": null,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "wasza": {
+          "rank": 33,
+          "national": null,
+          "name": "Liceum Huty im. Tadeusza Sendzimira Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-huty-im-tadeusza-sendzimira-krakow-18861",
+          "score": 23.109,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    }
+  ]
+}

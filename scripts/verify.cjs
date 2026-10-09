@@ -38,6 +38,18 @@ const fs=require('node:fs');
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
  await page.locator('.school-row').first().click();assert(await page.locator('#detail').isVisible());
  await page.screenshot({path:'licea/research/mobile-detail.png'});
+ await page.selectOption('#historySource','wasza');assert.equal(await page.locator('#historyChart circle').count(),10);
+ await page.selectOption('#historySource','oto');assert.equal(await page.locator('#historyChart circle').count(),5);
+ await page.locator('.history-values summary').click();assert.equal(await page.locator('.history-values tbody tr').count(),10);
+ assert.match(await page.locator('.history-values tbody tr').first().innerText(),/Brak danych/);
+ await page.selectOption('#year','2017');assert.equal(await page.locator('#ranking option').count(),1);
+ assert.equal(await page.locator('.school-row').count(),27);
+ await page.locator('.school-row').first().click();assert.match(await page.locator('#detail').innerText(),/lokalizacja historyczna niepotwierdzona/);
+ assert.equal(await page.locator('#historyChart circle').count(),10);
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+ await page.screenshot({path:'licea/research/history-mobile.png',fullPage:true});
+ await page.setViewportSize({width:1440,height:1000});await page.selectOption('#year','2025');
+ await page.locator('.school-row').first().click();await page.locator('#historySource').scrollIntoViewIfNeeded();await page.locator('#detail').evaluate(e=>e.scrollTop+=200);await page.screenshot({path:'licea/research/history-desktop.png',fullPage:true});
  assert.deepEqual(errors,[]);
  console.log(JSON.stringify({passed:true,schools:data.schools.length,mapped:data.schools.filter(s=>s.coords).length,profiles:data.schools.filter(s=>s.profiles.length).length,rankings:{wasza:70,pers:44,oto:72},browserErrors:errors}));
  // Test-only future snapshot, injected in the response; never saved or published.

@@ -3,9 +3,25 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
-from datasets import DIST, import_snapshot, read_snapshots, validate
+from datasets import DIST, import_snapshot, import_batch, read_snapshots, validate
 
 class DatasetTests(unittest.TestCase):
+    def test_batch_validates_before_writing_and_is_idempotent(self):
+        batch=json.loads((DIST.parent/'imports/historical-batch.json').read_text(encoding='utf-8'))
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);dist=root/'dist';dist.mkdir();file=root/'batch.json'
+            broken=copy.deepcopy(batch);broken['datasets'][-1]['schools'][0]['rankings']['oto']['rank']=0
+            file.write_text(json.dumps(broken),encoding='utf-8')
+            with self.assertRaises(ValueError):import_batch(file,dist=dist)
+            self.assertFalse((dist/'data').exists())
+            file.write_text(json.dumps(batch),encoding='utf-8');import_batch(file,dist=dist)
+            before=(dist/'data.js').read_bytes();import_batch(file,dist=dist)
+            self.assertEqual(before,(dist/'data.js').read_bytes())
+            self.assertEqual(len(read_snapshots(dist/'data')),9)
+            batch['datasets'][-1]['schools'][0]['rankings']['oto']['rank']=99
+            file.write_text(json.dumps(batch),encoding='utf-8')
+            with self.assertRaises(ValueError):import_batch(file,dist=dist)
+            self.assertEqual(before,(dist/'data.js').read_bytes())
     def setUp(self):
         self.original=json.loads((DIST/'data/rankings-2026.json').read_text(encoding='utf-8'))
 

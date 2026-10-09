@@ -1,0 +1,123 @@
+{
+  "downloaded": "2026-10-09",
+  "sources": [
+    {
+      "source": "wasza",
+      "year": 2017,
+      "url": "https://waszaedukacja.pl/ranking/krakow/licea/2017",
+      "finalUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2017",
+      "downloaded": "2026-10-09",
+      "sha256": "701764d288367f7154227580dac3d3ec6de52dfc5f4faa6ffa578b73e6d7d539",
+      "rows": 27
+    },
+    {
+      "source": "wasza",
+      "year": 2018,
+      "url": "https://waszaedukacja.pl/ranking/krakow/licea/2018",
+      "finalUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2018",
+      "downloaded": "2026-10-09",
+      "sha256": "d6b708da462e2809469c5e0d7ccbe53f6d4c1a3b7e2582264366c20d0e31db0c",
+      "rows": 27
+    },
+    {
+      "source": "wasza",
+      "year": 2019,
+      "url": "https://waszaedukacja.pl/ranking/krakow/licea/2019",
+      "finalUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2019",
+      "downloaded": "2026-10-09",
+      "sha256": "9ff476963074ed3574ad4d521c3a78ff007c0de3d7a6e14a78b7cf25f0a08c7c",
+      "rows": 28
+    },
+    {
+      "source": "wasza",
+      "year": 2020,
+      "url": "https://waszaedukacja.pl/ranking/krakow/licea/2020",
+      "finalUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2020",
+      "downloaded": "2026-10-09",
+      "sha256": "354944b3b2667760064957f1a86ba78e4e2477879b33607afb860e7d43886709",
+      "rows": 33
+    },
+    {
+      "source": "wasza",
+      "year": 2021,
+      "url": "https://waszaedukacja.pl/ranking/krakow/licea/2021",
+      "finalUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2021",
+      "downloaded": "2026-10-09",
+      "sha256": "2aac5d6d4bb66114a01025d594d4192bd45c0be469139c220fac742938d831d6",
+      "rows": 38
+    },
+    {
+      "source": "oto",
+      "year": 2022,
+      "url": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022",
+      "finalUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022",
+      "downloaded": "2026-10-09",
+      "sha256": "6ac93079a75d13c42fa203f171144ec66df00d711bc9f85cff4fed3488cf3cc8",
+      "rows": 67
+    },
+    {
+      "source": "wasza",
+      "year": 2022,
+      "url": "https://waszaedukacja.pl/ranking/krakow/licea/2022",
+      "finalUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022",
+      "downloaded": "2026-10-09",
+      "sha256": "57ba0766528d52decb002a342b5f82b2dc595433f4cf7a18998baba8a5526dd7",
+      "rows": 54
+    },
+    {
+      "source": "oto",
+      "year": 2023,
+      "url": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2023",
+      "finalUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2023",
+      "downloaded": "2026-10-09",
+      "sha256": "eff514b24c6a15c66416ae72168367e6b7d5c8ef7483adc6ff239124420d0a2e",
+      "rows": 74
+    },
+    {
+      "source": "wasza",
+      "year": 2023,
+      "url": "https://waszaedukacja.pl/ranking/krakow/licea/2023",
+      "finalUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2023",
+      "downloaded": "2026-10-09",
+      "sha256": "2a197a465f7c6930ebf58240bf09369308837a506a3f1dff694bd1777bac14ee",
+      "rows": 57
+    },
+    {
+      "source": "oto",
+      "year": 2024,
+      "url": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2024",
+      "finalUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2024",
+      "downloaded": "2026-10-09",
+      "sha256": "eee3a213b832a06309659b1996589d289ca8986dba96c79cb2e8eea73a7225d0",
+      "rows": 67
+    },
+    {
+      "source": "wasza",
+      "year": 2024,
+      "url": "https://waszaedukacja.pl/ranking/krakow/licea/2024",
+      "finalUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2024",
+      "downloaded": "2026-10-09",
+      "sha256": "0e90db060206d8e1cb4327cd3135bdd40672c0eb7eefd2ef859b3a8ea9cc104e",
+      "rows": 61
+    },
+    {
+      "source": "oto",
+      "year": 2025,
+      "url": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2025",
+      "finalUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2025",
+      "downloaded": "2026-10-09",
+      "sha256": "e10437b19de9db2917fa68e3c9e314ab9719afc18d888779c00ca709324461b8",
+      "rows": 68
+    },
+    {
+      "source": "wasza",
+      "year": 2025,
+      "url": "https://waszaedukacja.pl/ranking/krakow/licea/2025",
+      "finalUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2025",
+      "downloaded": "2026-10-09",
+      "sha256": "f115e477716d89d0f2dc3d4fcb867b0f44ae9ea79474962b53ddbb5efd7a6937",
+      "rows": 66
+    }
+  ],
+  "notes": "Adresy i współrzędne pochodzą z migawki 2026, nie są potwierdzeniem historycznej lokalizacji. Profile historyczne pozostawiono puste."
+}
