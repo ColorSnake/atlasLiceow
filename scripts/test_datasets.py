@@ -7,7 +7,7 @@ from datasets import DIST, import_snapshot, import_batch, read_snapshots, valida
 
 class DatasetTests(unittest.TestCase):
     def test_batch_validates_before_writing_and_is_idempotent(self):
-        batch=json.loads((DIST.parent/'imports/historical-batch.json').read_text(encoding='utf-8'))
+        batch=json.loads((DIST.parent.parent/'imports/historical-batch.json').read_text(encoding='utf-8'))
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);dist=root/'dist';dist.mkdir();file=root/'batch.json'
             broken=copy.deepcopy(batch);broken['datasets'][-1]['schools'][0]['rankings']['oto']['rank']=0

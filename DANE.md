@@ -2,7 +2,7 @@
 
 ## Co jest przechowywane
 
-Każdy rok ma niezależną migawkę szkół w `dist/data/rankings-ROK.json`. Stabilne `id` szkoły powinno być takie samo w kolejnych latach. Dla importowanych archiwów historyczne są wyniki rankingowe i matury. Adresy i współrzędne pochodzą z bazy 2026 (pole `metadataAsOf`), a nie ze zweryfikowanych historycznych lokalizacji. Historyczne profile klas pozostają puste. Aplikacja oznacza to przy wyborze roku i w karcie szkoły.
+Każdy rok ma niezależną migawkę szkół w `public/atlas/data/rankings-ROK.json`. Stabilne `id` szkoły powinno być takie samo w kolejnych latach. Dla importowanych archiwów historyczne są wyniki rankingowe i matury. Adresy i współrzędne pochodzą z bazy 2026 (pole `metadataAsOf`), a nie ze zweryfikowanych historycznych lokalizacji. Historyczne profile klas pozostają puste. Aplikacja oznacza to przy wyborze roku i w karcie szkoły.
 
 ## Pakiet historyczny 2017–2025
 
@@ -22,7 +22,7 @@ W pliku rozróżniamy:
 - `updated`: data faktycznego zebrania/weryfikacji danych (YYYY-MM-DD), a nie data publikacji kodu.
 - `sources`: nazwy, adresy źródeł, objaśnienia metodologii, zakres numeracji i precyzja punktów **dla tej edycji**. Zmiana samego numeru roku nie aktualizuje danych ani metodologii.
 
-Pozostałe pola i pełny przykład rzeczywistego formatu znajdują się w `dist/data/rankings-2026.json`. Format ma `schemaVersion: 1`.
+Pozostałe pola i pełny przykład rzeczywistego formatu znajdują się w `public/atlas/data/rankings-2026.json`. Format ma `schemaVersion: 1`.
 
 `schools` to lista kart z polami: `id`, `name`, `address`, `type`, `adult`, `coords` (para szerokość/długość geograficzna albo `null`), `examYear`, `profiles`, `profileYear`, `profileSource`, `tags`, `rankings`. Opcjonalne są m.in. `website`, `coordSource`, `addressSource`, `specialization`, `specializationSource`.
 
@@ -50,13 +50,26 @@ Zachowaj kopię i przejrzyj zmiany przed zastąpieniem istniejącej edycji. Wali
 
 ## Pliki generowane
 
-- `dist/data/index.json`: dostępne lata i rok domyślny.
-- `dist/data.js`: pakiet wszystkich roczników dla przeglądarki; dzięki niemu aplikacja działa też po otwarciu HTML bez serwera.
-- `dist/data.json`: kopia najnowszego rocznika, zachowana dla zgodności i wygodnej analizy.
+- `public/atlas/data/index.json`: dostępne lata i rok domyślny.
+- `public/atlas/data.js`: pakiet wszystkich roczników dla przeglądarki; dzięki niemu aplikacja działa też po otwarciu HTML bez serwera.
+- `public/atlas/data.json`: kopia najnowszego rocznika, zachowana dla zgodności i wygodnej analizy.
 
 Nie edytuj tych trzech plików ręcznie. Po ręcznej korekcie plików rocznych można uruchomić `python scripts/datasets.py build`. Zalecany jest jednak import, który domyślnie chroni istniejące roczniki.
 
-Nie ma bazy danych, formularza importu w przeglądarce ani automatycznego pobierania nowych lat. Skrypty zbierające dane utworzone w pierwszej wersji są właściwe dla **edycji 2026**. `build_data.py` zapisuje teraz propozycję w `research/candidate-2026.json`; nie nadpisuje aktywnego katalogu. Dla nowych lat należy dopasować pobieranie i parsowanie do stron wydawców, następnie użyć wspólnego importera.
+## Import i eksport w przeglądarce
+
+Zakładka **Dane · import i eksport** pobiera tabelę WaszaEdukacja lub otouczelnie dla wybranego roku. Adres URL jest budowany przez serwer wyłącznie dla tych dwóch wydawców. Import nie pobiera profili ani nie geokoduje nowych szkół. Nieobsługiwany układ strony, błędny rok, niekompletna tabela otouczelnie lub blokada wydawcy kończą się komunikatem bez zmiany danych.
+
+Po pobraniu zobaczysz miejsca, punkty, podsumowanie zmian i nierozpoznane szkoły. Przypisz je do istniejącej szkoły albo wybierz nową kartę (bez adresu i mapy). Podgląd jest ważny godzinę. **Pobierz przygotowany JSON** pobiera kompletny proponowany rocznik bez zapisu na stronie. **Zapisz i zaktualizuj stronę** zastępuje ranking tylko wybranego wydawcy, zachowuje inne źródła i odświeża aplikację. Równoczesne nadpisanie zmienionego rocznika jest odrzucane.
+
+Aktualizacje GUI są przechowywane trwale w bazie Cloudflare D1, w tabeli `annual_snapshots`. Podglądy znajdują się w `import_drafts`. Strona pozostaje prywatna; dostęp chroni Sites. Zmiana jej odbiorców na publicznych wymaga uprzednio dodania uprawnień administratora do operacji zapisu. Endpointy mutujące wymagają również zgodnego Origin i JSON. Baza lokalnego podglądu jest oddzielona od bazy opublikowanej strony.
+
+Pliki `public/atlas/data/rankings-ROK.json` oraz generowany `server/seed.json` są danymi początkowymi. Zapisany w bazie rocznik ma nad nimi pierwszeństwo i przetrwa kolejne publikacje. Import skryptem Python zmienia dane początkowe w kodzie, nie nadpisuje bazy produkcyjnej. Gdy baza jest niedostępna, mapa wyświetla kopię początkową z ostrzeżeniem. Pobranie JSON w zakładce Dane jest sposobem wykonania kopii aktualnego rocznika.
+
+Eksport CSV obejmuje wszystkie szkoły i wszystkie źródła danego roku, niezależnie od filtrów mapy: jeden wiersz na parę szkoła–wydawca. Format: UTF-8 z BOM, średnik, CRLF, cudzysłowy; wartości mogące zostać potraktowane jako formuła są poprzedzane apostrofem. Eksport JSON zachowuje pełny zestaw danych. Import pliku JSON przez GUI nie jest częścią tej funkcji; GUI importuje strony wydawców.
+
+Projekt serwerowy korzysta z szablonu Vinext i integracji Sites. `npm run dev` uruchamia podgląd, `npm run build` tworzy wynik w `dist`, `npm start` uruchamia zbudowany Worker lokalnie. Lokalną migrację D1 stosuje się zgodnie z instrukcją szablonu, z pliku `drizzle/0000_lean_stepford_cuckoos.sql`. Wymagany Node >=22.13. Kopie HTML w `research/history` służą do testów parsera i nie trafiają do publikacji.
+
 
 ## Testy
 

@@ -1,18 +1,21 @@
 # Atlas liceów Krakowa
 
-Dynamiczna aplikacja HTML/JavaScript z mapą Leaflet. Nie wymaga frameworka, klucza API, instalowania pakietów ani serwera aplikacyjnego.
+Atlas z mapą Leaflet i historią miejsc. Interfejs HTML/JavaScript znajduje się w `public/atlas`, a serwer Vinext udostępnia import rankingów i bazę Cloudflare D1.
 
-**Obsługa roczników:** wybór roku rankingu nad mapą. Każdy rok jest oddzielną migawką JSON. Obecnie opublikowano tylko rzeczywiste dane edycji 2026. Instrukcja importu kolejnych lat: [DANE.md](DANE.md).
+**Obsługa roczników:** dane od 2017 do 2026, wykresy miejsc, zakładka importu stron WaszaEdukacja/otouczelnie oraz eksport CSV i JSON. Instrukcja i sposób przechowywania: [DANE.md](DANE.md).
 
 ## Uruchomienie
 
-Otwórz `dist/index.html` w przeglądarce albo uruchom w katalogu `licea`:
+Wymagany Node.js >=22.13. W katalogu `licea` zainstaluj zależności i zbuduj aplikację:
 
 ```sh
-python -m http.server 8765 --bind 127.0.0.1 --directory dist
+npm ci
+npm run build
+node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_lean_stepford_cuckoos.sql
+npm start -- --port 8765
 ```
 
-Wejdź na http://127.0.0.1:8765/. Podkład mapy OpenStreetMap oraz opcjonalne fonty Google wymagają internetu. Dane i biblioteka mapy są zapisane lokalnie. W razie braku podkładu lista, filtry i panel szkół nadal działają.
+Migrację uruchom tylko przy pierwszym przygotowaniu lokalnej bazy. Wejdź na http://127.0.0.1:8765/. Lokalna baza jest oddzielona od produkcyjnej. Bez serwera można otworzyć `public/atlas/index.html` do przeglądania danych początkowych i eksportu; import i trwały zapis wymagają serwera. Mapa wymaga połączenia z OpenStreetMap.
 
 ## Zakres
 
@@ -42,8 +45,8 @@ Dodatkowo przeanalizowano [egzamin.pl](https://egzamin.pl/licea/krakow/), który
 
 ## Pliki i odtwarzanie danych
 
-- `dist/data/rankings-2026.json`: niezależna migawka rocznika; przyszłe edycje mają własne pliki `rankings-ROK.json`.
-- `dist/data/index.json`: katalog dostępnych roczników.
+- `public/atlas/data/rankings-2026.json`: niezależna migawka rocznika; przyszłe edycje mają własne pliki `rankings-ROK.json`.
+- `public/atlas/data/index.json`: katalog dostępnych roczników.
 - `dist/`: gotowa aplikacja; generowany `data.json` zawiera najnowszy rocznik, a `data.js` wszystkie roczniki i umożliwia działanie także po otwarciu pliku HTML.
 - `school_overrides.json`: udokumentowane korekty i informacje ze źródeł oficjalnych.
 - `scripts/`: pobieranie, ekstrakcja, łączenie i weryfikacja danych. To narzędzia do ręcznej aktualizacji, nie automatyczny scraper uruchamiany u odwiedzającego.

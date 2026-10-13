@@ -7,7 +7,7 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).absolute().parent.parent
-DIST = ROOT / 'dist'
+DIST = ROOT / 'public' / 'atlas'
 
 def validate(data):
     def require(condition, message):
@@ -92,6 +92,8 @@ def rebuild(dist=DIST, snapshots=None):
     temporary.replace(dist / 'data.js')
     write_json(dist / 'data.json', snapshots[latest])
     write_json(dist / 'data' / 'index.json', {'schemaVersion': 1, 'defaultYear': int(latest), 'years': sorted(map(int, snapshots), reverse=True)})
+    if dist == DIST and (ROOT / 'server').exists():
+        write_json(ROOT / 'server' / 'seed.json', snapshots)
 
 def import_snapshot(filename, replace=False, dist=DIST):
     data = validate(json.loads(Path(filename).read_text(encoding='utf-8')))

@@ -1,6 +1,7 @@
 @echo off
 cd /d "%~dp0"
-echo Atlas liceow: otworz http://127.0.0.1:8765/ w przegladarce.
+echo Atlas liceow: wymagany Node.js 22.13+ i zaleznosci npm ci.
+echo Po pierwszym przygotowaniu lokalnej bazy uruchom adres pokazany przez serwer.
 echo Aby zatrzymac serwer, nacisnij Ctrl+C.
-python -m http.server 8765 --bind 127.0.0.1 --directory dist
+call npm run dev -- --hostname 127.0.0.1
 pause

@@ -2,7 +2,7 @@ const {chromium}=require('C:/Users/lukasz/.cache/codex-runtimes/codex-primary-ru
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 (async()=>{
- const data=JSON.parse(fs.readFileSync('licea/dist/data.json','utf8'));
+ const data=JSON.parse(fs.readFileSync('licea/public/atlas/data.json','utf8'));
  assert.equal(data.schools.length,72);
  for(const s of data.schools){if(s.coords)assert(s.coords[0]>49.9&&s.coords[0]<50.2&&s.coords[1]>19.7&&s.coords[1]<20.3);const r=s.rankings.oto;assert(Math.abs(r.score-(r.passRate/2+r.polish+r.math+r.english))<.011,`Score mismatch ${s.id}`)}
  assert.equal(data.schools.filter(s=>s.rankings.wasza).length,70);
@@ -53,7 +53,7 @@ const fs=require('node:fs');
  assert.deepEqual(errors,[]);
  console.log(JSON.stringify({passed:true,schools:data.schools.length,mapped:data.schools.filter(s=>s.coords).length,profiles:data.schools.filter(s=>s.profiles.length).length,rankings:{wasza:70,pers:44,oto:72},browserErrors:errors}));
  // Test-only future snapshot, injected in the response; never saved or published.
- const original=JSON.parse(fs.readFileSync('licea/dist/data/rankings-2026.json','utf8'));
+ const original=JSON.parse(fs.readFileSync('licea/public/atlas/data/rankings-2026.json','utf8'));
  const future=structuredClone(original);
  future.rankingYear=2027;future.examYear=2026;future.updated='2027-02-03';
  future.schools=future.schools.slice(0,1);
@@ -62,7 +62,7 @@ const fs=require('node:fs');
  future.sources.wasza.description='TEST metodologia nowej edycji';
  const yearsPage=await browser.newPage({viewport:{width:1440,height:1000}});
  yearsPage.on('pageerror',e=>errors.push(e.message));
- await yearsPage.route('**/data.js',route=>route.fulfill({contentType:'application/javascript',body:'window.SCHOOL_DATASETS='+JSON.stringify({'2026':original,'2027':future})+';'}));
+ await yearsPage.route('**/api/datasets',route=>route.fulfill({contentType:'application/json',body:JSON.stringify({datasets:{'2026':original,'2027':future},revisions:{}})}));
  await yearsPage.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
  assert.equal(await yearsPage.locator('#year').inputValue(),'2027');
  assert.equal(await yearsPage.locator('.school-row').count(),1);

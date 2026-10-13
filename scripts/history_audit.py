@@ -1,7 +1,7 @@
 import ast,json,re,sys,unicodedata
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-root=Path('licea');parsed=json.loads((root/'research/history/parsed.json').read_text(encoding='utf-8'));base=json.loads((root/'dist/data/rankings-2026.json').read_text(encoding='utf-8'))
+root=Path('licea');parsed=json.loads((root/'research/history/parsed.json').read_text(encoding='utf-8'));base=json.loads((root/'public/atlas/data/rankings-2026.json').read_text(encoding='utf-8'))
 # Read the existing identity rules without executing the legacy data builder.
 node=next(n for n in ast.parse((root/'scripts/build_data.py').read_text(encoding='utf-8')).body if isinstance(n,ast.FunctionDef) and n.name=='key')
 exec(compile(ast.Module(body=[node],type_ignores=[]),'identity rules','exec'))

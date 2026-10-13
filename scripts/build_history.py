@@ -7,7 +7,7 @@ from pathlib import Path
 from datasets import validate, write_json
 
 ROOT = Path(__file__).absolute().parent.parent
-base = json.loads((ROOT/'dist/data/rankings-2026.json').read_text(encoding='utf-8'))
+base = json.loads((ROOT/'public/atlas/data/rankings-2026.json').read_text(encoding='utf-8'))
 parsed = json.loads((ROOT/'research/history/parsed.json').read_text(encoding='utf-8'))
 node = next(n for n in ast.parse((ROOT/'scripts/build_data.py').read_text(encoding='utf-8')).body if isinstance(n, ast.FunctionDef) and n.name == 'key')
 exec(compile(ast.Module(body=[node], type_ignores=[]), 'identity rules', 'exec'))

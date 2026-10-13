@@ -1,0 +1,2 @@
+import fs from 'node:fs';
+const r=await fetch('https://waszaedukacja.pl/ranking/krakow/licea/2026');const raw=await r.text();fs.writeFileSync('research/wasza-current.html',raw);console.log(r.status,r.url,raw.match(/<title[^>]*>[\s\S]*?<\/title>/i)?.[0]);console.log([...raw.matchAll(/<h[12][^>]*>[\s\S]*?<\/h[12]>/gi)].map(x=>x[0]));console.log([...raw.matchAll(/.{0,70}2026.{0,120}/g)].slice(0,15).map(x=>x[0]));
