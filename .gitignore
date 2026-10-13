@@ -1,0 +1,22 @@
+# Local deployment snapshots and original starter
+/deploy-stage/
+/years-deploy-stage/
+/history-stage-oct09/
+/gui-stage-oct13/
+/gui-server-starter/
+/*.tar.gz
+
+# Dependencies, generated builds and local state
+node_modules/
+.next/
+.vinext/
+.wrangler/
+.sites-runtime/
+dist/
+research/
+__pycache__/
+*.pyc
+*.tsbuildinfo
+*.log
+.env*
+!.env.example
