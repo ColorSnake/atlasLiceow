@@ -1,0 +1,2440 @@
+{
+  "schemaVersion": 1,
+  "rankingYear": 2022,
+  "examYear": 2021,
+  "updated": "2026-10-09",
+  "historical": true,
+  "sources": {
+    "oto": {
+      "name": "otouczelnie",
+      "scope": "w Krakowie",
+      "url": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022",
+      "digits": 2,
+      "description": "Archiwalna edycja 2022: 67 opublikowanych pozycji. Zachowano miejsca i punkty wydawcy. Metodologia i liczba uwzględnionych szkół mogą różnić się między latami. Wyniki matury 2021; punkty = 0,5 × zdawalność + polski + matematyka + angielski."
+    },
+    "wasza": {
+      "name": "WaszaEdukacja",
+      "scope": "w Krakowie",
+      "url": "https://waszaedukacja.pl/ranking/krakow/licea/2022",
+      "digits": 3,
+      "description": "Archiwalna edycja 2022: 54 opublikowanych pozycji. Zachowano miejsca i punkty wydawcy. Metodologia i liczba uwzględnionych szkół mogą różnić się między latami. Rok wyników egzaminacyjnych nie został potwierdzony."
+    }
+  },
+  "schools": [
+    {
+      "id": "v-lo",
+      "name": "V LO im. Augusta Witkowskiego w Krakowie",
+      "address": "ul. Studencka 12, 31-116 Kraków",
+      "coords": [
+        50.062249,
+        19.92864
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 1,
+          "name": "V LO im. Augusta Witkowskiego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/292/V-LO-im-Augusta-Witkowskiego",
+          "passRate": 100.0,
+          "polish": 76.39,
+          "math": 94.48,
+          "english": 98.66,
+          "score": 319.53,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 1,
+          "national": 3,
+          "name": "V Liceum im. Augusta Witkowskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/v-liceum-im-augusta-witkowskiego-krakow-415",
+          "score": 82.639,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "viii-lo",
+      "name": "VIII LO im. Stanisława Wyspiańskiego w Krakowie",
+      "address": "ul. Grzegórzecka 24, 31-531 Kraków",
+      "coords": [
+        50.058679,
+        19.95536
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 2,
+          "name": "VIII LO im. Stanisława Wyspiańskiego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/295/VIII-LO-im-Stanislawa-Wyspianskiego",
+          "passRate": 100.0,
+          "polish": 69.22,
+          "math": 94.31,
+          "english": 98.08,
+          "score": 311.61,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 5,
+          "national": 70,
+          "name": "VIII Liceum im. Stanisława Wyspiańskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/viii-liceum-im-stanislawa-wyspianskiego-krakow-418",
+          "score": 64.98,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "ii-lo",
+      "name": "II LO im. Króla Jana III Sobieskiego w Krakowie",
+      "address": "ul. Sobieskiego 9, 31-136 Kraków",
+      "coords": [
+        50.068237,
+        19.931221
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 3,
+          "name": "II LO im. Króla Jana III Sobieskiego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/289/II-LO-im-Krola-Jana-III-Sobieskiego",
+          "passRate": 99.64,
+          "polish": 73.09,
+          "math": 89.77,
+          "english": 97.95,
+          "score": 310.63,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 3,
+          "national": 29,
+          "name": "II Liceum im. Króla Jana III Sobieskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/ii-liceum-im-krola-jana-iii-sobieskiego-krakow-79285",
+          "score": 72.047,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "i-lo",
+      "name": "I LO im. Bartłomieja Nowodworskiego w Krakowie",
+      "address": "pl. Na Groblach 9, 31-101 Kraków",
+      "coords": [
+        50.056987,
+        19.9332
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 4,
+          "name": "I LO im. Bartłomieja Nowodworskiego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/288/I-LO-im-Bartlomieja-Nowodworskiego",
+          "passRate": 100.0,
+          "polish": 71.76,
+          "math": 89.07,
+          "english": 98.16,
+          "score": 308.99,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 2,
+          "national": 17,
+          "name": "I Liceum im. Bartłomieja Nowodworskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/i-liceum-im-bartlomieja-nowodworskiego-krakow-413",
+          "score": 76.483,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "vii-lo",
+      "name": "VII LO im. Zofii Nałkowskiej w Krakowie",
+      "address": "ul. Skarbińskiego 5, 30-071 Kraków",
+      "coords": [
+        50.070891,
+        19.908527
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 5,
+          "name": "VII LO im. Zofii Nałkowskiej w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/294/VII-LO-im-Zofii-Nalkowskiej",
+          "passRate": 100.0,
+          "polish": 67.02,
+          "math": 87.65,
+          "english": 97.62,
+          "score": 302.29,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 7,
+          "national": 92,
+          "name": "VII Liceum im. Zofii Nałkowskiej Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/vii-liceum-im-zofii-nalkowskiej-krakow-417",
+          "score": 62.622,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "vi-lo",
+      "name": "VI LO im. Adama Mickiewicza w Krakowie",
+      "address": "ul. Wąska 7, 31-057 Kraków",
+      "coords": [
+        50.050452,
+        19.947631
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 6,
+          "name": "VI LO im. Adama Mickiewicza w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/293/VI-LO-im-Adama-Mickiewicza",
+          "passRate": 100.0,
+          "polish": 70.65,
+          "math": 82.77,
+          "english": 98.21,
+          "score": 301.63,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 4,
+          "national": 40,
+          "name": "VI Liceum im. Adama Mickiewicza Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/vi-liceum-im-adama-mickiewicza-krakow-416",
+          "score": 69.604,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "viii-prywatne",
+      "name": "VIII Prywatne Akademickie Liceum Ogólnokształcące w Krakowie",
+      "address": "ul. Karmelicka 45, 31-128 Kraków",
+      "coords": [
+        50.0678736,
+        19.928352
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 7,
+          "name": "VIII Prywatne Akademickie Liceum Ogólnokształcące w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3267/Viii-Prywatne-Akademickie-Liceum-Ogolnoksztalcace",
+          "passRate": 100.0,
+          "polish": 68.36,
+          "math": 84.08,
+          "english": 97.52,
+          "score": 299.96,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 6,
+          "national": 85,
+          "name": "VIII Prywatne Akademickie Liceum Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/viii-prywatne-akademickie-liceum-w-krakowie-krakow-18945",
+          "score": 63.149,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "iii-lo",
+      "name": "III LO im. Jana Kochanowskiego w Krakowie",
+      "address": "os. Wysokie 6, 31-818 Kraków",
+      "coords": [
+        50.089262,
+        20.017631
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 8,
+          "name": "III LO im. Jana Kochanowskiego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/290/III-LO-im-Jana-Kochanowskiego",
+          "passRate": 100.0,
+          "polish": 64.2,
+          "math": 85.87,
+          "english": 96.43,
+          "score": 296.5,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 10,
+          "national": 154,
+          "name": "III Liceum im. Jana Kochanowskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/iii-liceum-im-jana-kochanowskiego-krakow-394",
+          "score": 59.807,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "iv-lo",
+      "name": "IV LO im. Tadeusza Kościuszki w Krakowie",
+      "address": "ul. Krzemionki 11, 30-525 Kraków",
+      "coords": [
+        50.041104,
+        19.945951
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 9,
+          "name": "IV LO im. Tadeusza Kościuszki w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/291/IV-LO-im-Tadeusza-Kosciuszki",
+          "passRate": 99.53,
+          "polish": 66.74,
+          "math": 82.17,
+          "english": 97.39,
+          "score": 296.07,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 13,
+          "national": 187,
+          "name": "IV Liceum im. Tadeusza Kościuszki Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/iv-liceum-im-tadeusza-kosciuszki-krakow-396",
+          "score": 58.603,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "x-lo",
+      "name": "X LO im. Komisji Edukacji Narodowej w Krakowie",
+      "address": "ul. Wróblewskiego 8, 31-148 Kraków",
+      "coords": [
+        50.069283,
+        19.940326
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 10,
+          "name": "X LO im. Komisji Edukacji Narodowej w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/297/X-LO-im-Komisji-Edukacji-Narodowej",
+          "passRate": 100.0,
+          "polish": 66.66,
+          "math": 81.97,
+          "english": 96.8,
+          "score": 295.43,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 11,
+          "national": 167,
+          "name": "X Liceum im. Komisji Edukacji Narodowej Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/x-liceum-im-komisji-edukacji-narodowej-krakow-420",
+          "score": 59.302,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "salezjanie",
+      "name": "Publiczne Salezjańskie LO w Krakowie",
+      "address": "os. Osiedle Piastów 34, 31-624 Kraków",
+      "coords": [
+        50.099187,
+        20.018153
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 11,
+          "name": "Publiczne Salezjańskie LO w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/306/Publiczne-Salezjanskie-LO",
+          "passRate": 100.0,
+          "polish": 65.16,
+          "math": 81.98,
+          "english": 96.6,
+          "score": 293.74,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 12,
+          "national": 180,
+          "name": "Liceum Salezjańskie Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-salezjanskie-krakow-18862",
+          "score": 58.733,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "vii-prywatne",
+      "name": "VII Prywatne Liceum Ogólnokształcące im. Mikołaja Reja w Krakowie",
+      "address": "ul. Grodzka 60, 31-044 Kraków",
+      "coords": [
+        50.0557181,
+        19.9390074
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 12,
+          "name": "VII Prywatne Liceum Ogólnokształcące im. Mikołaja Reja w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3257/Vii-Prywatne-Liceum-Ogolnoksztalcace-im-Mikolaja-Reja-W-Krakowie",
+          "passRate": 100.0,
+          "polish": 66.55,
+          "math": 78.2,
+          "english": 98.43,
+          "score": 293.18,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 9,
+          "national": 153,
+          "name": "VII Prywatne Liceum im. Mikołaja Reja Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/vii-prywatne-liceum-im-mikolaja-reja-w-krakowie-krakow-18941",
+          "score": 59.826,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "michalowski",
+      "name": "Liceum Ogólnokształcące Z Oddziałem Dwujęzycznym im. Piotra Michałowskiego Tssp w Krakowie",
+      "address": "ul. Piotra Michałowskiego 4, 31-126 Kraków",
+      "coords": [
+        50.0664831,
+        19.9288056
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 13,
+          "name": "Liceum Ogólnokształcące Z Oddziałem Dwujęzycznym im. Piotra Michałowskiego Tssp w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/5041/Liceum-Ogolnoksztalcace-Z-Oddzialem-Dwujezycznym-im-Piotra-Michalowskiego-Tssp",
+          "passRate": 100.0,
+          "polish": 69.09,
+          "math": 77.64,
+          "english": 96.0,
+          "score": 292.73,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 18,
+          "national": 285,
+          "name": "Liceum Ogólnokształcące z Oddziałem Dwujęzycznym im. Piotra Michałowskiego TSSP Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-z-oddzialem-dwujezycznym-im-piotra-michalowskiego-tssp-krakow-19320",
+          "score": 56.324,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xiii-lo",
+      "name": "XIII LO im. Obrońców Westerplatte w Krakowie",
+      "address": "ul. Sądowa 4, 31-542 Kraków",
+      "coords": [
+        50.063102898906955,
+        19.963859790532297
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 14,
+          "name": "XIII LO im. Obrońców Westerplatte w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/300/XIII-LO-im-Obroncow-Westerplatte",
+          "passRate": 98.75,
+          "polish": 66.19,
+          "math": 79.18,
+          "english": 95.18,
+          "score": 289.93,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 22,
+          "national": 400,
+          "name": "XIII Liceum im. Bohaterów Westerplatte Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xiii-liceum-im-bohaterow-westerplatte-krakow-421",
+          "score": 54.171,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "pijarzy",
+      "name": "Liceum Ogólnokształcące Zakonu Pijarów im. Ks. Stanisława Konarskiego w Krakowie",
+      "address": "ul. Akacjowa 5, 31-466 Kraków",
+      "coords": [
+        50.0841324,
+        19.9785059
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 15,
+          "name": "Liceum Ogólnokształcące Zakonu Pijarów im. Ks. Stanisława Konarskiego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3285/Liceum-Ogolnoksztalcace-Zakonu-Pijarow-im-Ks-Stanislawa-Konarskiego",
+          "passRate": 100.0,
+          "polish": 64.74,
+          "math": 79.71,
+          "english": 94.48,
+          "score": 288.93,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 14,
+          "national": 189,
+          "name": "Liceum Zakonu Pijarów im. ks. Stanisława Konarskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-zakonu-pijarow-im-ks-stanislawa-konarskiego-krakow-18954",
+          "score": 58.394,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "muzyka-karlowicz",
+      "name": "Ogólnokształcaca Szkoła Muzyczna II St. w Krakowie",
+      "address": "os. Centrum E 2, 31-934 Kraków",
+      "coords": [
+        50.0693572,
+        20.041045
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 16,
+          "name": "Ogólnokształcaca Szkoła Muzyczna II St. w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/6383/Ogolnoksztalcaca-Szkola-Muzyczna-II-St-w-Krakowie",
+          "passRate": 95.0,
+          "polish": 67.3,
+          "math": 73.05,
+          "english": 97.4,
+          "score": 285.25,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "prezentki",
+      "name": "LO Sióstr Prezentek w Krakowie",
+      "address": "ul. św. Jana 7, 31-017 Kraków",
+      "coords": [
+        50.063424,
+        19.938886
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 17,
+          "name": "LO Sióstr Prezentek w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/307/LO-Siostr-Prezentek",
+          "passRate": 100.0,
+          "polish": 68.8,
+          "math": 75.54,
+          "english": 90.73,
+          "score": 285.07,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 17,
+          "national": 274,
+          "name": "Liceum Sióstr Prezentek Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-siostr-prezentek-krakow-18859",
+          "score": 56.572,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xliv-lo",
+      "name": "XLIV LO w Krakowie",
+      "address": "ul. Bernardyńska 7, 31-069 Kraków",
+      "coords": [
+        50.052784,
+        19.936211
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 18,
+          "name": "XLIV LO w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3039/XLIV-LO",
+          "passRate": 100.0,
+          "polish": 61.04,
+          "math": 76.07,
+          "english": 94.54,
+          "score": 281.65,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 21,
+          "national": 392,
+          "name": "XLIV Liceum im. Stanisława Konarskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xliv-liceum-krakow-18802",
+          "score": 54.293,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "iii-spoleczne",
+      "name": "III Społeczne Liceum Ogólnokształcące im. Juliusza Słowackiego Społecznego Towarzystwa Oświatowego w Krakowie",
+      "address": "ul. Stradomska 10, 31-058 Kraków",
+      "coords": [
+        50.0531794,
+        19.9404408
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 19,
+          "name": "III Społeczne Liceum Ogólnokształcące im. Juliusza Słowackiego Społecznego Towarzystwa Oświatowego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3269/Iii-Spoleczne-Liceum-Ogolnoksztalcace-im-Juliusza-Slowackiego-Spolecznego-Towarzystwa-Oswiatowego-W-Krakowie",
+          "passRate": 100.0,
+          "polish": 60.88,
+          "math": 70.22,
+          "english": 97.54,
+          "score": 278.64,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 8,
+          "national": 142,
+          "name": "III Społeczne Liceum im. Juliusza Słowackiego STO Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/iii-spoleczne-liceum-im-juliusza-slowackiego-spolecznego-towarzystwa-oswiatowego-w-krakowie-krakow-18946",
+          "score": 60.682,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "montessori",
+      "name": "Katolickie Liceum Montessori im. Sprawiedliwych Wśród Narodów Świata w Krakowie",
+      "address": "ul. ks. Stefana Pawlickiego 1, 30-320 Kraków",
+      "coords": [
+        50.0436936,
+        19.9184419
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 20,
+          "name": "Katolickie Liceum Montessori im. Sprawiedliwych Wśród Narodów Świata w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/5159/Katolickie-Liceum-Montessori-im-Sprawiedliwych-Wsrod-Narodow-Swiata",
+          "passRate": 100.0,
+          "polish": 61.04,
+          "math": 72.26,
+          "english": 92.82,
+          "score": 276.12,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "i-prywatne",
+      "name": "I Prywatne Liceum Ogólnokształcące im. Marszałka J. Piłsudskiego w Krakowie",
+      "address": "al. Adolfa Dygasińskiego 5B, 30-820 Kraków",
+      "coords": [
+        50.023117,
+        19.9829214
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 21,
+          "name": "I Prywatne Liceum Ogólnokształcące im. Marszałka J. Piłsudskiego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3277/I-Prywatne-Liceum-Ogolnoksztalcace-im-Marszalka-J-Pilsudskiego",
+          "passRate": 100.0,
+          "polish": 55.42,
+          "math": 72.58,
+          "english": 97.17,
+          "score": 275.17,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 20,
+          "national": 386,
+          "name": "I Prywatne Liceum im. Marszałka J. Piłsudskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/i-prywatne-liceum-im-marszalka-j-pilsudskiego-krakow-18949",
+          "score": 54.399,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xlii-lo",
+      "name": "XLII LO w Krakowie",
+      "address": "ul. Studencka 13, 31-116 Kraków",
+      "coords": [
+        50.062731,
+        19.930016
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 22,
+          "name": "XLII LO w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3034/XLII-LO",
+          "passRate": 98.01,
+          "polish": 57.58,
+          "math": 74.36,
+          "english": 94.06,
+          "score": 275.01,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 25,
+          "national": 431,
+          "name": "XLII Liceum im. Adama Mickiewicza Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xlii-liceum-krakow-18801",
+          "score": 53.703,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "plastyczne",
+      "name": "Państwowe Liceum Sztuk Plastycznych im. Józefa Kluzy w Krakowie",
+      "address": "ul. Mlaskotów 6, 30-117 Kraków",
+      "coords": [
+        50.05602,
+        19.9145932
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 23,
+          "name": "Państwowe Liceum Sztuk Plastycznych im. Józefa Kluzy w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/6417/Panstwowe-Liceum-Sztuk-Plastycznych-im-Jozefa-Kluzy-w-Krakowie",
+          "passRate": 100.0,
+          "polish": 62.06,
+          "math": 71.33,
+          "english": 89.83,
+          "score": 273.22,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 15,
+          "national": 231,
+          "name": "Państwowe Liceum Sztuk Plastycznych im. Józefa Kluzy Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/panstwowe-liceum-sztuk-plastycznych-im-jozefa-kluzy-krakow-61212",
+          "score": 57.516,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "ix-lo",
+      "name": "IX LO im. Zygmunta Wróblewskiego w Krakowie",
+      "address": "ul. Czapińskiego 5, 30-048 Kraków",
+      "coords": [
+        50.068908,
+        19.919283
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 24,
+          "name": "IX LO im. Zygmunta Wróblewskiego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/296/IX-LO-im-Zygmunta-Wroblewskiego",
+          "passRate": 100.0,
+          "polish": 66.27,
+          "math": 66.36,
+          "english": 89.91,
+          "score": 272.54,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 31,
+          "national": 677,
+          "name": "IX Liceum im. Zygmunta Wróblewskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/ix-liceum-im-zygmunta-wroblewskiego-krakow-419",
+          "score": 50.616,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "nazaret",
+      "name": "Katolickie LO im. Świętej Rodziny z Nazaretu w Krakowie",
+      "address": "ul. Pędzichów 13, 31-152 Kraków",
+      "coords": [
+        50.070388,
+        19.938739
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 25,
+          "name": "Katolickie LO im. Świętej Rodziny z Nazaretu w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/308/Katolickie-LO-im-Swietej-Rodziny-z-Nazaretu",
+          "passRate": 97.87,
+          "polish": 59.3,
+          "math": 72.98,
+          "english": 90.98,
+          "score": 272.2,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 27,
+          "national": 573,
+          "name": "Liceum im. św. Rodziny z Nazaretu Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-im-sw-rodziny-z-nazaretu-krakow-18860",
+          "score": 51.788,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "kostka",
+      "name": "Liceum Jezuitów im. św. Stanisława Kostki w Krakowie",
+      "address": "ul. Spółdzielców 5, 30-682 Kraków",
+      "coords": [
+        50.018119,
+        19.980673
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 26,
+          "name": "Liceum Jezuitów im. św. Stanisława Kostki w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3027/Liceum-Jezuitow-im-sw-Stanislawa-Kostki",
+          "passRate": 100.0,
+          "polish": 60.2,
+          "math": 68.9,
+          "english": 92.12,
+          "score": 271.22,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 23,
+          "national": 411,
+          "name": "Liceum Jezuitów im. św. Stanisława Kostki Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-jezuitow-im-sw-stanislawa-kostki-krakow-18798",
+          "score": 54.015,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "salezjanki",
+      "name": "Publiczne LO Sióstr Salezjanek im. Świętego Dominika Savio w Krakowie",
+      "address": "os. Jagiellońskie 17, 31-833 Kraków",
+      "coords": [
+        50.085778,
+        20.026603
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 27,
+          "name": "Publiczne LO Sióstr Salezjanek im. Świętego Dominika Savio w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3029/Publiczne-LO-Siostr-Salezjanek-im-Swietego-Dominika-Savio",
+          "passRate": 100.0,
+          "polish": 68.16,
+          "math": 64.52,
+          "english": 87.52,
+          "score": 270.2,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 29,
+          "national": 597,
+          "name": "Liceum Sióstr Salezjanek im. św. Dominika Savio Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-siostr-salezjanek-im-sw-dominika-savio-krakow-18856",
+          "score": 51.577,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xx-lo",
+      "name": "XX LO im. Leopolda Staffa w Krakowie",
+      "address": "ul. Szlak 5, 31-161 Kraków",
+      "coords": [
+        50.070371,
+        19.933474
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 28,
+          "name": "XX LO im. Leopolda Staffa w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/303/XX-LO-im-Leopolda-Staffa",
+          "passRate": 98.96,
+          "polish": 62.79,
+          "math": 64.29,
+          "english": 91.38,
+          "score": 267.94,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 30,
+          "national": 659,
+          "name": "XX Liceum im. Leopolda Staffa Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xx-liceum-im-leopolda-staffa-krakow-422",
+          "score": 50.858,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "emmanuel",
+      "name": "Akademickie Liceum Ogólnokształcące \"emmanuel w Krakowie",
+      "address": "os. Urocze 14, 31-954 Kraków",
+      "coords": [
+        50.0779179,
+        20.0379026
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 29,
+          "name": "Akademickie Liceum Ogólnokształcące \"emmanuel w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/5047/Akademickie-Liceum-Ogolnoksztalcace-emmanuel",
+          "passRate": 100.0,
+          "polish": 62.76,
+          "math": 61.32,
+          "english": 93.52,
+          "score": 267.6,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 28,
+          "national": 585,
+          "name": "Akademickie Liceum Ogólnokształcące Emmanuel Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/akademickie-liceum-ogolnoksztalcace-emmanuel-krakow-19323",
+          "score": 51.665,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xi-lo",
+      "name": "XI LO im. Marii Dąbrowskiej w Krakowie",
+      "address": "os. Teatralne 33, 31-948 Kraków",
+      "coords": [
+        50.080977,
+        20.033042
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 30,
+          "name": "XI LO im. Marii Dąbrowskiej w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/298/XI-LO-im-Marii-Dabrowskiej",
+          "passRate": 99.39,
+          "polish": 57.87,
+          "math": 70.57,
+          "english": 89.45,
+          "score": 267.59,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 26,
+          "national": 505,
+          "name": "XI Liceum im. Marii Dąbrowskiej Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xi-liceum-im-marii-dabrowskiej-krakow-391",
+          "score": 52.772,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "rita",
+      "name": "LO św. Rity w Krakowie",
+      "address": "ul. Skałeczna 10, 31-065 Kraków",
+      "coords": [
+        50.048926,
+        19.940938
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 31,
+          "name": "LO św. Rity w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3030/LO-sw-Rity",
+          "passRate": 100.0,
+          "polish": 56.68,
+          "math": 71.92,
+          "english": 84.72,
+          "score": 263.32,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 16,
+          "national": 244,
+          "name": "Liceum Zgromadzenia Sióstr Augustianek im. św. Rity Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-zgromadzenia-siostr-augustianek-im-sw-rity-krakow-18858",
+          "score": 57.134,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "muzyka-chopin",
+      "name": "Państwowa Ogólnokształcąca Szkoła Muzyczna II St. im. Fryderyka Chopina w Krakowie",
+      "address": "ul. Basztowa 6 31-134 Kraków Śródmieście",
+      "coords": [
+        50.0664208,
+        19.9368297
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 32,
+          "name": "Państwowa Ogólnokształcąca Szkoła Muzyczna II St. im. Fryderyka Chopina w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/6362/Panstwowa-Ogolnoksztalcaca-Szkola-Muzyczna-II-St-im-Fryderyka-Chopina-w-Krakowie",
+          "passRate": 98.04,
+          "polish": 62.31,
+          "math": 60.94,
+          "english": 89.57,
+          "score": 261.84,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xii-lo",
+      "name": "XII LO im. Cypriana Norwida w Krakowie",
+      "address": "os. Kolorowe 29a, 31-941 Kraków",
+      "coords": [
+        50.07612,
+        20.02405
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 33,
+          "name": "XII LO im. Cypriana Norwida w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/299/XII-LO-im-Cypriana-Norwida",
+          "passRate": 98.82,
+          "polish": 60.77,
+          "math": 62.52,
+          "english": 88.05,
+          "score": 260.75,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 33,
+          "national": 731,
+          "name": "XII Liceum im. Cypriana Kamila Norwida Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xii-liceum-krakow-399",
+          "score": 49.693,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "v-prywatne",
+      "name": "V Prywatne Liceum Ogólnokształcące w Krakowie im. Królowej Jadwigi",
+      "address": "ul. Smoleńsk 14, 31-112 Kraków",
+      "coords": [
+        50.0583874,
+        19.9279898
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 34,
+          "name": "V Prywatne Liceum Ogólnokształcące w Krakowie im. Królowej Jadwigi",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3270/V-Prywatne-Liceum-Ogolnoksztalcace-W-Krakowie-im-Krolowej-Jadwigi",
+          "passRate": 95.0,
+          "polish": 58.2,
+          "math": 61.95,
+          "english": 91.8,
+          "score": 259.45,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 38,
+          "national": 979,
+          "name": "V Prywatne Liceum Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/v-prywatne-liceum-w-krakowie-krakow-18947",
+          "score": 46.339,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xliii-lo",
+      "name": "XLIII LO w Krakowie",
+      "address": "ul. Bolesława Limanowskiego 60-62, 30-534 Kraków",
+      "coords": [
+        50.043434,
+        19.959035
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 35,
+          "name": "XLIII LO w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3035/XLIII-LO",
+          "passRate": 96.59,
+          "polish": 61.76,
+          "math": 61.44,
+          "english": 86.62,
+          "score": 258.12,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 34,
+          "national": 854,
+          "name": "XLIII Liceum Ogólnokształcące im. Zofii Chrzanowskiej Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xliii-liceum-ogolnoksztalcace-krakow-5454",
+          "score": 48.204,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xvii-lo",
+      "name": "XVII LO im. Młodej Polski w Krakowie",
+      "address": "ul. Złoty Róg 30, 30-095 Kraków",
+      "coords": [
+        50.081513,
+        19.894953
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 36,
+          "name": "XVII LO im. Młodej Polski w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/302/XVII-LO-im-Mlodej-Polski",
+          "passRate": 91.36,
+          "polish": 58.54,
+          "math": 62.1,
+          "english": 89.5,
+          "score": 255.82,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 24,
+          "national": 412,
+          "name": "XVII Liceum im. Młodej Polski Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xvii-liceum-im-mlodej-polski-krakow-403",
+          "score": 54.01,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxvi-lo",
+      "name": "XXVI LO w ZSC im. Marii Skłodowskiej-Curie w Krakowie",
+      "address": "ul. Krupnicza 44, 31-123 Kraków",
+      "coords": [
+        50.062168,
+        19.924209
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 37,
+          "name": "XXVI LO w ZSC im. Marii Skłodowskiej-Curie w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/304/XXVI-LO-w-ZSC-im-Marii-Sklodowskiej-Curie",
+          "passRate": 98.11,
+          "polish": 58.75,
+          "math": 60.58,
+          "english": 84.46,
+          "score": 252.85,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 32,
+          "national": 681,
+          "name": "XXVI Liceum Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxvi-liceum-krakow-429",
+          "score": 50.583,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxiii-lo",
+      "name": "XXIII LO w Krakowie",
+      "address": "ul. Seniorów Lotnictwa 5, 31-455 Kraków",
+      "coords": [
+        50.079778,
+        19.985796
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 38,
+          "name": "XXIII LO w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3042/XXIII-LO",
+          "passRate": 92.0,
+          "polish": 53.32,
+          "math": 61.36,
+          "english": 90.0,
+          "score": 250.68,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 36,
+          "national": 894,
+          "name": "XXIII Liceum im. płk. pil. Stanisława Skarżyńskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxiii-liceum-im-plk-pil-stanislawa-skarzynskiego-krakow-404",
+          "score": 47.766,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xv-lo",
+      "name": "XV LO im. Marii Skłodowskiej-Curie w Krakowie",
+      "address": "al. Dygasińskiego 15, 30-820 Kraków",
+      "coords": [
+        50.022256,
+        19.986139
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 39,
+          "name": "XV LO im. Marii Skłodowskiej-Curie w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/301/XV-LO-im-Marii-Sklodowskiej-Curie",
+          "passRate": 95.12,
+          "polish": 57.07,
+          "math": 56.75,
+          "english": 84.02,
+          "score": 245.4,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 37,
+          "national": 977,
+          "name": "XV Liceum im. Marii Skłodowskiej-Curie Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xv-liceum-im-marii-sklodowskiej-curie-krakow-405",
+          "score": 46.423,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxviii-lo",
+      "name": "XXVIII LO im. Wojciecha Bednarskiego w Krakowie",
+      "address": "ul. Czackiego 11, 30-501 Kraków",
+      "coords": [
+        50.040994,
+        19.936786
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 40,
+          "name": "XXVIII LO im. Wojciecha Bednarskiego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/305/XXVIII-LO-im-Wojciecha-Bednarskiego",
+          "passRate": 98.48,
+          "polish": 57.48,
+          "math": 57.29,
+          "english": 81.17,
+          "score": 245.18,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 42,
+          "national": 1053,
+          "name": "XXVIII Liceum im. Wojciecha Bednarskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxviii-liceum-im-wojciecha-bednarskiego-krakow-424",
+          "score": 45.296,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "ix-prywatne",
+      "name": "IX Prywatne Liceum Ogólnokształcące w Krakowie",
+      "address": "ul. Brzozowa 6, 31-050 Kraków",
+      "coords": [
+        50.0540135,
+        19.9446123
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 41,
+          "name": "IX Prywatne Liceum Ogólnokształcące w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3278/Ix-Prywatne-Liceum-Ogolnoksztalcace",
+          "passRate": 87.5,
+          "polish": 66.63,
+          "math": 44.94,
+          "english": 86.13,
+          "score": 241.45,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 19,
+          "national": 316,
+          "name": "IX Prywatne Liceum Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/ix-prywatne-liceum-w-krakowie-krakow-18950",
+          "score": 55.676,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "i-sport",
+      "name": "I LO Sportowe w Krakowie",
+      "address": "os. Teatralne 35, 31-948 Kraków",
+      "coords": [
+        50.079975,
+        20.03408
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 42,
+          "name": "I LO Sportowe w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3026/I-LO-Sportowe",
+          "passRate": 93.75,
+          "polish": 62.19,
+          "math": 52.56,
+          "english": 78.38,
+          "score": 240.01,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 41,
+          "national": 1028,
+          "name": "I Liceum Sportowe Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/i-liceum-ogolnoksztalcace-sportowe-krakow-18799",
+          "score": 45.716,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "iii-prywatne",
+      "name": "III Prywatne Liceum Ogólnokształcące w Krakowie",
+      "address": "ul. Sławkowska 20, 31-014 Kraków",
+      "coords": [
+        50.0642668,
+        19.9375842
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 43,
+          "name": "III Prywatne Liceum Ogólnokształcące w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3344/Iii-Prywatne-Liceum-Ogolnoksztalcace",
+          "passRate": 86.49,
+          "polish": 52.92,
+          "math": 53.92,
+          "english": 86.33,
+          "score": 236.42,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 35,
+          "national": 885,
+          "name": "III Prywatne Liceum Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/iii-prywatne-liceum-w-krakowie-krakow-18981",
+          "score": 47.857,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "sms",
+      "name": "LO Mistrzostwa Sportowego w Krakowie",
+      "address": "ul. Grochowska 20, 31-521 Kraków",
+      "coords": [
+        50.073631,
+        19.962353
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 44,
+          "name": "LO Mistrzostwa Sportowego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3152/LO-Mistrzostwa-Sportowego",
+          "passRate": 90.0,
+          "polish": 52.6,
+          "math": 59.93,
+          "english": 78.07,
+          "score": 235.6,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 47,
+          "national": 1164,
+          "name": "Liceum Mistrzostwa Sportowego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-mistrzostwa-sportowego-krakow-390",
+          "score": 43.771,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xli-lo",
+      "name": "XLI LO w Krakowie",
+      "address": "ul. Rynek Kleparski 18, 31-150 Kraków",
+      "coords": [
+        50.06737,
+        19.941558
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 45,
+          "name": "XLI LO w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3033/XLI-LO",
+          "passRate": 88.24,
+          "polish": 51.35,
+          "math": 54.68,
+          "english": 84.1,
+          "score": 234.25,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 45,
+          "national": 1140,
+          "name": "XLI Liceum im. Jana Twardowskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xli-liceum-krakow-18800",
+          "score": 44.152,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xiv-lo",
+      "name": "XIV LO w Krakowie",
+      "address": "ul. Chełmońskiego 24, 31-322 Kraków",
+      "coords": [
+        50.087095,
+        19.913508
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 46,
+          "name": "XIV LO w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3032/XIV-LO",
+          "passRate": 91.18,
+          "polish": 55.0,
+          "math": 52.33,
+          "english": 76.91,
+          "score": 229.83,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 48,
+          "national": 1276,
+          "name": "XIV Liceum im. Mikołaja Kopernika Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xiv-liceum-im-mikolaja-kopernika-krakow-398",
+          "score": 42.174,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxiv-lo",
+      "name": "XXIV LO im. św. Jana Pawła II w Krakowie",
+      "address": "ul. Wilka Wyrwińskiego 1, 31-517 Kraków",
+      "coords": [
+        50.072149,
+        19.965338
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 47,
+          "name": "XXIV LO im. św. Jana Pawła II w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3043/XXIV-LO-im-sw-Jana-Pawla-II",
+          "passRate": 88.8,
+          "polish": 52.83,
+          "math": 50.42,
+          "english": 81.6,
+          "score": 229.25,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 40,
+          "national": 999,
+          "name": "XXIV Liceum im. Jana Pawła II Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxiv-liceum-im-jana-pawla-ii-krakow-407",
+          "score": 46.089,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "iv-prywatne",
+      "name": "IV Prywatne Liceum Ogólnokształcące im. Królów Polskich w Krakowie",
+      "address": "ul. Basztowa 17, 31-143 Kraków",
+      "coords": [
+        50.0662702,
+        19.9407322
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 48,
+          "name": "IV Prywatne Liceum Ogólnokształcące im. Królów Polskich w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3248/Iv-Prywatne-Liceum-Ogolnoksztalcace-im-Krolow-Polskich-W-Krakowie",
+          "passRate": 100.0,
+          "polish": 51.91,
+          "math": 47.91,
+          "english": 74.18,
+          "score": 224.0,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 44,
+          "national": 1129,
+          "name": "IV Prywatne Liceum im. Królów Polskich Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/iv-prywatne-liceum-im-krolow-polskich-w-krakowie-krakow-18935",
+          "score": 44.241,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxi-lo",
+      "name": "XXI Liceum Ogólnokształcące im. Stanisława Ignacego Witkiewicza-witkacego w Krakowie",
+      "address": "os. Tysiąclecia 15, 31-606 Kraków",
+      "coords": [
+        50.091347,
+        20.002073
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 49,
+          "name": "XXI Liceum Ogólnokształcące im. Stanisława Ignacego Witkiewicza-witkacego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3172/XXI-Liceum-Ogolnoksztalcace-im-Stanislawa-Ignacego-Witkiewicza-witkacego-w-Krakowie",
+          "passRate": 86.36,
+          "polish": 57.55,
+          "math": 39.32,
+          "english": 83.57,
+          "score": 223.62,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 43,
+          "national": 1119,
+          "name": "XXI Liceum im. St. I. Witkiewicza-Witkacego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxi-liceum-im-st-i-witkiewicza-witkacego-krakow-423",
+          "score": 44.334,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xviii-lo",
+      "name": "XVIII LO w Krakowie",
+      "address": "ul. Na Błonie 15b, 30-147 Kraków",
+      "coords": [
+        50.077548,
+        19.882569
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 50,
+          "name": "XVIII LO w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3041/XVIII-LO",
+          "passRate": 81.82,
+          "polish": 49.3,
+          "math": 46.66,
+          "english": 76.84,
+          "score": 213.71,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 46,
+          "national": 1151,
+          "name": "XVIII Liceum im. prof. Akademii Krakowskiej św. Jana Kantego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xviii-liceum-krakow-402",
+          "score": 43.937,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxvii-lo",
+      "name": "XXVII LO im. dra Henryka Jordana w Krakowie",
+      "address": "ul. Senatorska 35, 30-106 Kraków",
+      "coords": [
+        50.053739,
+        19.916909
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 51,
+          "name": "XXVII LO im. dra Henryka Jordana w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3046/XXVII-LO-im-dra-Henryka-Jordana",
+          "passRate": 79.25,
+          "polish": 58.56,
+          "math": 39.42,
+          "english": 76.05,
+          "score": 213.66,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 39,
+          "national": 998,
+          "name": "XXVII Liceum im. dr Henryka Jordana Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxvii-liceum-im-dr-henryka-jordana-krakow-411",
+          "score": 46.098,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xvi-lo",
+      "name": "XVI LO im. Krzysztofa Kamila Baczyńskiego w Krakowie",
+      "address": "os. Willowe 1, 31-901 Kraków",
+      "coords": [
+        50.07211409350004,
+        20.046799057690805
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 52,
+          "name": "XVI LO im. Krzysztofa Kamila Baczyńskiego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3040/XVI-LO-im-Krzysztofa-Kamila-Baczynskiego",
+          "passRate": 86.36,
+          "polish": 49.6,
+          "math": 45.34,
+          "english": 70.43,
+          "score": 208.55,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 51,
+          "national": 1408,
+          "name": "XVI Liceum im. Krzysztofa Kamila Baczyńskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xvi-liceum-im-krzysztofa-kamila-baczynskiego-krakow-412",
+          "score": 39.944,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "gortat",
+      "name": "Szkoła Mistrzostwa Sportowego Liceum Ogólnokształcące Marcina Gortata w Krakowie",
+      "address": "os. Osiedle Kościuszkowskie 2A, 31-858 Kraków",
+      "coords": [
+        50.0845697,
+        20.017752
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 53,
+          "name": "Szkoła Mistrzostwa Sportowego Liceum Ogólnokształcące Marcina Gortata w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/4954/Szkola-Mistrzostwa-Sportowego-Liceum-Ogolnoksztalcace-Marcina-Gortata",
+          "passRate": 77.78,
+          "polish": 50.49,
+          "math": 43.93,
+          "english": 74.0,
+          "score": 207.31,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 52,
+          "national": 1447,
+          "name": "Szkoła Mistrzostwa Sportowego Liceum Ogólnokształcące Marcina Gortata Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/szkola-mistrzostwa-sportowego-liceum-ogolnoksztalcace-marcina-gortata-krakow-19298",
+          "score": 39.075,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "sms-spoleczne",
+      "name": "Społeczne Liceum Ogólnokształcące Mistrzostwa Sportowego w Krakowie",
+      "address": "ul. Wielicka 101, 30-552 Kraków",
+      "coords": [
+        50.0284977,
+        19.9727738
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 54,
+          "name": "Społeczne Liceum Ogólnokształcące Mistrzostwa Sportowego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3485/Spoleczne-Liceum-Ogolnoksztalcace-Mistrzostwa-Sportowego",
+          "passRate": 82.54,
+          "polish": 52.44,
+          "math": 44.56,
+          "english": 68.73,
+          "score": 207.0,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 50,
+          "national": 1395,
+          "name": "Społeczne Liceum Mistrzostwa Sportowego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-liceum-mistrzostwa-sportowego-w-krakowie-krakow-19023",
+          "score": 40.318,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxx-lo",
+      "name": "XXX LO w Krakowie",
+      "address": "os. Dywizjonu 303 66, 31-875 Kraków",
+      "coords": [
+        50.083403,
+        20.006577
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 55,
+          "name": "XXX LO w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3047/XXX-LO",
+          "passRate": 78.33,
+          "polish": 57.27,
+          "math": 39.97,
+          "english": 70.45,
+          "score": 206.86,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 49,
+          "national": 1346,
+          "name": "XXX Liceum im. św. Brata Alberta-Adama Chmielowskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxx-liceum-im-sw-brata-alberta-adama-chmielowskiego-krakow-410",
+          "score": 41.114,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "xxv-lo",
+      "name": "XXV LO w Krakowie",
+      "address": "ul. Telimeny 9, 30-838 Kraków",
+      "coords": [
+        50.019919,
+        20.016089
+      ],
+      "type": "Publiczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 56,
+          "name": "XXV LO w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3045/XXV-LO",
+          "passRate": 59.04,
+          "polish": 46.77,
+          "math": 35.47,
+          "english": 69.46,
+          "score": 181.22,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 53,
+          "national": 1641,
+          "name": "XXV Liceum im. Stefana Żeromskiego Kraków",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxv-liceum-im-stefana-zeromskiego-krakow-408",
+          "score": 33.922,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "mond",
+      "name": "Niepubliczne Liceum Ogólnokształcące Szkoły Sportowej Piłki Nożnej im. Generała Bernarda Monda w Krakowie",
+      "address": "os. Szkolne 18, 31-977 Kraków",
+      "coords": [
+        50.0801425,
+        20.0476113
+      ],
+      "type": "Niepubliczna",
+      "adult": false,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 57,
+          "name": "Niepubliczne Liceum Ogólnokształcące Szkoły Sportowej Piłki Nożnej im. Generała Bernarda Monda w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3924/Niepubliczne-Liceum-Ogolnoksztalcace-Szkoly-Sportowej-Pilki-Noznej-im-Generala-Bernarda-Monda",
+          "passRate": 66.67,
+          "polish": 46.93,
+          "math": 37.13,
+          "english": 60.13,
+          "score": 177.53,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        },
+        "wasza": {
+          "rank": 54,
+          "national": 1732,
+          "name": "Niepubliczne Liceum Szkoły Sportowej Piłki Nożnej im. Generała Bernarda Monda Kraków",
+          "url": null,
+          "score": 30.332,
+          "sourceUrl": "https://waszaedukacja.pl/ranking/krakow/licea/2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "adult-york",
+      "name": "Zaoczne Liceum Ogólnokształcące Dla Dorosłych York w Krakowie",
+      "address": "",
+      "coords": null,
+      "type": "Brak danych",
+      "adult": true,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 58,
+          "name": "Zaoczne Liceum Ogólnokształcące Dla Dorosłych York w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3963/Zaoczne-Liceum-Ogolnoksztalcace-Dla-Doroslych-York-W-Krakowie",
+          "passRate": 48.72,
+          "polish": 46.15,
+          "math": 31.28,
+          "english": 62.77,
+          "score": 164.56,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "adult-zdz",
+      "name": "Liceum Ogólnokształcące Dla Dorosłych Zakładu Doskonalenia Zawodowego w Krakowie",
+      "address": "",
+      "coords": null,
+      "type": "Brak danych",
+      "adult": true,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 59,
+          "name": "Liceum Ogólnokształcące Dla Dorosłych Zakładu Doskonalenia Zawodowego w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3782/Liceum-Ogolnoksztalcace-Dla-Doroslych-Zakladu-Doskonalenia-Zawodowego-W-Krakowie",
+          "passRate": 51.85,
+          "polish": 40.67,
+          "math": 30.26,
+          "english": 64.77,
+          "score": 161.63,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "adult-cosinus",
+      "name": "Zaoczne Liceum Ogólnokształcące Dla Dorosłych \"cosinus Plus\" w Krakowie",
+      "address": "",
+      "coords": null,
+      "type": "Brak danych",
+      "adult": true,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 60,
+          "name": "Zaoczne Liceum Ogólnokształcące Dla Dorosłych \"cosinus Plus\" w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/4971/Zaoczne-Liceum-Ogolnoksztalcace-Dla-Doroslych-cosinus-Plus-W-Krakowie",
+          "passRate": 42.73,
+          "polish": 44.41,
+          "math": 30.44,
+          "english": 62.39,
+          "score": 158.61,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "adult-4u",
+      "name": "Edukacja 4u Liceum Ogólnokształcące Dla Dorosłych w Krakowie",
+      "address": "",
+      "coords": null,
+      "type": "Brak danych",
+      "adult": true,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 61,
+          "name": "Edukacja 4u Liceum Ogólnokształcące Dla Dorosłych w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/5015/Edukacja-4u-Liceum-Ogolnoksztalcace-Dla-Doroslych-W-Krakowie",
+          "passRate": 33.33,
+          "polish": 42.9,
+          "math": 24.74,
+          "english": 65.51,
+          "score": 149.82,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "iii-dorosli",
+      "name": "III Prywatne Liceum Ogólnokształcące Dla Dorosłych w Krakowie",
+      "address": "",
+      "coords": null,
+      "type": "Brak danych",
+      "adult": true,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 62,
+          "name": "III Prywatne Liceum Ogólnokształcące Dla Dorosłych w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3539/Iii-Prywatne-Liceum-Ogolnoksztalcace-Dla-Doroslych",
+          "passRate": 33.33,
+          "polish": 49.63,
+          "math": 25.04,
+          "english": 53.08,
+          "score": 144.42,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": null
+    },
+    {
+      "id": "prywatne-zaoczne-dorosli",
+      "name": "Prywatne Czteroletnie Liceum Ogólnokształcące Dla Dorosłych Zaoczne w Krakowie",
+      "address": "",
+      "coords": null,
+      "type": "Brak danych",
+      "adult": true,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 63,
+          "name": "Prywatne Czteroletnie Liceum Ogólnokształcące Dla Dorosłych Zaoczne w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3458/Prywatne-Czteroletnie-Liceum-Ogolnoksztalcace-Dla-Doroslych-Zaoczne",
+          "passRate": 23.08,
+          "polish": 29.69,
+          "math": 29.69,
+          "english": 69.54,
+          "score": 140.46,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": null
+    },
+    {
+      "id": "v-dorosli",
+      "name": "V Liceum Ogólnokształcące Dla Dorosłych w Krakowie",
+      "address": "os. Osiedle Szkolne 21, 31-977 Kraków",
+      "coords": [
+        50.0790249,
+        20.0472638
+      ],
+      "type": "Publiczna",
+      "adult": true,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 64,
+          "name": "V Liceum Ogólnokształcące Dla Dorosłych w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/3316/V-Liceum-Ogolnoksztalcace-Dla-Doroslych-w-Krakowie",
+          "passRate": 25.0,
+          "polish": 40.65,
+          "math": 23.48,
+          "english": 53.96,
+          "score": 130.59,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "ix-dorosli",
+      "name": "IX Liceum Ogólnokształcące Dla Dorosłych w Krakowie",
+      "address": "",
+      "coords": null,
+      "type": "Brak danych",
+      "adult": true,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 65,
+          "name": "IX Liceum Ogólnokształcące Dla Dorosłych w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-publiczne-i-prywatne-w-Krakowie-wyszukiwarka/4796/IX-Liceum-Ogolnoksztalcace-Dla-Doroslych-w-Krakowie",
+          "passRate": 22.73,
+          "polish": 46.41,
+          "math": 25.86,
+          "english": 45.39,
+          "score": 129.03,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": null
+    },
+    {
+      "id": "adult-zak",
+      "name": "Liceum Ogólnokształcące Dla Dorosłych \"żak w Krakowie",
+      "address": "",
+      "coords": null,
+      "type": "Brak danych",
+      "adult": true,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 66,
+          "name": "Liceum Ogólnokształcące Dla Dorosłych \"żak w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3623/Liceum-Ogolnoksztalcace-Dla-Doroslych-zak",
+          "passRate": 25.0,
+          "polish": 35.81,
+          "math": 21.4,
+          "english": 56.98,
+          "score": 126.69,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": "2026-10-04"
+    },
+    {
+      "id": "eduvision-dorosli",
+      "name": "Eduvision Liceum Ogólnokształcące Dla Dorosłych w Krakowie",
+      "address": "",
+      "coords": null,
+      "type": "Brak danych",
+      "adult": true,
+      "examYear": 2021,
+      "profileYear": "Brak historycznej oferty",
+      "profileSource": "",
+      "profiles": [],
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 67,
+          "name": "Eduvision Liceum Ogólnokształcące Dla Dorosłych w Krakowie",
+          "url": "https://www.otouczelnie.pl/artykul/208/Licea-w-Krakowie/3779/Eduvision-Liceum-Ogolnoksztalcace-Dla-Doroslych-W-Krakowie",
+          "passRate": 25.0,
+          "polish": 42.55,
+          "math": 20.64,
+          "english": 50.73,
+          "score": 126.42,
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2022"
+        }
+      },
+      "metadataAsOf": null
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+research/
+__pycache__/
+*.zip
+.sites-runtime/
+
+node_modules/
+.vinext/
+.wrangler/
+dist/
+.env*
+.next/
+*.tsbuildinfo
