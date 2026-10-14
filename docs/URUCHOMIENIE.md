@@ -68,6 +68,52 @@ Test parsera nie zadziała w czystym klonie bez przygotowania źródeł. Testy p
 
 ## Wdrożenie i narzędzia historyczne
 
+### Własne konto Cloudflare: Workers + D1
+
+Ustawienia Workers Builds dla repozytorium:
+
+| Pole | Wartość |
+| --- | --- |
+| Root directory | `licea` |
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy --config dist/server/wrangler.json` |
+| Node.js | 22.13 lub nowszy |
+
+Cloudflare automatycznie instaluje zależności, więc ponowne `npm ci` w build command nie jest potrzebne. Nazwa Workera w wygenerowanej konfiguracji musi odpowiadać projektowi w Cloudflare; Workers Builds może dopasować ją podczas wdrożenia.
+
+1. W panelu Cloudflare otwórz **D1 SQL database**, wybierz **Create Database**, nadaj nazwę np. `atlasliceow-db` i skopiuj jej **Database ID**.
+2. W projekcie Worker otwórz **Settings > Build > Build variables and secrets**. Dodaj zwykłe zmienne budowania:
+   - `CLOUDFLARE_D1_DATABASE_ID`: rzeczywisty Database ID, w formacie UUID.
+   - `CLOUDFLARE_D1_DATABASE_NAME`: nazwa bazy, np. `atlasliceow-db`.
+3. Utwórz tabele w nowej bazie. W jej zakładce **Console** wykonaj kolejno poniższe dwa zapytania. Są zgodne ze schematem w `drizzle/0000_lean_stepford_cuckoos.sql`; `IF NOT EXISTS` pozwala bezpiecznie ponowić utworzenie tabel, lecz nie naprawia odmiennego istniejącego schematu.
+
+```sql
+CREATE TABLE IF NOT EXISTS annual_snapshots (
+  year INTEGER PRIMARY KEY NOT NULL,
+  payload TEXT NOT NULL,
+  revision INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS import_drafts (
+  id TEXT PRIMARY KEY NOT NULL,
+  payload TEXT NOT NULL,
+  created INTEGER NOT NULL
+);
+```
+
+4. Wgraj zmieniony `vite.config.ts` do GitHub i ponów build. Konfiguracja w `dist/server/wrangler.json` zostanie wygenerowana z Twoim ID. Binding aplikacji nadal nazywa się `DB`.
+
+Zmienne muszą być dostępne **podczas budowania**, ponieważ Vite zapisuje je w konfiguracji wdrożenia. Sama zmienna runtime lub binding ustawiony tylko w panelu nie zastępuje ID używanego przez Wrangler. Nie edytuj ręcznie `dist/server/wrangler.json`: następny build go odtworzy. Lokalnie bez tych zmiennych pozostaje dotychczasowa baza lokalna. Workers Builds bez ID zatrzyma się z konkretną instrukcją, zanim rozpocznie upload.
+
+Alternatywnie pierwszą migrację nowej bazy można wykonać z terminala po zalogowaniu Wrangler i zbudowaniu aplikacji z rzeczywistym ID:
+
+```powershell
+npx wrangler d1 execute DB --remote --config dist/server/wrangler.json --file drizzle/0000_lean_stepford_cuckoos.sql
+```
+
+To polecenie dotyczy bazy w Cloudflare i wykonuje pierwotną migrację tylko raz. Dane początkowe roczników są dołączone w `server/seed.json`, więc puste tabele wystarczą do odczytu początkowych rankingów. Przed publicznym uruchomieniem operacji importu zapewnij uprawnienia administratora; kontrola Origin sama nie ogranicza zapisu do właściciela.
+
+Dokumentacja dostawcy: [tworzenie i podłączanie D1](https://developers.cloudflare.com/d1/get-started/), [ustawienia Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/).
+
 Build tworzy Worker i zasoby w `dist/`. Integracja Sites korzysta z `.openai/hosting.json`, kodu `build/` i migracji `drizzle/`. Dokumentacja opisuje kod, nie potwierdza aktualnych ustawień hostingu.
 
 `migrate_gui.py` to jednorazowa migracja starej aplikacji statycznej. Nie uruchamiaj jej na aktualnym projekcie: kopiuje starter i stare `dist` do źródeł. `package_gui.py` ma lokalną ścieżkę helpera Sites i może wykorzystać wcześniejszy staging. Nie jest przenośnym skryptem publikacji. Nowe wdrożenie przygotuj ze świeżego buildu przez integrację hostingu.

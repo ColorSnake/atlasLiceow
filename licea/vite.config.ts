@@ -10,6 +10,19 @@ const SITE_CREATOR_PLACEHOLDER_DATABASE_ID =
 
 const { d1, r2 } = hostingConfig;
 
+// Workers Builds supplies these at build time; local previews keep their own DB.
+const d1DatabaseId = process.env.CLOUDFLARE_D1_DATABASE_ID?.trim()
+  || SITE_CREATOR_PLACEHOLDER_DATABASE_ID;
+const d1DatabaseName = process.env.CLOUDFLARE_D1_DATABASE_NAME?.trim()
+  || "site-creator-d1";
+if (d1 && !/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(d1DatabaseId)) {
+  throw new Error("CLOUDFLARE_D1_DATABASE_ID musi zawierać identyfikator UUID bazy D1.");
+}
+if (d1 && process.env.WORKERS_CI === "1"
+  && d1DatabaseId === SITE_CREATOR_PLACEHOLDER_DATABASE_ID) {
+  throw new Error("Dodaj CLOUDFLARE_D1_DATABASE_ID w Cloudflare: Settings > Build > Build variables and secrets. Skopiuj Database ID swojej bazy D1.");
+}
+
 // macOS Seatbelt blocks FSEvents, so Codex previews need polling for HMR.
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
 const managedLinux = readExecutionProfile() === "managed-linux";
@@ -21,8 +34,8 @@ const localBindingConfig = {
     ? [
         {
           binding: d1,
-          database_name: "site-creator-d1",
-          database_id: SITE_CREATOR_PLACEHOLDER_DATABASE_ID,
+          database_name: d1DatabaseName,
+          database_id: d1DatabaseId,
         },
       ]
     : [],
