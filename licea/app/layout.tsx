@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Atlas liceów Krakowa",
-  description: "Rankingi liceów, mapa i import danych.",
+  description: "Rankingi liceów, mapa, historia wyników i eksport danych.",
   other: {
 
   },

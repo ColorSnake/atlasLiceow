@@ -1,2 +1,8 @@
-import {loadData,json} from '../../../server/store';
-export async function GET(){try{return json(await loadData())}catch{return json({error:'Nie udało się odczytać zapisanych aktualizacji. Spróbuj ponownie.'},503)}}
+import datasets from '../../../server/seed.json';
+
+// Published snapshots in Git are the only source of data. No database overrides.
+export async function GET() {
+  return Response.json({ datasets, revisions: {} }, {
+    headers: { 'Cache-Control': 'no-store' },
+  });
+}

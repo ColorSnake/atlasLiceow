@@ -1,6 +1,6 @@
 # Atlas liceów Krakowa
 
-Interaktywna mapa liceów w Krakowie z rankingami WaszaEdukacja, otouczelnie i Perspektywy, historią wyników 2017–2026 oraz importem i eksportem danych. Kod aplikacji znajduje się w `licea/`.
+Interaktywna mapa liceów w Krakowie z rankingami WaszaEdukacja, otouczelnie i Perspektywy, historią wyników 2017–2026 oraz eksportem CSV i JSON. Publiczna aplikacja służy wyłącznie do odczytu. Nowe roczniki dodaje się lokalnym skryptem i publikuje przez Git. Kod aplikacji znajduje się w `licea/`.
 
 Migawka 2026 obejmuje 72 szkoły, w tym szkoły dla dorosłych. Miejsca WaszaEdukacja i otouczelnie dotyczą Krakowa, a Perspektyw — Polski. Wyniki matur przypisane do edycji otouczelnie 2026 pochodzą z 2025 roku. Dane nie aktualizują się automatycznie.
 
@@ -21,19 +21,18 @@ cd licea
 node --version
 npm ci
 npm run build
-node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_lean_stepford_cuckoos.sql
 npm start -- --port 8765
 ```
 
-Migrację SQL wykonaj tylko przy pierwszym przygotowaniu lokalnej bazy. Otwórz [lokalną aplikację](http://127.0.0.1:8765/).
+Otwórz [lokalną aplikację](http://127.0.0.1:8765/). Baza D1 i logowanie nie są wymagane.
 
 ## Układ repozytorium
 
 | Ścieżka | Zawartość |
 | --- | --- |
 | `licea/public/atlas/` | Interfejs HTML/JavaScript, Leaflet i pliki danych |
-| `licea/app/`, `licea/server/` | Aplikacja Vinext, API i logika importu |
-| `licea/db/`, `licea/drizzle/` | Schemat i migracja Cloudflare D1 |
+| `licea/app/`, `licea/server/` | Aplikacja Vinext, API odczytu i opublikowane dane |
+| `licea/db/`, `licea/drizzle/` | Zachowany schemat dawnej bazy D1; aktualna aplikacja go nie używa |
 | `licea/scripts/`, `licea/imports/` | Narzędzia danych, testy i pakiet historyczny |
 | `docs/` | Dokumentacja techniczna i historia Git |
 | `migrate_gui.py`, `package_gui.py` | Historyczne narzędzia migracji i pakowania |
@@ -42,6 +41,6 @@ Lokalne katalogi stagingowe, `gui-server-starter/` i archiwa wdrożeniowe są ig
 
 ## Dostęp i licencje
 
-API importu zakłada kontrolę dostępu zapewnianą przez wdrożenie Sites. Sprawdzenie Origin nie jest autoryzacją administratora; przed publicznym udostępnieniem zapisu trzeba dodać uprawnienia. Lokalnie uruchamiaj serwer na adresie pętli zwrotnej.
+Publiczna strona nie udostępnia importu ani zapisu: endpointy `/api/import/*` zostały usunięte. Dane pochodzą z wersjonowanych plików, a dawne aktualizacje D1 nie zastępują ich. Eksport pozostaje dostępny dla wszystkich odwiedzających. Instrukcja corocznej aktualizacji jest w [dokumentacji uruchomienia](docs/URUCHOMIENIE.md).
 
 Licencje Leaflet i MarkerCluster znajdują się w `licea/public/atlas/vendor/`, a pozostałe dołączone licencje przy bibliotekach. Repozytorium nie definiuje odrębnej licencji własnego kodu. Lista źródeł danych jest w dokumentacji aplikacji.

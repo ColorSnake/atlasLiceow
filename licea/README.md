@@ -1,8 +1,8 @@
 # Atlas liceów Krakowa
 
-Atlas z mapą Leaflet i historią miejsc. Interfejs HTML/JavaScript znajduje się w `public/atlas`, a serwer Vinext udostępnia import rankingów i bazę Cloudflare D1.
+Atlas z mapą Leaflet i historią miejsc. Interfejs HTML/JavaScript znajduje się w `public/atlas`, a serwer Vinext udostępnia tylko odczyt opublikowanych plików. Aplikacja nie wymaga logowania ani bazy Cloudflare D1.
 
-**Obsługa roczników:** dane od 2017 do 2026, wykresy miejsc, zakładka importu stron WaszaEdukacja/otouczelnie oraz eksport CSV i JSON. Instrukcja i sposób przechowywania: [DANE.md](DANE.md).
+**Obsługa roczników:** dane od 2017 do 2026, wykresy miejsc i eksport CSV oraz JSON. Nowe dane dodaje się lokalnie przez `scripts/datasets.py` i publikuje commitem w GitHub. Import przez stronę oraz jego endpointy zostały usunięte. Instrukcja i format: [DANE.md](DANE.md).
 
 ## Uruchomienie
 
@@ -11,11 +11,10 @@ Wymagany Node.js >=22.13. W katalogu `licea` zainstaluj zależności i zbuduj ap
 ```sh
 npm ci
 npm run build
-node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_lean_stepford_cuckoos.sql
 npm start -- --port 8765
 ```
 
-Migrację uruchom tylko przy pierwszym przygotowaniu lokalnej bazy. Wejdź na http://127.0.0.1:8765/. Lokalna baza jest oddzielona od produkcyjnej. Bez serwera można otworzyć `public/atlas/index.html` do przeglądania danych początkowych i eksportu; import i trwały zapis wymagają serwera. Mapa wymaga połączenia z OpenStreetMap.
+Wejdź na http://127.0.0.1:8765/. Migracja bazy nie jest potrzebna. Bez serwera można otworzyć `public/atlas/index.html` do przeglądania opublikowanych danych i eksportu. Mapa wymaga połączenia z OpenStreetMap.
 
 ## Zakres
 

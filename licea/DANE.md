@@ -53,22 +53,23 @@ Zachowaj kopię i przejrzyj zmiany przed zastąpieniem istniejącej edycji. Wali
 - `public/atlas/data/index.json`: dostępne lata i rok domyślny.
 - `public/atlas/data.js`: pakiet wszystkich roczników dla przeglądarki; dzięki niemu aplikacja działa też po otwarciu HTML bez serwera.
 - `public/atlas/data.json`: kopia najnowszego rocznika, zachowana dla zgodności i wygodnej analizy.
+- `server/seed.json`: te same roczniki dla API odczytu; importer aktualizuje go automatycznie.
 
-Nie edytuj tych trzech plików ręcznie. Po ręcznej korekcie plików rocznych można uruchomić `python scripts/datasets.py build`. Zalecany jest jednak import, który domyślnie chroni istniejące roczniki.
+Nie edytuj tych plików ręcznie. Po ręcznej korekcie plików rocznych można uruchomić `python scripts/datasets.py build`. Zalecany jest jednak import, który domyślnie chroni istniejące roczniki. Dodaj plik rocznika i wszystkie pliki generowane do jednego commita. Nowa wersja danych pojawi się publicznie dopiero po wdrożeniu tego commita przez Cloudflare.
 
-## Import i eksport w przeglądarce
+## Publiczna strona: tylko odczyt i eksport
 
-Zakładka **Dane · import i eksport** pobiera tabelę WaszaEdukacja lub otouczelnie dla wybranego roku. Adres URL jest budowany przez serwer wyłącznie dla tych dwóch wydawców. Import nie pobiera profili ani nie geokoduje nowych szkół. Nieobsługiwany układ strony, błędny rok, niekompletna tabela otouczelnie lub blokada wydawcy kończą się komunikatem bez zmiany danych.
+Zakładka **Dane · eksport** pozwala pobrać opublikowany rocznik jako CSV albo JSON. Na stronie nie ma logowania, formularza importu, podglądu zmian ani przycisku zapisu.
 
-Po pobraniu zobaczysz miejsca, punkty, podsumowanie zmian i nierozpoznane szkoły. Przypisz je do istniejącej szkoły albo wybierz nową kartę (bez adresu i mapy). Podgląd jest ważny godzinę. **Pobierz przygotowany JSON** pobiera kompletny proponowany rocznik bez zapisu na stronie. **Zapisz i zaktualizuj stronę** zastępuje ranking tylko wybranego wydawcy, zachowuje inne źródła i odświeża aplikację. Równoczesne nadpisanie zmienionego rocznika jest odrzucane.
+Endpointy `/api/import/preview`, `/api/import/prepare` i `/api/import/commit` zostały usunięte. Wywołanie ich bezpośrednio również nie aktualizuje danych. `GET /api/datasets` zwraca tylko roczniki dołączone w `server/seed.json`.
 
-Aktualizacje GUI są przechowywane trwale w bazie Cloudflare D1, w tabeli `annual_snapshots`. Podglądy znajdują się w `import_drafts`. Strona pozostaje prywatna; dostęp chroni Sites. Zmiana jej odbiorców na publicznych wymaga uprzednio dodania uprawnień administratora do operacji zapisu. Endpointy mutujące wymagają również zgodnego Origin i JSON. Baza lokalnego podglądu jest oddzielona od bazy opublikowanej strony.
+Nowe roczniki i poprawki wprowadza się lokalnie przez `scripts/datasets.py`, przegląda w Git i wysyła do repozytorium. Szczegółowa lista poleceń: [coroczna aktualizacja](../docs/URUCHOMIENIE.md#coroczna-aktualizacja-danych).
 
-Pliki `public/atlas/data/rankings-ROK.json` oraz generowany `server/seed.json` są danymi początkowymi. Zapisany w bazie rocznik ma nad nimi pierwszeństwo i przetrwa kolejne publikacje. Import skryptem Python zmienia dane początkowe w kodzie, nie nadpisuje bazy produkcyjnej. Gdy baza jest niedostępna, mapa wyświetla kopię początkową z ostrzeżeniem. Pobranie JSON w zakładce Dane jest sposobem wykonania kopii aktualnego rocznika.
+Pliki wersjonowane w Git są jedynym źródłem opublikowanych danych. Aplikacja nie odczytuje ani nie zapisuje D1, a dawne rekordy bazy nie przesłaniają nowych plików. Istniejąca baza i jej zawartość nie są kasowane. Przed przejściem na ten model sprawdzono, że publiczne roczniki odpowiadają plikom repozytorium; lokalna kopia odpowiedzi pozostała w ignorowanym katalogu `research/`.
 
-Eksport CSV obejmuje wszystkie szkoły i wszystkie źródła danego roku, niezależnie od filtrów mapy: jeden wiersz na parę szkoła–wydawca. Format: UTF-8 z BOM, średnik, CRLF, cudzysłowy; wartości mogące zostać potraktowane jako formuła są poprzedzane apostrofem. Eksport JSON zachowuje pełny zestaw danych. Import pliku JSON przez GUI nie jest częścią tej funkcji; GUI importuje strony wydawców.
+Eksport CSV obejmuje wszystkie szkoły i wszystkie źródła danego roku, niezależnie od filtrów mapy: jeden wiersz na parę szkoła–wydawca. Format: UTF-8 z BOM, średnik, CRLF, cudzysłowy; wartości mogące zostać potraktowane jako formuła są poprzedzane apostrofem. Eksport JSON zachowuje pełny zestaw danych.
 
-Projekt serwerowy korzysta z szablonu Vinext i integracji Sites. `npm run dev` uruchamia podgląd, `npm run build` tworzy wynik w `dist`, `npm start` uruchamia zbudowany Worker lokalnie. Lokalną migrację D1 stosuje się zgodnie z instrukcją szablonu, z pliku `drizzle/0000_lean_stepford_cuckoos.sql`. Wymagany Node >=22.13. Kopie HTML w `research/history` służą do testów parsera i nie trafiają do publikacji.
+Projekt korzysta z szablonu Vinext i integracji Sites. `npm run dev` uruchamia podgląd, `npm run build` tworzy wynik w `dist`, `npm start` uruchamia zbudowany Worker lokalnie. D1 i migracja SQL nie są potrzebne. Wymagany Node >=22.13. Kopie HTML w `research/history` służą do lokalnych narzędzi i nie trafiają do publikacji.
 
 
 ## Testy
