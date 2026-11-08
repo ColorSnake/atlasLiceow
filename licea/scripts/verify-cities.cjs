@@ -1,0 +1,72 @@
+const {chromium}=require('C:/Users/lukasz/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('node:assert/strict');
+const fs=require('node:fs/promises');
+const origin='http://127.0.0.1:8765';
+(async()=>{
+ const browser=await chromium.launch({headless:true,channel:'msedge'});
+ try{
+  await fs.mkdir('research',{recursive:true});
+  const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];
+  page.on('pageerror',e=>errors.push(e.message));
+  await page.goto(origin,{waitUntil:'networkidle'});await page.waitForSelector('#city option',{state:'attached'});
+  assert.equal(await page.locator('#city').inputValue(),'krakow');
+  await page.selectOption('#year','2017');await page.fill('#search','zzzzzz');
+  await page.selectOption('#city','wroclaw');
+  assert.equal(await page.locator('#year').inputValue(),'2026');
+  assert.equal(await page.locator('#year option').count(),1);
+  assert.equal(await page.locator('#search').inputValue(),'');
+  assert.match(await page.title(),/Wrocław/);
+  await page.selectOption('#ranking','oto');await page.check('#adults');
+  const data=await page.evaluate(()=>dataset);
+  assert.equal(data.city,'wroclaw');assert.equal(data.examYear,2025);
+  assert.equal(await page.locator('.school-row').count(),data.schools.filter(s=>s.rankings.oto).length);
+  const center=await page.evaluate(()=>{const c=map.getCenter();return [c.lat,c.lng]});
+  assert(center[0]>51&&center[0]<51.25&&center[1]>16.8&&center[1]<17.25);
+  await page.locator('.school-row').first().click();
+  assert.match(await page.locator('#detail').innerText(),/Matura 2025/i);
+  assert.match(await page.locator('.pass-rate strong').innerText(),/%/);
+  assert(!/Kraków|Krakowie/.test(await page.locator('#detail').innerText()));
+  assert.equal(await page.locator('#historyChart circle').count(),1);
+  await page.selectOption('#historySource','pers');
+  const selectedSchool=await page.evaluate(()=>schools.find(s=>s.id===selected));
+  const knownHistory=Object.values(selectedSchool.rankings.pers?.history??{}).filter(value=>value!=='-').length;
+  assert.equal(await page.locator('#historyChart circle').count(),knownHistory+1);
+  assert.equal(await page.locator('#year option').count(),1);
+  assert.match(await page.locator('#historyTitle').innerText(),/2023–2026/);
+  await page.click('#sourcesBtn');
+  assert.match(await page.locator('#snapshotInfo').innerText(),/Wrocław/);
+  assert.match(await page.locator('#rankingScopes').innerText(),/we Wrocławiu/);
+  await page.keyboard.press('Escape');
+  await page.screenshot({path:'research/wroclaw-desktop.png',fullPage:true});
+  await page.click('#dataTab');
+  assert.equal(await page.locator('#exportYear option').count(),1);
+  const download=page.waitForEvent('download');await page.click('#exportCSV');const csvDownload=await download;
+  assert.equal(csvDownload.suggestedFilename(),'licea-wroclaw-2026.csv');
+  const csv=await fs.readFile(await csvDownload.path(),'utf8');
+  assert(csv.includes('Wrocław'));assert(!csv.includes('Kraków'));assert(csv.includes('zdawalnosc_proc'));
+  await page.click('#atlasTab');await page.click('#closeDetail');await page.setViewportSize({width:390,height:844});
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+  await page.locator('.school-row').first().click();await page.screenshot({path:'research/wroclaw-mobile.png',fullPage:true});
+  await page.click('#closeDetail');await page.selectOption('#city','krakow');assert.equal(await page.locator('#year option').count(),10);
+  assert((await page.locator('.school-row').count())>0);
+  await page.selectOption('#city','wroclaw');await page.reload({waitUntil:'networkidle'});
+  assert.equal(await page.locator('#city').inputValue(),'wroclaw');
+  await page.goto(origin+'/atlas/?city=constructor',{waitUntil:'networkidle'});
+  assert.equal(await page.locator('#city').inputValue(),'krakow');
+
+  // Missing pass rates are unknown, not 0%, in both the list and the school card.
+  const missing=await browser.newPage();
+  missing.on('pageerror',e=>errors.push(e.message));
+  await missing.route('**/api/datasets',async route=>{
+   const response=await route.fetch(),state=await response.json();
+   for(const s of state.catalog.datasetsByCity.wroclaw['2026'].schools)if(s.rankings.oto)s.rankings.oto.passRate=null;
+   await route.fulfill({json:state});
+  });
+  await missing.goto(origin+'/atlas/?city=wroclaw',{waitUntil:'networkidle'});
+  await missing.selectOption('#ranking','oto');await missing.locator('.school-row').first().click();
+  assert.equal(await missing.locator('.pass-rate strong').innerText(),'Brak danych');
+  assert.match(await missing.locator('.school-row').first().innerText(),/Zdawalność matury: brak danych/);
+  assert.deepEqual(errors,[]);
+  console.log('Cities passed: isolated city/year data, Wrocław map and ranks, pass-rate/year/source labels, missing values, exports, mobile and bookmarked city.');
+ }finally{await browser.close()}
+})().catch(e=>{console.error(e);process.exitCode=1});

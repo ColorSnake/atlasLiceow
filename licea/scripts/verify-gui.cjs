@@ -16,7 +16,7 @@ const origin = process.env.ATLAS_TEST_URL || 'http://127.0.0.1:8765';
     assert.equal(response.status(), 200);
     const before = await response.json();
     const published = JSON.parse(await fs.readFile(path.join(__dirname, '../server/seed.json'), 'utf8'));
-    assert.deepEqual(before, {datasets:published, revisions:{}});
+    assert.deepEqual(before, {catalog:published, revisions:{}});
     assert.equal(await page.locator('#importForm, #importPreview, #saveImport, #fetchRanking').count(), 0);
     await page.click('#dataTab');
     assert(!/import|zapisz/i.test(await page.locator('#dataPanel').innerText()));
@@ -28,9 +28,9 @@ const origin = process.env.ATLAS_TEST_URL || 'http://127.0.0.1:8765';
     const csvBytes = await download('#exportCSV'), csv = csvBytes.toString('utf8');
     assert.equal(csvBytes.subarray(0,3).toString('hex'), 'efbbbf');
     assert(csv.includes('Witkowskiego'));
-    const expectedRows = before.datasets['2025'].schools.reduce((count, school) => count + Object.values(school.rankings).filter(Boolean).length, 0);
+    const expectedRows = before.catalog.datasetsByCity.krakow['2025'].schools.reduce((count, school) => count + Object.values(school.rankings).filter(Boolean).length, 0);
     assert.equal(csv.split('\r\n').length, expectedRows + 2);
-    assert.deepEqual(JSON.parse((await download('#exportJSON')).toString('utf8')), before.datasets['2025']);
+    assert.deepEqual(JSON.parse((await download('#exportJSON')).toString('utf8')), before.catalog.datasetsByCity.krakow['2025']);
 
     // Same-origin requests previously accepted by the public importer must fail.
     for (const endpoint of ['preview', 'prepare', 'commit']) {

@@ -1,6 +1,6 @@
 # Architektura i API
 
-Publiczna aplikacja jest przeznaczona wyłącznie do odczytu i eksportu. Nie ma logowania, importu przez przeglądarkę ani operacji zapisu na serwerze.
+Publiczna aplikacja jest przeznaczona wyłącznie do odczytu i eksportu. Obsługuje niezależne miasta i roczniki; obecnie Kraków i Wrocław. Nie ma logowania, importu przez przeglądarkę ani operacji zapisu na serwerze.
 
 ## Przepływ danych
 
@@ -32,14 +32,16 @@ Interfejs HTML/CSS/JavaScript znajduje się w `licea/public/atlas/`. Leaflet wy�
 | `public/atlas/data/rankings-ROK.json` | Wersjonowane migawki roczników, schemaVersion 1 |
 | `public/atlas/data/index.json` | Katalog dostępnych lat i rok domyślny |
 | `public/atlas/data.js`, `data.json` | Pakiet przeglądarkowy i najnowsza migawka |
-| `server/seed.json` | Te same roczniki dla API odczytu |
+| `public/atlas/data/wroclaw/rankings-ROK.json` | Oddzielne migawki Wrocławia; nowe miasta mają analogiczne katalogi |
+| `cities.json` | Nazwy miast, centrum mapy i prostokątne zakresy walidacji współrzędnych |
+| `server/seed.json` | Katalog miast i roczników dla API odczytu |
 | `scripts/datasets.py` | Walidacja, import i generowanie wszystkich kopii, w tym seedów |
 
-Stabilne `schools[].id` łączy szkołę między latami. Brak wyniku nie jest zerem. Dane historyczne nie potwierdzają dawnych adresów ani ofert: lokalizacje korzystają z bazy 2026, a historyczne profile pozostają puste. Schemat i źródła opisuje [DANE.md](../licea/DANE.md).
+Stabilne `schools[].id` łączy szkołę między latami tego samego miasta. Katalog ma strukturę `datasetsByCity[city][year]`. Stare migawki Krakowa pozostały bez przepisywania: brak `city` oznacza `krakow`, a brak `schoolType` oznacza `liceum`. Walidacja dopuszcza współrzędne tylko w obszarze właściwego miasta. Historia szkoły nie przechodzi między miastami. Brak wyniku lub zdawalności nie jest zerem. Schemat i źródła opisuje [DANE.md](../licea/DANE.md).
 
 ## API i dostęp
 
-`GET /api/datasets` zwraca `{datasets, revisions: {}}` z nagłówkiem `Cache-Control: no-store`. `revisions` pozostało puste dla zgodności z formatem wcześniejszych odpowiedzi; aplikacja nie prowadzi już rewizji bazy.
+`GET /api/datasets` zwraca `{catalog, revisions: {}}` z nagłówkiem `Cache-Control: no-store`. `catalog` zawiera `defaultCity`, `cities`, `schoolType` i `datasetsByCity`. `revisions` pozostało puste dla zgodności z formatem wcześniejszych odpowiedzi; aplikacja nie prowadzi już rewizji bazy.
 
 Endpointy `/api/import/preview`, `/api/import/prepare` i `/api/import/commit` zostały usunięte, wraz z kodem zapisu D1. Bezpośrednie żądanie do dawnego API również nie zmienia danych. Publiczna mapa i eksport nie wymagają konta. Uprawnienia do zmian wynikają z dostępu do repozytorium GitHub oraz wdrożeń Cloudflare.
 
@@ -47,4 +49,4 @@ Endpointy `/api/import/preview`, `/api/import/prepare` i `/api/import/commit` zo
 
 ## Coroczna publikacja
 
-Właściciel przygotowuje rzeczywisty rocznik, waliduje i importuje go lokalnie, przegląda diff, testuje i wysyła commit z rocznikiem oraz plikami generowanymi. Cloudflare buduje i publikuje nową wersję. Szczegółowe polecenia: [instrukcja aktualizacji](URUCHOMIENIE.md#coroczna-aktualizacja-danych).
+Właściciel przygotowuje rzeczywisty rocznik dla wybranego miasta, waliduje i importuje go lokalnie, przegląda diff, testuje i wysyła commit z rocznikiem oraz plikami generowanymi. Cloudflare buduje i publikuje nową wersję. Szczegółowe polecenia: [instrukcja aktualizacji](URUCHOMIENIE.md#coroczna-aktualizacja-danych). Kolejne duże miasta oraz osobny model przyszłych szkół podstawowych opisuje [plan rozwoju](ROZWOJ.md).

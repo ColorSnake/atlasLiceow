@@ -1,6 +1,6 @@
 # Uruchomienie i utrzymanie
 
-Publiczna aplikacja pozwala przeglądać rankingi i eksportować dane. Nowe roczniki dodaje się lokalnym skryptem i publikuje przez GitHub oraz Cloudflare. Nie ma logowania ani operacji zapisu na stronie.
+Publiczna aplikacja pozwala wybierać miasto, przeglądać rankingi i zdawalność matur oraz eksportować dane. Nowe miasta i roczniki dodaje się lokalnym skryptem i publikuje przez GitHub oraz Cloudflare. Nie ma logowania ani operacji zapisu na stronie.
 
 ## Wymagania
 
@@ -27,7 +27,7 @@ Otwarcie `public/atlas/index.html` bez serwera pozwala przeglądać i eksportowa
 
 ## Coroczna aktualizacja danych
 
-1. Przygotuj kompletny JSON nowej edycji zgodny z [DANE.md](../licea/DANE.md). Zachowaj identyfikatory szkół, podaj rzeczywiste źródła oraz lata rankingu i matur. Nie kopiuj wyników starej edycji pod nowy rok.
+1. Przygotuj kompletny JSON nowej edycji zgodny z [DANE.md](../licea/DANE.md). Zachowaj identyfikatory szkół, podaj rzeczywiste źródła oraz lata rankingu i matur. Wpisz `city: "wroclaw"` dla Wrocławia; stare pliki bez `city` należą do Krakowa. Nie kopiuj wyników innego miasta ani starej edycji pod nowy rok.
 2. W katalogu `licea/` sprawdź i zaimportuj dane:
 
 ```powershell
@@ -37,7 +37,7 @@ python scripts/test_datasets.py
 npm run build
 ```
 
-Importer automatycznie zapisuje rocznik i regeneruje `data/index.json`, `data.js`, `data.json` oraz `server/seed.json`. Nie trzeba osobno uruchamiać `seed-server.py`. Najnowszy rok staje się domyślny, a poprzednie roczniki pozostają dostępne.
+Importer automatycznie zapisuje rocznik w katalogu jego miasta i regeneruje katalogi, `data.js`, `data.json` miasta domyślnego oraz `server/seed.json`. Nie trzeba osobno uruchamiać `seed-server.py`. Najnowszy rok miasta staje się domyślny, a poprzednie roczniki i inne miasta pozostają dostępne. Dodanie kolejnego miasta opisuje [plan rozwoju](ROZWOJ.md).
 
 Korekta istniejącej edycji wymaga świadomego zastąpienia:
 
@@ -93,6 +93,7 @@ node scripts/verify-gui.cjs
 - `test-import.mjs` sprawdza zachowane narzędzia parsowania i scalania. Wymaga ignorowanego cache HTML w `research/`; nie wywołuje już żadnego publicznego importera.
 - `verify-gui.cjs` wymaga uruchomionej lokalnej strony. Sprawdza brak importu, eksport CSV/JSON, widok mobilny, zgodność API z seedami i odrzucenie żądań do usuniętych endpointów. Nie zapisuje do bazy ani nie pobiera rankingów od wydawców.
 - `verify.cjs` sprawdza mapę, filtry i historię; uruchamiaj z katalogu głównego: `node licea/scripts/verify.cjs`.
+- `verify-cities.cjs` sprawdza Wrocław, rozdzielenie roczników, centrum mapy, zdawalność z rokiem matury, brakujące wartości, eksport, widok mobilny i odnośnik `?city=wroclaw`. Uruchamiaj w `licea/`: `node scripts/verify-cities.cjs`.
 
 Skrypty przeglądarkowe zawierają ścieżkę Playwright komputera autora; na innym komputerze dostosuj import. Zrzuty testu mapy trafiają do `licea/research/`. Dawny `verify-conflicts.mjs` został usunięty wraz z importerem serwerowym.
 

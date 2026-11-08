@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {parseRanking,identifyRows,mergeRanking,sourceURL} from '../server/rankings.mjs';
-const seed=JSON.parse(fs.readFileSync(new URL('../server/seed.json',import.meta.url)));
+const seed=JSON.parse(fs.readFileSync(new URL('../server/seed.json',import.meta.url))).datasetsByCity.krakow;
 const fixtures=JSON.parse(fs.readFileSync(new URL('../research/history/parsed.json',import.meta.url)));
 for(const fixture of fixtures){
  const raw=fs.readFileSync(new URL('../research/history/'+fixture.cache,import.meta.url),'utf8');

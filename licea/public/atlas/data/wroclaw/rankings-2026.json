@@ -1,0 +1,2498 @@
+{
+  "schemaVersion": 1,
+  "city": "wroclaw",
+  "schoolType": "liceum",
+  "rankingYear": 2026,
+  "examYear": 2025,
+  "updated": "2026-11-08",
+  "sources": {
+    "wasza": {
+      "name": "WaszaEdukacja",
+      "url": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+      "scope": "we Wrocławiu",
+      "digits": 2,
+      "description": "Ranking liceów 2026, migawka pobrana 08.11.2026: 42 szkoły, oryginalne miejsca we Wrocławiu i punkty wydawcy. Obecna metodologia uwzględnia matury, olimpiady i EWD. Punkty nie są bezpośrednio porównywalne z innymi wydawcami ani starszymi migawkami metodologii. Wyników matury 2026 z kart WaszaEdukacja nie połączono z maturą 2025 z otouczelnie."
+    },
+    "oto": {
+      "name": "otouczelnie",
+      "url": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+      "scope": "we Wrocławiu",
+      "digits": 2,
+      "description": "Ranking liceów we Wrocławiu 2026 obejmuje 43 szkoły; dane egzaminacyjne dotyczą matury 2025: terminu głównego, dodatkowego i poprawkowego. Wydawca wymaga co najmniej 10 zdających i co najmniej 10% zdawalności. Punkty = 0,5 × zdawalność + polski + matematyka + angielski (podstawa). Zdawalność jest podana dla każdej szkoły; nie jest średnią wyników przedmiotowych."
+    },
+    "pers": {
+      "name": "Perspektywy",
+      "url": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+      "scope": "w Polsce",
+      "digits": 2,
+      "description": "Ogólnopolski Ranking Liceów Perspektywy 2026: 23 szkoły z Wrocławia. Zachowano oryginalne miejsca krajowe i ex aequo, bez tworzenia rankingu miejskiego. Historia 2023–2025 pochodzi z tabeli historii wydania 2026. Metodologia: 25% olimpiady, 30% matura obowiązkowa, 45% matura dodatkowa; nie obejmuje matury IB."
+    }
+  },
+  "schools": [
+    {
+      "id": "wroclaw-akademickie-pwr",
+      "name": "Akademickie Liceum Politechniki Wrocławskiej",
+      "address": "ul. Wybrzeże Wyspiańskiego 23-25, Wrocław",
+      "district": "Śródmieście",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.107686,
+        17.059565
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/akademickie-liceum-politechniki-wroclawskiej-wroclaw-1409",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/akademickie-liceum-politechniki-wroclawskiej-wroclaw-1409",
+      "website": "http://www.liceum.pwr.edu.pl",
+      "examYear": 2025,
+      "profiles": [
+        "A Matematyczno-fizyczno-informatyczna / fizyka, informatyka, matematyka",
+        "B Matematyczno-fizyczno-informatyczna / fizyka, informatyka, matematyka",
+        "C Matematyczno-chemiczna / chemia, fizyka, matematyka",
+        "D Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/akademickie-liceum-politechniki-wroclawskiej-wroclaw-1409/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 1,
+          "name": "Akademickie Liceum Ogólnokształcące Politechniki Wrocławskiej we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/4846/Akademickie-Liceum-Ogolnoksztalcace-Politechniki-Wroclawskiej",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 100.0,
+          "polish": 83.65,
+          "math": 97.9,
+          "english": 98.11,
+          "score": 329.66
+        },
+        "wasza": {
+          "rank": 1,
+          "name": "Akademickie Liceum Politechniki Wrocławskiej",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/akademickie-liceum-politechniki-wroclawskiej-wroclaw-1409",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 67.81,
+          "national": 11
+        },
+        "pers": {
+          "rank": "8",
+          "name": "Akademickie LO PWr",
+          "url": "https://liceum.pwr.edu.pl/",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 78.65,
+          "history": {
+            "2023": "9",
+            "2024": "18",
+            "2025": "11"
+          },
+          "olymp": 16.85,
+          "basic": 99.17,
+          "advanced": 91.41
+        }
+      }
+    },
+    {
+      "id": "wroclaw-iii-lo",
+      "name": "III Liceum im. Adama Mickiewicza",
+      "address": "ul. Składowa 5, Wrocław",
+      "district": "Śródmieście",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.120278,
+        17.026921
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/iii-liceum-im-adama-mickiewicza-wroclaw-86",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/iii-liceum-im-adama-mickiewicza-wroclaw-86",
+      "website": "http://www.lo3.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "A Matematyczna uniwersytecka / fizyka, matematyka",
+        "B Architektoniczna / fizyka, matematyka",
+        "C Matematyczno-informatyczna / informatyka, matematyka",
+        "D Matematyczno-fizyczna / fizyka, matematyka",
+        "E Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/iii-liceum-im-adama-mickiewicza-wroclaw-86/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 2,
+          "name": "III LO im. Adama Mickiewicza we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/351/III-LO-im-Adama-Mickiewicza",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 100.0,
+          "polish": 85.3,
+          "math": 93.96,
+          "english": 97.6,
+          "score": 326.86
+        },
+        "wasza": {
+          "rank": 2,
+          "name": "III Liceum im. Adama Mickiewicza",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/iii-liceum-im-adama-mickiewicza-wroclaw-86",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 65.71,
+          "national": 22
+        },
+        "pers": {
+          "rank": "18=",
+          "name": "LO nr III im. Adama Mickiewicza",
+          "url": "http://lo3.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 73.42,
+          "history": {
+            "2023": "6",
+            "2024": "6",
+            "2025": "8"
+          },
+          "olymp": 19.23,
+          "basic": 97.35,
+          "advanced": 80.21
+        }
+      }
+    },
+    {
+      "id": "wroclaw-v-lo",
+      "name": "V Liceum im. gen. Jakuba Jasińskiego",
+      "address": "ul. Jacka Kuronia 14, Wrocław",
+      "district": "Krzyki",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.096125,
+        17.007424
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/v-liceum-im-gen-jakuba-jasinskiego-wroclaw-89",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/v-liceum-im-gen-jakuba-jasinskiego-wroclaw-89",
+      "website": "http://www.lo5.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "Matematyczno-geograficzno-polonistyczna / geografia, j. polski, matematyka",
+        "Matematyczno-historyczno-polonistyczna / historia, j. polski, matematyka",
+        "Bh Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "Bn Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "Cf Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "Cw Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "Eh Matematyczno-geograficzno-ekonomiczna / biznes i zarządzanie, geografia, matematyka",
+        "En Matematyczno-geograficzno-ekonomiczna / biznes i zarządzanie, geografia, matematyka",
+        "Fh Matematyczno-fizyczna / fizyka, matematyka",
+        "Fn Matematyczno-fizyczna / fizyka, matematyka",
+        "IB-MYPh Międzynarodowa (IB) IB / -",
+        "IB-MYPn Międzynarodowa (IB) IB / -"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/v-liceum-im-gen-jakuba-jasinskiego-wroclaw-89/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 3,
+          "name": "V LO im. gen. Jakuba Jasińskiego we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/353/V-LO-im-gen-Jakuba-Jasinskiego",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 100.0,
+          "polish": 79.81,
+          "math": 92.88,
+          "english": 97.95,
+          "score": 320.64
+        },
+        "wasza": {
+          "rank": 4,
+          "name": "V Liceum im. gen. Jakuba Jasińskiego",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/v-liceum-im-gen-jakuba-jasinskiego-wroclaw-89",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 62.44,
+          "national": 28
+        },
+        "pers": {
+          "rank": "47=",
+          "name": "LO nr V im. gen. Jakuba Jasińskiego",
+          "url": "https://lo5.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 64.43,
+          "history": {
+            "2023": "95",
+            "2024": "49",
+            "2025": "65"
+          },
+          "olymp": 3.27,
+          "basic": 95.51,
+          "advanced": 71.23
+        }
+      }
+    },
+    {
+      "id": "wroclaw-xii-lo",
+      "name": "XII Liceum im. Bolesława Chrobrego",
+      "address": "pl. Orląt Lwowskich 2a, Wrocław",
+      "district": "Stare Miasto",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.10945,
+        17.020009
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/xii-liceum-im-boleslawa-chrobrego-wroclaw-95",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/xii-liceum-im-boleslawa-chrobrego-wroclaw-95",
+      "website": "http://www.lo12.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "AB1 Humanistyczna / historia, j. polski, WOS",
+        "AB2 Geograficzno-historyczno-polonistyczna / geografia, historia, j. polski",
+        "C1 Matematyczno-historyczno-społeczna / historia, matematyka, WOS",
+        "C2 Matematyczno-geograficzno-historyczna / geografia, historia, matematyka",
+        "DE1 Biologiczno-polonistyczna / biologia, j. angielski, j. polski",
+        "DE2 Humanistyczna / j. angielski, j. polski, WOS",
+        "FG1 Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "FG2 Matematyczno-fizyczna / fizyka, j. angielski, matematyka",
+        "H Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/xii-liceum-im-boleslawa-chrobrego-wroclaw-95/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 4,
+          "name": "XII LO im. Bolesława Chrobrego we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/359/XII-LO-im-Boleslawa-Chrobrego",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 100.0,
+          "polish": 75.34,
+          "math": 90.5,
+          "english": 96.32,
+          "score": 312.16
+        },
+        "wasza": {
+          "rank": 3,
+          "name": "XII Liceum im. Bolesława Chrobrego",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xii-liceum-im-boleslawa-chrobrego-wroclaw-95",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 62.45,
+          "national": 27
+        },
+        "pers": {
+          "rank": "58=",
+          "name": "LO nr XII im. Bolesława Chrobrego",
+          "url": "http://lo12.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 64.03,
+          "history": {
+            "2023": "72",
+            "2024": "41",
+            "2025": "74"
+          },
+          "olymp": 3.62,
+          "basic": 92.19,
+          "advanced": 72.4
+        }
+      }
+    },
+    {
+      "id": "wroclaw-xiv-lo",
+      "name": "XIV Liceum im. Polonii Belgijskiej",
+      "address": "al. Aleksandra Brücknera 10, Wrocław",
+      "district": "Psie Pole",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.132447,
+        17.078861
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/xiv-liceum-im-polonii-belgijskiej-wroclaw-286",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/xiv-liceum-im-polonii-belgijskiej-wroclaw-286",
+      "website": "http://www.lo14.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "A1 Matematyczno-fizyczno-informatyczna / fizyka, informatyka, matematyka",
+        "A2 Matematyczno-fizyczno-informatyczna / fizyka, informatyka, matematyka",
+        "A3 Matematyczno-fizyczno-informatyczna / fizyka, informatyka, matematyka",
+        "B1 Matematyczno-fizyczno-informatyczna / fizyka, informatyka, matematyka",
+        "B2 Matematyczno-fizyczno-informatyczna / fizyka, informatyka, matematyka",
+        "B3 Matematyczno-fizyczno-informatyczna / fizyka, informatyka, matematyka",
+        "C1 Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "C2 Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "C3 Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "D1 Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "D2 Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "D3 Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "E1 Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "E2 Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "E3 Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "F1 Geograficzno-historyczno-polonistyczna / geografia, historia, j. polski",
+        "F2 Humanistyczna / historia, j. polski, WOS",
+        "F3 Geograficzno-historyczno-polonistyczna / geografia, historia, j. polski",
+        "F4 Humanistyczna / historia, j. polski, WOS",
+        "G1 Dwujęzyczna dwujęzyczna / biznes i zarządzanie, geografia, matematyka",
+        "G2 Dwujęzyczna dwujęzyczna / biznes i zarządzanie, geografia, matematyka",
+        "H1 Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "H2 Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "H3 Matematyczno-geograficzna / geografia, j. angielski, matematyka"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/xiv-liceum-im-polonii-belgijskiej-wroclaw-286/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 5,
+          "name": "XIV LO im. Polonii Belgijskiej we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/361/XIV-LO-im-Polonii-Belgijskiej",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 99.51,
+          "polish": 76.21,
+          "math": 88.61,
+          "english": 95.71,
+          "score": 310.29
+        },
+        "wasza": {
+          "rank": 5,
+          "name": "XIV Liceum im. Polonii Belgijskiej",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xiv-liceum-im-polonii-belgijskiej-wroclaw-286",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 61.77,
+          "national": 31
+        },
+        "pers": {
+          "rank": "47=",
+          "name": "LO nr XIV im. Polonii Belgijskiej",
+          "url": "https://lo14.wroc.pl/",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 64.57,
+          "history": {
+            "2023": "20",
+            "2024": "32",
+            "2025": "54"
+          },
+          "olymp": 11.13,
+          "basic": 92.06,
+          "advanced": 69.46
+        }
+      }
+    },
+    {
+      "id": "wroclaw-ix-lo",
+      "name": "IX Liceum im. Juliusza Słowackiego",
+      "address": "ul. ks. Piotra Skargi 31, Wrocław",
+      "district": "Stare Miasto",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.106648,
+        17.039409
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/ix-liceum-im-juliusza-slowackiego-wroclaw-88",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/ix-liceum-im-juliusza-slowackiego-wroclaw-88",
+      "website": "http://www.lo9.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "A1 Matematyczno-fizyczno-informatyczna / fizyka, informatyka, matematyka",
+        "A2 Matematyczno-fizyczno-informatyczna / fizyka, informatyka, matematyka",
+        "B1 Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "B2 Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "C1 Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "C2 Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "D1 Biologiczno-chemiczna / biologia, chemia",
+        "D2 Biologiczno-chemiczna / biologia, chemia",
+        "E1 Humanistyczna / historia, j. polski, WOS",
+        "E2 Humanistyczna / historia, j. polski, WOS",
+        "F1 Humanistyczna / historia, j. angielski, j. polski",
+        "F2 Humanistyczna / historia, j. angielski, j. polski",
+        "H Dwujęzyczna dwujęzyczna / geografia, j. angielski",
+        "K1 Historia, język łaciński, filozofia / filozofia, historia, j. łaciński",
+        "K2 Historia, język łaciński, filozofia / filozofia, historia, j. łaciński",
+        "W Geograficzna wstępna / geografia, j. angielski"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/ix-liceum-im-juliusza-slowackiego-wroclaw-88/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 6,
+          "name": "IX LO im. Juliusza Słowackiego we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/357/IX-LO-im-Juliusza-Slowackiego",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 99.64,
+          "polish": 74.27,
+          "math": 88.85,
+          "english": 95.95,
+          "score": 308.89
+        },
+        "wasza": {
+          "rank": 9,
+          "name": "IX Liceum im. Juliusza Słowackiego",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/ix-liceum-im-juliusza-slowackiego-wroclaw-88",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 47.98,
+          "national": 214
+        },
+        "pers": {
+          "rank": "110=",
+          "name": "LO nr IX im. Juliusza Słowackiego",
+          "url": "http://lo9.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 58.94,
+          "history": {
+            "2023": "113",
+            "2024": "96",
+            "2025": "160"
+          },
+          "olymp": 0.06,
+          "basic": 91.68,
+          "advanced": 63.91
+        }
+      }
+    },
+    {
+      "id": "wroclaw-xiii-lo",
+      "name": "XIII Liceum im. Aleksandra Fredry",
+      "address": "ul. gen. J. Haukego-Bosaka 33-37, Wrocław",
+      "district": "Krzyki",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.103921,
+        17.047224
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/xiii-liceum-im-aleksandra-fredry-wroclaw-96",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/xiii-liceum-im-aleksandra-fredry-wroclaw-96",
+      "website": "http://www.lo13.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "IA1 Medialna / historia, j. angielski, j. polski",
+        "IA2 Dziennikarska / historia, j. angielski, j. polski",
+        "IB Biologiczno-chemiczna IB / biologia, chemia",
+        "IC Politechniczna / fizyka, informatyka, matematyka",
+        "ID Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "IE gr.1 Humanistyczna / historia, j. angielski, WOS",
+        "IE gr.2 Humanistyczna / historia, j. angielski, j. polski",
+        "IF Architektoniczna / fizyka, j. angielski, matematyka",
+        "Matematyczno-geograficzna / geografia, j. niemiecki, matematyka",
+        "Przyrodnicza / biologia, chemia, j. niemiecki",
+        "IJ Plastyczna / j. angielski, j. polski",
+        "IK Politechniczno-ekonomiczna / fizyka, geografia, matematyka"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/xiii-liceum-im-aleksandra-fredry-wroclaw-96/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe",
+        "Artystyczne"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 7,
+          "name": "XIII LO im. Aleksandra Fredry we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/360/XIII-LO-im-Aleksandra-Fredry",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 100.0,
+          "polish": 77.24,
+          "math": 85.29,
+          "english": 95.6,
+          "score": 308.13
+        },
+        "wasza": {
+          "rank": 6,
+          "name": "XIII Liceum im. Aleksandra Fredry",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xiii-liceum-im-aleksandra-fredry-wroclaw-96",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 51.42,
+          "national": 120
+        },
+        "pers": {
+          "rank": "172=",
+          "name": "LO nr XIII im. Aleksandra Fredry",
+          "url": "http://lo13.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 55.79,
+          "history": {
+            "2023": "185",
+            "2024": "172",
+            "2025": "209"
+          },
+          "olymp": 1.09,
+          "basic": 91.17,
+          "advanced": 57.01
+        }
+      }
+    },
+    {
+      "id": "wroclaw-viii-lo",
+      "name": "VIII Liceum im. Bolesława Krzywoustego",
+      "address": "ul. Zaporoska 71, Wrocław",
+      "district": "Fabryczna",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.093446,
+        17.014797
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/viii-liceum-im-boleslawa-krzywoustego-wroclaw-92",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/viii-liceum-im-boleslawa-krzywoustego-wroclaw-92",
+      "website": "http://www.lo8.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "1W Wstępna wstępna / j. francuski",
+        "Af Matematyczno-fizyczna / fizyka, matematyka",
+        "An Matematyczno-fizyczna / fizyka, matematyka",
+        "Ar Matematyczno-fizyczna / fizyka, matematyka",
+        "Bf Biologiczno-chemiczna / biologia, chemia",
+        "Bn Biologiczno-chemiczna / biologia, chemia",
+        "Br Biologiczno-chemiczna / biologia, chemia",
+        "C1f Polonistyczna / j. francuski, j. polski",
+        "C1n Polonistyczna / j. niemiecki, j. polski",
+        "C2f Matematyczna / j. francuski, matematyka",
+        "C2n Matematyczna / j. niemiecki, matematyka",
+        "D1f Humanistyczna / historia, j. angielski, j. polski",
+        "D1n Humanistyczna / historia, j. angielski, j. polski",
+        "D1r Humanistyczna / historia, j. angielski, j. polski",
+        "D2f Geograficzno-polonistyczna / geografia, j. angielski, j. polski",
+        "D2n Geograficzno-polonistyczna / geografia, j. angielski, j. polski",
+        "D2r Geograficzno-polonistyczna / geografia, j. angielski, j. polski",
+        "Ef Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "En Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "Er Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "F Matematyczno-fizyczno-biologiczna dwujęzyczna / biologia, chemia, fizyka, geografia, historia, j. polski, matematyka",
+        "Gf Matematyczno-biologiczna / biologia, j. angielski, matematyka",
+        "Gn Matematyczno-biologiczna / biologia, j. angielski, matematyka"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/viii-liceum-im-boleslawa-krzywoustego-wroclaw-92/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 8,
+          "name": "VIII LO im. Bolesława Krzywoustego we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/356/VIII-LO-im-Boleslawa-Krzywoustego",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 99.51,
+          "polish": 73.1,
+          "math": 84.75,
+          "english": 97.1,
+          "score": 304.71
+        },
+        "wasza": {
+          "rank": 7,
+          "name": "VIII Liceum im. Bolesława Krzywoustego",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/viii-liceum-im-boleslawa-krzywoustego-wroclaw-92",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 49.78,
+          "national": 165
+        },
+        "pers": {
+          "rank": "142=",
+          "name": "LO nr VIII im. Bolesława Krzywoustego",
+          "url": "http://lo8.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 57.34,
+          "history": {
+            "2023": "157",
+            "2024": "159",
+            "2025": "137"
+          },
+          "olymp": 0.49,
+          "basic": 89.78,
+          "advanced": 61.54
+        }
+      }
+    },
+    {
+      "id": "wroclaw-xvi-lo",
+      "name": "XVI Liceum",
+      "address": "ul. Mikołaja Reja 3, Wrocław",
+      "district": "Śródmieście",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.113983,
+        17.057746
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/xvi-liceum-wroclaw-98",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/xvi-liceum-wroclaw-98",
+      "website": "http://www.lo16.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "1A Humanistyczna / historia, j. angielski, j. polski",
+        "1B Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "1C Matematyczno-fizyczna / fizyka, j. angielski, matematyka",
+        "1D Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "1E Polonistyczna / j. angielski, j. francuski, j. polski"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/xvi-liceum-wroclaw-98/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 9,
+          "name": "XVI LO we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3067/XVI-LO",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 99.31,
+          "polish": 74.2,
+          "math": 80.39,
+          "english": 94.37,
+          "score": 298.62
+        },
+        "wasza": {
+          "rank": 13,
+          "name": "XVI Liceum",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xvi-liceum-wroclaw-98",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 44.46,
+          "national": 387
+        },
+        "pers": {
+          "rank": "308=",
+          "name": "LO nr XVI",
+          "url": "http://lo16.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 50.77,
+          "history": {
+            "2023": "493",
+            "2024": "352",
+            "2025": "318"
+          },
+          "olymp": 0.0,
+          "basic": 86.45,
+          "advanced": 50.1
+        }
+      }
+    },
+    {
+      "id": "wroclaw-vi-lo",
+      "name": "VI Liceum im. Bolesława Prusa",
+      "address": "ul. Hutnicza 45, Wrocław",
+      "district": "Fabryczna",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.135819,
+        16.960652
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/vi-liceum-im-boleslawa-prusa-wroclaw-90",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/vi-liceum-im-boleslawa-prusa-wroclaw-90",
+      "website": "http://www.lo6.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "1A Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "1B1 Matematyczno-fizyczna / fizyka, j. angielski, matematyka",
+        "1B2 Matematyczno-informatyczna / informatyka, j. angielski, matematyka",
+        "1C1 Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "1C2 Pływanie sportowa / biologia, chemia, j. angielski",
+        "1D1 Humanistyczna / historia, j. angielski, j. polski",
+        "1D2 Humanistyczna / j. angielski, j. polski, WOS",
+        "1E Matematyczno-biologiczna / biologia, j. angielski, matematyka"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/vi-liceum-im-boleslawa-prusa-wroclaw-90/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe",
+        "Sportowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 10,
+          "name": "VI LO im. Bolesława Prusa we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/354/VI-LO-im-Boleslawa-Prusa",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 100.0,
+          "polish": 70.71,
+          "math": 81.75,
+          "english": 93.42,
+          "score": 295.88
+        },
+        "wasza": {
+          "rank": 17,
+          "name": "VI Liceum im. Bolesława Prusa",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/vi-liceum-im-boleslawa-prusa-wroclaw-90",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 41.91,
+          "national": 605
+        },
+        "pers": {
+          "rank": "383=",
+          "name": "LO nr VI im. Bolesława Prusa",
+          "url": "http://lo6.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 49.03,
+          "history": {
+            "2023": "501",
+            "2024": "497",
+            "2025": "457"
+          },
+          "olymp": 0.0,
+          "basic": 86.69,
+          "advanced": 46.25
+        }
+      }
+    },
+    {
+      "id": "wroclaw-vii-lo",
+      "name": "VII Liceum im. K. K. Baczyńskiego",
+      "address": "ul. Krucza 49, Wrocław",
+      "district": "Fabryczna",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.094094,
+        17.005277
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/vii-liceum-im-k-k-baczynskiego-wroclaw-91",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/vii-liceum-im-k-k-baczynskiego-wroclaw-91",
+      "website": "http://www.lo7.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "A1 Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "A2 Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "B Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "C Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "D Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "E Biologiczno-polonistyczna / biologia, j. angielski, j. polski",
+        "F Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "G Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "H Matematyczno-fizyczno-informatyczna / fizyka, informatyka, matematyka",
+        "i Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/vii-liceum-im-k-k-baczynskiego-wroclaw-91/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 11,
+          "name": "VII LO im. Krzysztofa Kamila Baczyńskiego we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/355/VII-LO-im-Krzysztofa-Kamila-Baczynskiego",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 99.09,
+          "polish": 69.61,
+          "math": 81.26,
+          "english": 94.72,
+          "score": 295.14
+        },
+        "wasza": {
+          "rank": 11,
+          "name": "VII Liceum im. K. K. Baczyńskiego",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/vii-liceum-im-k-k-baczynskiego-wroclaw-91",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 45.79,
+          "national": 305
+        },
+        "pers": {
+          "rank": "216=",
+          "name": "LO nr VII im. Krzysztofa Kamila Baczyńskiego",
+          "url": "http://lo7.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 53.68,
+          "history": {
+            "2023": "99",
+            "2024": "71",
+            "2025": "129"
+          },
+          "olymp": 0.34,
+          "basic": 86.26,
+          "advanced": 56.22
+        }
+      }
+    },
+    {
+      "id": "wroclaw-i-lo",
+      "name": "I Liceum im. Danuty Siedzikówny Inki",
+      "address": "ul. Księcia J. Poniatowskiego 9, Wrocław",
+      "district": "Śródmieście",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.120229,
+        17.043026
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/i-liceum-wroclaw-84",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/i-liceum-wroclaw-84",
+      "website": "http://www.lo1.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "1A Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "1B Politechniczno-inżynieryjna / fizyka, j. angielski, matematyka",
+        "1C Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "1D Komunikacji wizerunkowej / biologia, j. angielski, j. polski",
+        "1E Międzynarodowa (IB) / geografia, j. angielski, WOS",
+        "1F Humanistyczna / historia, j. angielski, WOS",
+        "1G Humanistyczna / j. angielski, j. polski, WOS",
+        "1H Inżynierii medycznej / biologia, chemia, j. angielski",
+        "1I Menedżerska / geografia, j. angielski, matematyka"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/i-liceum-wroclaw-84/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 12,
+          "name": "I LO im. Danuty Siedzikówny \"Inki\" we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3061/I-LO-im-Danuty-Siedzikowny-Inki",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 98.59,
+          "polish": 74.8,
+          "math": 75.38,
+          "english": 93.33,
+          "score": 292.81
+        },
+        "wasza": {
+          "rank": 12,
+          "name": "I Liceum im. Danuty Siedzikówny Inki",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/i-liceum-wroclaw-84",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 44.58,
+          "national": 376
+        },
+        "pers": {
+          "rank": "405=",
+          "name": "LO nr I im. Danuty Siedzikówny \"Inki\"",
+          "url": "http://lo1.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 48.6,
+          "history": {
+            "2023": "695",
+            "2024": "529",
+            "2025": "616"
+          },
+          "olymp": 0.0,
+          "basic": 84.48,
+          "advanced": 46.81
+        }
+      }
+    },
+    {
+      "id": "wroclaw-iv-lo",
+      "name": "IV Liceum im. Stefana Żeromskiego",
+      "address": "ul. Stacha Świstackiego 12-14, Wrocław",
+      "district": "Krzyki",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.097874,
+        17.050852
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/iv-liceum-im-stefana-zeromskiego-wroclaw-87",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/iv-liceum-im-stefana-zeromskiego-wroclaw-87",
+      "website": "http://www.lo4.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "1A1 Kulturowo-społeczna / geografia, j. angielski, j. polski",
+        "1A2 Kulturowo-społeczna / geografia, j. angielski, j. polski",
+        "1B Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "1C1 Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "1C2 Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "1D Geograficzno-historyczna / geografia, historia, j. angielski",
+        "1E1 Humanistyczna / historia, j. polski, WOS",
+        "1E2 Humanistyczna / historia, j. polski, WOS",
+        "1F Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "1G1 Matematyczno-biologiczna / biologia, j. angielski, matematyka",
+        "1G2 Matematyczno-biologiczna / biologia, j. angielski, matematyka",
+        "1H1 Przyrodnicza / biologia, geografia, j. angielski",
+        "1H2 Przyrodnicza / biologia, geografia, j. angielski"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/iv-liceum-im-stefana-zeromskiego-wroclaw-87/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 13,
+          "name": "IV LO im. Stefana Żeromskiego we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/352/IV-LO-im-Stefana-Zeromskiego",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 99.4,
+          "polish": 72.42,
+          "math": 75.58,
+          "english": 93.43,
+          "score": 291.13
+        },
+        "wasza": {
+          "rank": 10,
+          "name": "IV Liceum im. Stefana Żeromskiego",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/iv-liceum-im-stefana-zeromskiego-wroclaw-87",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 46.53,
+          "national": 268
+        },
+        "pers": {
+          "rank": "405=",
+          "name": "LO nr IV im. Stefana Żeromskiego",
+          "url": "http://lo4.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 48.71,
+          "history": {
+            "2023": "688",
+            "2024": "521",
+            "2025": "597"
+          },
+          "olymp": 0.0,
+          "basic": 84.9,
+          "advanced": 46.75
+        }
+      }
+    },
+    {
+      "id": "wroclaw-muzyczne-szymanowski",
+      "name": "Ogólnokształcąca Szkoła Muzyczna II St. im. Karola Szymanowskiego",
+      "address": "ul. marsz. Józefa Piłsudskiego 25, Wrocław",
+      "district": "",
+      "type": "Brak danych",
+      "adult": false,
+      "coords": null,
+      "coordSource": null,
+      "addressSource": "https://www.gov.pl/web/osmwroclaw/dane-kontaktowe",
+      "website": "https://www.gov.pl/web/osmwroclaw",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 14,
+          "name": "Ogólnokształcąca Szkoła Muzyczna II St. im. Karola Szymanowskiego We Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/6371/Ogolnoksztalcaca-Szkola-Muzyczna-II-St-im-Karola-Szymanowskiego-We-Wroclawiu",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 100.0,
+          "polish": 66.67,
+          "math": 80.07,
+          "english": 92.58,
+          "score": 289.32
+        }
+      }
+    },
+    {
+      "id": "wroclaw-x-lo",
+      "name": "X Liceum im. Stefanii Sempołowskiej",
+      "address": "ul. Piesza 1, Wrocław",
+      "district": "Psie Pole",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.134269,
+        17.032898
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/x-liceum-im-stefanii-sempolowskiej-wroclaw-93",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/x-liceum-im-stefanii-sempolowskiej-wroclaw-93",
+      "website": "http://www.lo10.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "IA Przyrodnicza / biologia, geografia, j. angielski",
+        "IB Humanistyczna IB / historia, j. angielski, j. polski",
+        "IC Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "ID Matematyczno-fizyczna / fizyka, j. angielski, matematyka",
+        "IE Matematyczno-fizyczno-informatyczna / fizyka, informatyka, matematyka",
+        "IF Psychologiczna / biologia, j. angielski, j. polski",
+        "IG Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "IH Prawnicza / historia, j. angielski, WOS",
+        "IJ Dyplomatyczna / geografia, historia, j. angielski",
+        "IK Biologiczno-chemiczna / biologia, chemia, j. angielski"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/x-liceum-im-stefanii-sempolowskiej-wroclaw-93/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 15,
+          "name": "X LO im. Stefanii Sempołowskiej we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/358/X-LO-im-Stefanii-Sempolowskiej",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 100.0,
+          "polish": 66.03,
+          "math": 78.1,
+          "english": 92.58,
+          "score": 286.71
+        },
+        "wasza": {
+          "rank": 15,
+          "name": "X Liceum im. Stefanii Sempołowskiej",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/x-liceum-im-stefanii-sempolowskiej-wroclaw-93",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 42.61,
+          "national": 531
+        },
+        "pers": {
+          "rank": "383=",
+          "name": "LO nr X im. Stefanii Sempołowskiej",
+          "url": "http://lo10.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 49.03,
+          "history": {
+            "2023": "429",
+            "2024": "326",
+            "2025": "538"
+          },
+          "olymp": 0.06,
+          "basic": 82.66,
+          "advanced": 48.9
+        }
+      }
+    },
+    {
+      "id": "wroclaw-ii-lo",
+      "name": "II Liceum im. Piastów Śląskich",
+      "address": "ul. Parkowa 18-26, Wrocław",
+      "district": "Śródmieście",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.111762,
+        17.072455
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/ii-liceum-im-piastow-slaskich-wroclaw-85",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/ii-liceum-im-piastow-slaskich-wroclaw-85",
+      "website": "http://www.lo2.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "1a Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "1A1 Mistrzostwa sportowego sportowa / biologia, j. angielski",
+        "1A2 Mistrzostwa sportowego sportowa / biologia, j. angielski",
+        "1A3 Mistrzostwa sportowego sportowa / biologia, j. angielski",
+        "1b Geograficzno-polonistyczna / geografia, j. angielski, j. polski",
+        "1B Matematyczno-historyczno-społeczna / historia, matematyka, WOS",
+        "1C Matematyczno-fizyczna / fizyka, matematyka",
+        "1D Matematyczno-biologiczno-chemiczna / biologia, chemia, matematyka",
+        "1E Matematyczno-historyczno-polonistyczna / historia, j. polski, matematyka",
+        "1F Matematyczno-informatyczno-geograficzna / geografia, informatyka, matematyka",
+        "1G Matematyczno-społeczna / filozofia, matematyka, WOS",
+        "1H Matematyczno-polonistyczno-społeczna / j. polski, matematyka, WOS",
+        "1I Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "1J1 Oddział sportowy - piłka ręczna chłopców sportowa / biologia, j. angielski, matematyka",
+        "1J2 Sportowa sportowa / biologia, j. angielski, matematyka"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/ii-liceum-im-piastow-slaskich-wroclaw-85/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe",
+        "Sportowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 16,
+          "name": "II LO im. Piastów Śląskich we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/350/II-LO-im-Piastow-Slaskich",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 99.27,
+          "polish": 70.91,
+          "math": 75.72,
+          "english": 86.22,
+          "score": 282.49
+        },
+        "wasza": {
+          "rank": 23,
+          "name": "II Liceum im. Piastów Śląskich",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/ii-liceum-im-piastow-slaskich-wroclaw-85",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 39.23,
+          "national": 838
+        },
+        "pers": {
+          "rank": "806=",
+          "name": "LO nr II im. Piastów Śląskich",
+          "url": "http://lo2.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 40.75,
+          "history": {
+            "2023": "918",
+            "2024": "905",
+            "2025": "780"
+          },
+          "olymp": 0.0,
+          "basic": 81.15,
+          "advanced": 32.37
+        }
+      }
+    },
+    {
+      "id": "wroclaw-xvii-lo",
+      "name": "XVII Liceum im. Agnieszki Osieckiej",
+      "address": "ul. Tęczowa 60, Wrocław",
+      "district": "Stare Miasto",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.104834,
+        17.01258
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/xvii-liceum-im-agnieszki-osieckiej-wroclaw-99",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/xvii-liceum-im-agnieszki-osieckiej-wroclaw-99",
+      "website": "http://www.lo17.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "A Humanistyczna / j. angielski, j. polski, WOS",
+        "B Matematyczno-geograficzna / geografia, j. angielski, matematyka",
+        "C Matematyczno-informatyczna / informatyka, j. angielski, matematyka",
+        "D Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "E Teatralna / historia, j. angielski, j. polski"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/xvii-liceum-im-agnieszki-osieckiej-wroclaw-99/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 17,
+          "name": "XVII LO im. Agnieszki Osieckiej we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/362/XVII-LO-im-Agnieszki-Osieckiej",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 98.26,
+          "polish": 65.99,
+          "math": 72.84,
+          "english": 91.98,
+          "score": 279.94
+        },
+        "wasza": {
+          "rank": 18,
+          "name": "XVII Liceum im. Agnieszki Osieckiej",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xvii-liceum-im-agnieszki-osieckiej-wroclaw-99",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 41.41,
+          "national": 642
+        },
+        "pers": {
+          "rank": "572=",
+          "name": "LO nr XVII im. Agnieszki Osieckiej",
+          "url": "http://lo17.wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 44.8,
+          "history": {
+            "2023": "433",
+            "2024": "508",
+            "2025": "575"
+          },
+          "olymp": 0.0,
+          "basic": 80.19,
+          "advanced": 41.6
+        }
+      }
+    },
+    {
+      "id": "wroclaw-salezjanskie",
+      "name": "Liceum Salezjańskie",
+      "address": "ul. Bolesława Prusa 78, Wrocław",
+      "district": "Śródmieście",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.120379,
+        17.050409
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-salezjanskie-wroclaw-18880",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-salezjanskie-wroclaw-18880",
+      "website": "http://www.liceum.salez-wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "1A Humanistyczno-prawna / historia, j. angielski, j. polski",
+        "1C Medyczna / biologia, chemia, j. angielski",
+        "1F Biznesowa / geografia, j. angielski, matematyka"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-salezjanskie-wroclaw-18880/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 18,
+          "name": "Publiczne Liceum Salezjańskie we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3063/Publiczne-Liceum-Salezjanskie",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 98.48,
+          "polish": 68.76,
+          "math": 73.97,
+          "english": 87.73,
+          "score": 279.7
+        },
+        "wasza": {
+          "rank": 16,
+          "name": "Liceum Salezjańskie",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-salezjanskie-wroclaw-18880",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 42.1,
+          "national": 583
+        },
+        "pers": {
+          "rank": "494=",
+          "name": "Publiczne Liceum Salezjańskie",
+          "url": "http://liceum.salez-wroc.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 46.45,
+          "history": {
+            "2023": "464",
+            "2024": "566",
+            "2025": "648"
+          },
+          "olymp": 0.24,
+          "basic": 78.0,
+          "advanced": 46.43
+        }
+      }
+    },
+    {
+      "id": "wroclaw-urszulanki",
+      "name": "Liceum Sióstr Urszulanek Unii Rzymskiej",
+      "address": "pl. bp. Nankiera 16, Wrocław",
+      "district": "Stare Miasto",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.113009,
+        17.037128
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-siostr-urszulanek-unii-rzymskiej-wroclaw-18877",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-siostr-urszulanek-unii-rzymskiej-wroclaw-18877",
+      "website": "http://www.urszulanki.edu.pl",
+      "examYear": 2025,
+      "profiles": [
+        "1A gr.1 Prawnicza / historia, j. angielski, j. polski",
+        "1A gr.2 Psychologiczna / biologia, j. angielski, j. polski",
+        "1B Biologiczno-chemiczna / biologia, chemia, j. angielski",
+        "1C gr.1 Matematyczno-fizyczna / fizyka, j. angielski, matematyka",
+        "1C gr.2 Matematyczno-geograficzna / geografia, j. angielski, matematyka"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-siostr-urszulanek-unii-rzymskiej-wroclaw-18877/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 19,
+          "name": "LO Sióstr Urszulanek we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3062/LO-Siostr-Urszulanek",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 98.61,
+          "polish": 67.19,
+          "math": 72.94,
+          "english": 89.79,
+          "score": 279.23
+        },
+        "wasza": {
+          "rank": 8,
+          "name": "Liceum Sióstr Urszulanek Unii Rzymskiej",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-siostr-urszulanek-unii-rzymskiej-wroclaw-18877",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 49.18,
+          "national": 185
+        },
+        "pers": {
+          "rank": "473=",
+          "name": "LO Sióstr Urszulanek Unii Rzymskiej",
+          "url": "http://urszulanki.edu.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 46.99,
+          "history": {
+            "2023": "174",
+            "2024": "220",
+            "2025": "250"
+          },
+          "olymp": 2.35,
+          "basic": 80.95,
+          "advanced": 44.43
+        }
+      }
+    },
+    {
+      "id": "wroclaw-xi-lo",
+      "name": "XI Liceum im. Stanisława Konarskiego",
+      "address": "ul. Spółdzielcza 2a, Wrocław",
+      "district": "Śródmieście",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.105733,
+        17.106802
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/xi-liceum-im-stanislawa-konarskiego-wroclaw-94",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/xi-liceum-im-stanislawa-konarskiego-wroclaw-94",
+      "website": "http://www.lo11.wroclaw.pl",
+      "examYear": 2025,
+      "profiles": [
+        "B Biologiczno-chemiczna / biologia, chemia",
+        "D Humanistyczna / historia, j. angielski, j. polski",
+        "J Polonistyczna / j. angielski, j. hiszpański, j. polski",
+        "T Geograficzna / geografia, j. angielski"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/xi-liceum-im-stanislawa-konarskiego-wroclaw-94/profile",
+      "tags": [
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 20,
+          "name": "XI LO we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/836/XI-LO",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 96.67,
+          "polish": 67.94,
+          "math": 65.07,
+          "english": 89.03,
+          "score": 270.38
+        },
+        "wasza": {
+          "rank": 14,
+          "name": "XI Liceum im. Stanisława Konarskiego",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xi-liceum-im-stanislawa-konarskiego-wroclaw-94",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 43.87,
+          "national": 425
+        },
+        "pers": {
+          "rank": "652=",
+          "name": "LO nr XI im. Stanisława Konarskiego",
+          "url": "http://lo11.wroclaw.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 42.92,
+          "history": {
+            "2023": "-",
+            "2024": "-",
+            "2025": "905"
+          },
+          "olymp": 0.0,
+          "basic": 77.61,
+          "advanced": 39.34
+        }
+      }
+    },
+    {
+      "id": "wroclaw-cogito",
+      "name": "Liceum Cogito z Oddziałami Dwujęzycznymi",
+      "address": "",
+      "district": "Stare Miasto",
+      "type": "Niepubliczna",
+      "adult": false,
+      "coords": null,
+      "coordSource": null,
+      "addressSource": null,
+      "website": "https://cogitowroclaw.pl/",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 21,
+          "name": "Liceum Ogólnokształcące Cogito Z Oddziałami Dwujęzycznymi We Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/5666/Liceum-Ogolnoksztalcace-Cogito-Z-Oddzialami-Dwujezycznymi-We-Wroclawiu",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 95.24,
+          "polish": 67.18,
+          "math": 65.36,
+          "english": 85.86,
+          "score": 266.02
+        },
+        "wasza": {
+          "rank": 28,
+          "name": "Liceum Cogito z Oddziałami Dwujęzycznymi",
+          "url": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 36.98,
+          "national": 1049
+        },
+        "pers": {
+          "rank": "652=",
+          "name": "LO Cogito",
+          "url": "https://cogitowroclaw.pl/",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 43.14,
+          "history": {
+            "2023": "-",
+            "2024": "-",
+            "2025": "601"
+          },
+          "olymp": 0.0,
+          "basic": 75.48,
+          "advanced": 41.22
+        }
+      }
+    },
+    {
+      "id": "wroclaw-plastyczne-kopystynski",
+      "name": "Liceum Sztuk Plastycznych im. Stanisława Kopystyńskiego",
+      "address": "ul. ks. Piotra Skargi 23b, Wrocław",
+      "district": "Stare Miasto",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.106079,
+        17.039249
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sztuk-plastycznych-im-stanislawa-kopystynskiego-wroclaw-61356",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sztuk-plastycznych-im-stanislawa-kopystynskiego-wroclaw-61356",
+      "website": "http://zsp.wroclaw.pl",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 22,
+          "name": "Liceum Sztuk Plastycznych we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3065/Liceum-Sztuk-Plastycznych",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 95.24,
+          "polish": 63.88,
+          "math": 62.14,
+          "english": 89.74,
+          "score": 263.38
+        },
+        "wasza": {
+          "rank": 22,
+          "name": "Liceum Sztuk Plastycznych im. Stanisława Kopystyńskiego",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sztuk-plastycznych-im-stanislawa-kopystynskiego-wroclaw-61356",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 39.88,
+          "national": 787
+        },
+        "pers": {
+          "rank": "598=",
+          "name": "Liceum Sztuk Plastycznych im. St. Kopystyńskiego",
+          "url": "http://zsp.wroclaw.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 44.24,
+          "history": {
+            "2023": "717",
+            "2024": "873",
+            "2025": "747"
+          },
+          "olymp": 0.0,
+          "basic": 70.52,
+          "advanced": 46.86
+        }
+      }
+    },
+    {
+      "id": "wroclaw-fundacja-jadwigi",
+      "name": "Niepubliczne Liceum Fundacji Królowej Świętej Jadwigi",
+      "address": "ul. Robotnicza 36-38, Wrocław",
+      "district": "Fabryczna",
+      "type": "Niepubliczna",
+      "adult": false,
+      "coords": null,
+      "coordSource": null,
+      "addressSource": "https://geoportal.wroclaw.pl/poi/poi/24276",
+      "website": "http://szkolamontessori.com.pl",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 23,
+          "name": "Niepubliczne Liceum Ogólnokształcące Fundacji Królowej Świętej Jadwigi We Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/5297/Niepubliczne-Liceum-Ogolnoksztalcace-Fundacji-Krolowej-Swietej-Jadwigi-We-Wroclawiu",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 85.25,
+          "polish": 66.83,
+          "math": 62.87,
+          "english": 90.19,
+          "score": 262.52
+        },
+        "wasza": {
+          "rank": 24,
+          "name": "Niepubliczne Liceum Fundacji Królowej Świętej Jadwigi",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/niepubliczne-liceum-fundacji-krolowej-swietej-jadwigi-we-wroclawiu-wroclaw-19509",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 38.43,
+          "national": 920
+        },
+        "pers": {
+          "rank": "749=",
+          "name": "Niepubliczne LO Fundacji Królowej Świętej Jadwigi",
+          "url": "https://mms.edu.pl",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 41.46,
+          "history": {
+            "2023": "769",
+            "2024": "591",
+            "2025": "909"
+          },
+          "olymp": 0.32,
+          "basic": 76.49,
+          "advanced": 36.81
+        }
+      }
+    },
+    {
+      "id": "wroclaw-xxiv-lo",
+      "name": "XXIV Liceum z Oddziałami Mistrzostwa Sportowego",
+      "address": "ul. Drukarska 50, Wrocław",
+      "district": "Krzyki",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.089205,
+        17.020386
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/xxiv-liceum-wroclaw-100",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/xxiv-liceum-wroclaw-100",
+      "website": "http://www.drukarska.net",
+      "examYear": 2025,
+      "profiles": [
+        "1LA Biologiczno-geograficzno-społeczna / biologia, geografia, j. angielski, WOS",
+        "1LB Biologiczno-geograficzno-społeczna / biologia, geografia, j. angielski, WOS",
+        "1LMA Pływanie - mistrzostwa sportowego sportowa / biologia, geografia, j. angielski, WOS",
+        "1LMC Piłka nożna - mistrzostwa sportowego sportowa / biologia, geografia, j. angielski, WOS",
+        "1LSW Sporty walki sportowa / biologia, geografia, j. angielski, WOS"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/xxiv-liceum-wroclaw-100/profile",
+      "tags": [
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe",
+        "Sportowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 24,
+          "name": "XXIV LO we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3064/XXIV-LO",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 97.3,
+          "polish": 61.22,
+          "math": 59.3,
+          "english": 84.81,
+          "score": 253.98
+        },
+        "wasza": {
+          "rank": 26,
+          "name": "XXIV Liceum z Oddziałami Mistrzostwa Sportowego",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxiv-liceum-wroclaw-100",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 38.33,
+          "national": 927
+        }
+      }
+    },
+    {
+      "id": "wroclaw-etz-chaim",
+      "name": "Liceum Dialogu Kultur ETZ CHAIM",
+      "address": "ul. Żelazna 57, Wrocław",
+      "district": "Fabryczna",
+      "type": "Niepubliczna",
+      "adult": false,
+      "coords": [
+        51.099655,
+        17.006664
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-dialogu-kultur-etz-chaim-19538",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-dialogu-kultur-etz-chaim-19538",
+      "website": "http://www.etzchaim.pl",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 25,
+          "name": "Liceum Ogólnokształcące Dialogu Kultur Etz Chaim we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/5336/Liceum-Ogolnoksztalcace-Dialogu-Kultur-Etz-Chaim",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 93.75,
+          "polish": 58.38,
+          "math": 52.63,
+          "english": 94.81,
+          "score": 252.7
+        },
+        "wasza": {
+          "rank": 19,
+          "name": "Liceum Dialogu Kultur ETZ CHAIM",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-dialogu-kultur-etz-chaim-19538",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 40.96,
+          "national": 681
+        },
+        "pers": {
+          "rank": "895=",
+          "name": "Liceum Ogólnokształcące Dialogu Kultur ETZ Chaim",
+          "url": "https://etzchaim-liceum.pl/",
+          "sourceUrl": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+          "score": 39.14,
+          "history": {
+            "2023": "-",
+            "2024": "804",
+            "2025": "894"
+          },
+          "olymp": 0.0,
+          "basic": 71.37,
+          "advanced": 35.47
+        }
+      }
+    },
+    {
+      "id": "wroclaw-spoleczne-ala",
+      "name": "Społeczne Liceum Ala",
+      "address": "ul. Fabryczna 14, Wrocław",
+      "district": "Fabryczna",
+      "type": "Niepubliczna",
+      "adult": false,
+      "coords": [
+        51.112087,
+        16.985296
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-liceum-ala-wroclaw-19145",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-liceum-ala-wroclaw-19145",
+      "website": "http://www.ala.edu.pl",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 26,
+          "name": "Społeczne Liceum Ogólnokształcące we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3337/Spoleczne-Liceum-Ogolnoksztalcace",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 91.18,
+          "polish": 65.0,
+          "math": 47.41,
+          "english": 91.55,
+          "score": 249.55
+        },
+        "wasza": {
+          "rank": 21,
+          "name": "Społeczne Liceum Ala",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-liceum-ala-wroclaw-19145",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 40.07,
+          "national": 760
+        }
+      }
+    },
+    {
+      "id": "wroclaw-xxx-lo",
+      "name": "XXX Liceum z Oddziałami Integracyjnymi",
+      "address": "ul. Nowodworska 70-82, Wrocław",
+      "district": "Fabryczna",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.11561,
+        16.956127
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/xxx-liceum-z-oddzialami-integracyjnymi-wroclaw-102",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/xxx-liceum-z-oddzialami-integracyjnymi-wroclaw-102",
+      "website": "http://www.zs6.wroc.pl",
+      "examYear": 2025,
+      "profiles": [
+        "1LA gr.1 Polonistyczna integracyjna / j. angielski, j. polski",
+        "1LA gr.2 Polonistyczna integracyjna / j. angielski, j. polski",
+        "1LB gr.1 Polonistyczna integracyjna / j. angielski, j. polski",
+        "1LB gr.2 Polonistyczna integracyjna / j. angielski, j. polski",
+        "1LC gr.1 Geograficzno-ekonomiczna integracyjna / biznes i zarządzanie, geografia, j. angielski",
+        "1LC gr.2 Geograficzno-ekonomiczna integracyjna / biznes i zarządzanie, geografia, j. angielski",
+        "1LD gr.1 O profilu biznesowym integracyjna integracyjna / biznes i zarządzanie, geografia, j. angielski",
+        "1LD gr.2 Geograficzno-ekonomiczna integracyjna / biznes i zarządzanie, geografia, j. angielski",
+        "1LE gr.1 Polonistyczna integracyjna / j. angielski, j. polski",
+        "1LE gr.2 Polonistyczna integracyjna / j. angielski, j. polski"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/xxx-liceum-z-oddzialami-integracyjnymi-wroclaw-102/profile",
+      "tags": [
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 27,
+          "name": "XXX LO we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3066/XXX-LO",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 97.3,
+          "polish": 63.41,
+          "math": 57.41,
+          "english": 76.64,
+          "score": 246.11
+        },
+        "wasza": {
+          "rank": 20,
+          "name": "XXX Liceum z Oddziałami Integracyjnymi",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxx-liceum-z-oddzialami-integracyjnymi-wroclaw-102",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 40.57,
+          "national": 719
+        }
+      }
+    },
+    {
+      "id": "wroclaw-assa",
+      "name": "Społeczne Liceum Autorska Szkoła Samorozwoju ASSA",
+      "address": "ul. Kiełczowska 43, Wrocław",
+      "district": "Psie Pole",
+      "type": "Niepubliczna",
+      "adult": false,
+      "coords": [
+        51.145961,
+        17.122425
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-liceum-autorska-szkola-samorozwoju-assa-wroclaw-19141",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-liceum-autorska-szkola-samorozwoju-assa-wroclaw-19141",
+      "website": "http://www.assa.wroc.pl",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 28,
+          "name": "Społeczne Liceum Ogólnokształcące Autorska Szkoła Samorozwoju Assa we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/3197/Spoleczne-Liceum-Ogolnoksztalcace-Autorska-Szkola-Samorozwoju-Assa",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 95.12,
+          "polish": 57.22,
+          "math": 55.37,
+          "english": 82.63,
+          "score": 242.78
+        },
+        "wasza": {
+          "rank": 32,
+          "name": "Społeczne Liceum Autorska Szkoła Samorozwoju ASSA",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-liceum-autorska-szkola-samorozwoju-assa-wroclaw-19141",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 33.82,
+          "national": 1286
+        }
+      }
+    },
+    {
+      "id": "wroclaw-gimbasket",
+      "name": "Liceum Sportowe GIMBASKET",
+      "address": "ul. Drukarska 50, Wrocław",
+      "district": "Krzyki",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.088054,
+        17.020335
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sportowe-gimbasket-wroclaw-18876",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sportowe-gimbasket-wroclaw-18876",
+      "website": "http://gimbasket.edu.pl",
+      "examYear": 2025,
+      "profiles": [
+        "1S Sportowa sportowa / biologia, chemia, geografia, historia, j. angielski, matematyka, WOS"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sportowe-gimbasket-wroclaw-18876/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe",
+        "Sportowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 29,
+          "name": "Liceum Sportowe Gimbasket we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/4601/Liceum-Sportowe-Gimbasket",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 92.31,
+          "polish": 59.65,
+          "math": 53.38,
+          "english": 79.69,
+          "score": 238.88
+        },
+        "wasza": {
+          "rank": 31,
+          "name": "Liceum Sportowe GIMBASKET",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sportowe-gimbasket-wroclaw-18876",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 34.55,
+          "national": 1232
+        }
+      }
+    },
+    {
+      "id": "wroclaw-amigo",
+      "name": "Społeczne Integracyjne Liceum Amigo",
+      "address": "ul. Żelazna 36, Wrocław",
+      "district": "Krzyki",
+      "type": "Niepubliczna",
+      "adult": false,
+      "coords": [
+        51.096954,
+        17.007266
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-integracyjne-liceum-amigo-wroclaw-19236",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-integracyjne-liceum-amigo-wroclaw-19236",
+      "website": "http://www.amigo.wroclaw.pl",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 30,
+          "name": "Społeczne Integracyjne Liceum Ogólnokształcące \"amigo we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/4618/Spoleczne-Integracyjne-Liceum-Ogolnoksztalcace-amigo",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 90.91,
+          "polish": 54.86,
+          "math": 55.91,
+          "english": 81.52,
+          "score": 237.75
+        },
+        "wasza": {
+          "rank": 25,
+          "name": "Społeczne Integracyjne Liceum Amigo",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-integracyjne-liceum-amigo-wroclaw-19236",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 38.39,
+          "national": 921
+        }
+      }
+    },
+    {
+      "id": "wroclaw-plastyczne-ala",
+      "name": "Społeczne Liceum Sztuk Plastycznych Ala",
+      "address": "",
+      "district": "Fabryczna",
+      "type": "Niepubliczna",
+      "adult": false,
+      "coords": null,
+      "coordSource": null,
+      "addressSource": null,
+      "website": null,
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 31,
+          "name": "Społeczne Liceum Sztuk Plastycznych Ala We Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/6414/Spoleczne-Liceum-Sztuk-Plastycznych-Ala-We-Wroclawiu",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 81.82,
+          "polish": 71.64,
+          "math": 36.36,
+          "english": 83.1,
+          "score": 232.01
+        },
+        "wasza": {
+          "rank": 39,
+          "name": "Społeczne Liceum Sztuk Plastycznych Ala",
+          "url": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 24.09,
+          "national": 1770
+        }
+      }
+    },
+    {
+      "id": "wroclaw-xv-lo",
+      "name": "XV Liceum im. mjr Piotra Wysockiego",
+      "address": "ul. Wojrowicka 58, Wrocław",
+      "district": "Fabryczna",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.114122,
+        16.953432
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/xv-liceum-im-mjr-piotra-wysockiego-wroclaw-97",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/xv-liceum-im-mjr-piotra-wysockiego-wroclaw-97",
+      "website": "http://www.loxv.wroclaw.pl",
+      "examYear": 2025,
+      "profiles": [
+        "1A Biologiczno-polonistyczna / biologia, j. polski",
+        "1B Biologiczno-chemiczna / biologia, chemia",
+        "1C Biologiczno-polonistyczna / biologia, j. polski",
+        "1D Humanistyczna / historia, j. polski",
+        "1E Biologiczno-chemiczna / biologia, chemia",
+        "1F Humanistyczna / historia, j. polski",
+        "1G Polonistyczna / j. angielski, j. polski",
+        "1H Polonistyczna / j. angielski, j. polski",
+        "1I Matematyczno-fizyczna / fizyka, matematyka",
+        "1J Biologiczno-polonistyczna / biologia, j. polski"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/xv-liceum-im-mjr-piotra-wysockiego-wroclaw-97/profile",
+      "tags": [
+        "Ścisłe",
+        "Biol-chem",
+        "Humanistyczne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 32,
+          "name": "XV LO im. Mjr Piotra Wysockiego we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3180/XV-LO-im-Mjr-Piotra-Wysockiego",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 85.13,
+          "polish": 59.2,
+          "math": 48.95,
+          "english": 77.95,
+          "score": 228.67
+        },
+        "wasza": {
+          "rank": 33,
+          "name": "XV Liceum im. mjr Piotra Wysockiego",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/xv-liceum-im-mjr-piotra-wysockiego-wroclaw-97",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 33.18,
+          "national": 1328
+        }
+      }
+    },
+    {
+      "id": "wroclaw-edukacja",
+      "name": "Liceum Edukacja",
+      "address": "ul. Krakowska 56-62, Wrocław",
+      "district": "Krzyki",
+      "type": "Niepubliczna",
+      "adult": false,
+      "coords": [
+        51.09306,
+        17.061058
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-edukacja-wroclaw-19453",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-edukacja-wroclaw-19453",
+      "website": "http://www.liceum-edukacja.pl",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 33,
+          "name": "Liceum Ogólnokształcące \"Edukacja\" we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/5305/Liceum-Ogolnoksztalcace-Edukacja",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 80.56,
+          "polish": 54.0,
+          "math": 46.19,
+          "english": 84.41,
+          "score": 224.88
+        },
+        "wasza": {
+          "rank": 30,
+          "name": "Liceum Edukacja",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-edukacja-wroclaw-19453",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 34.84,
+          "national": 1217
+        }
+      }
+    },
+    {
+      "id": "wroclaw-sms-junior",
+      "name": "Liceum Mistrzostwa Sportowego Junior",
+      "address": "ul. Kwidzyńska 5, Wrocław",
+      "district": "Psie Pole",
+      "type": "Niepubliczna",
+      "adult": false,
+      "coords": [
+        51.132071,
+        17.082503
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-mistrzostwa-sportowego-junior-we-wroclawiu-wroclaw-19137",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-mistrzostwa-sportowego-junior-we-wroclawiu-wroclaw-19137",
+      "website": "http://www.smsw.pl",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 34,
+          "name": "Liceum Ogólnokształcące Mistrzostwa Sportowego Junior We Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/3954/Liceum-Ogolnoksztalcace-Mistrzostwa-Sportowego-Junior-We-Wroclawiu",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 85.0,
+          "polish": 52.29,
+          "math": 52.38,
+          "english": 69.34,
+          "score": 216.51
+        },
+        "wasza": {
+          "rank": 34,
+          "name": "Liceum Mistrzostwa Sportowego Junior",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-mistrzostwa-sportowego-junior-we-wroclawiu-wroclaw-19137",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 28.66,
+          "national": 1562
+        }
+      }
+    },
+    {
+      "id": "wroclaw-abor",
+      "name": "Liceum Ogólnokształcące Abor",
+      "address": "ul. Pabianicka 2, Wrocław",
+      "district": "Krzyki",
+      "type": "Niepubliczna",
+      "adult": false,
+      "coords": [
+        51.093329,
+        17.02746
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/prywatne-liceum-ogolnoksztalcace-abor-we-wroclawiu-wroclaw-19014",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/prywatne-liceum-ogolnoksztalcace-abor-we-wroclawiu-wroclaw-19014",
+      "website": "http://www.liceum.abor.com.pl",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 35,
+          "name": "Abor\" Prywatne Liceum Ogólnokształcące We Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/3440/Abor-Prywatne-Liceum-Ogolnoksztalcace-We-Wroclawiu",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 61.54,
+          "polish": 44.69,
+          "math": 35.54,
+          "english": 79.92,
+          "score": 190.92
+        },
+        "wasza": {
+          "rank": 27,
+          "name": "Liceum Ogólnokształcące Abor",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/prywatne-liceum-ogolnoksztalcace-abor-we-wroclawiu-wroclaw-19014",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 37.67,
+          "national": 989
+        }
+      }
+    },
+    {
+      "id": "wroclaw-husarz",
+      "name": "Liceum Husarz Główna Wojskowa Szkoła Średnia",
+      "address": "ul. Zagłębiowska 8, Wrocław",
+      "district": "Krzyki",
+      "type": "Niepubliczna",
+      "adult": false,
+      "coords": [
+        51.074111,
+        17.089994
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-husarz-glowna-wojskowa-szkola-srednia-we-wroclawiu-wroclaw-19381",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-husarz-glowna-wojskowa-szkola-srednia-we-wroclawiu-wroclaw-19381",
+      "website": "http://www.szkolawojskowahusarz.pl",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 36,
+          "name": "Husarz. Główna Wojskowa Szkoła Średnia We Wrocławiu - Liceum Ogólnokształcące",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/5160/Husarz-Glowna-Wojskowa-Szkola-Srednia-We-Wroclawiu-Liceum-Ogolnoksztalcace",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 63.89,
+          "polish": 48.76,
+          "math": 35.19,
+          "english": 72.62,
+          "score": 188.52
+        },
+        "wasza": {
+          "rank": 35,
+          "name": "Liceum Husarz Główna Wojskowa Szkoła Średnia",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-husarz-glowna-wojskowa-szkola-srednia-we-wroclawiu-wroclaw-19381",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 28.21,
+          "national": 1594
+        }
+      }
+    },
+    {
+      "id": "wroclaw-sluzb-mundurowych",
+      "name": "Liceum Służb Mundurowych",
+      "address": "ul. Kruszwicka 8a, Wrocław",
+      "district": "Stare Miasto",
+      "type": "Publiczna",
+      "adult": false,
+      "coords": [
+        51.113962,
+        17.009323
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sluzb-mundurowych-wroclaw-18881",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sluzb-mundurowych-wroclaw-18881",
+      "website": "http://www.szkolyeuropejskie.pl",
+      "examYear": 2025,
+      "profiles": [
+        "1A Oddział przygotowania wojskowego mundurowa / geografia, j. angielski",
+        "1B Oddział przygotowania wojskowego mundurowa / historia, j. angielski",
+        "1C Mundurowa mundurowa / historia, j. angielski",
+        "1D Policyjna mundurowa / historia, j. angielski",
+        "1E Strażacka mundurowa / geografia, j. angielski",
+        "1F Ratownik medyczny / biologia, j. angielski",
+        "1G Mundurowa mundurowa / geografia, j. angielski",
+        "1O Oddział przygotowania wojskowego mundurowa / historia, j. angielski",
+        "Ratownik medyczny / biologia, j. angielski",
+        "Strażacka mundurowa / biologia, j. angielski"
+      ],
+      "profileYear": "2026/2027",
+      "profileSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sluzb-mundurowych-wroclaw-18881/profile",
+      "tags": [
+        "Biol-chem",
+        "Humanistyczne",
+        "Geograficzne",
+        "Językowe"
+      ],
+      "rankings": {
+        "oto": {
+          "rank": 37,
+          "name": "Liceum Służb Mundurowych we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/5175/Liceum-Sluzb-Mundurowych",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 66.99,
+          "polish": 48.57,
+          "math": 36.13,
+          "english": 65.23,
+          "score": 183.43
+        },
+        "wasza": {
+          "rank": 37,
+          "name": "Liceum Służb Mundurowych",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sluzb-mundurowych-wroclaw-18881",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 27.44,
+          "national": 1629
+        }
+      }
+    },
+    {
+      "id": "wroclaw-adult-magnus",
+      "name": "Liceum dla Dorosłych Magnus",
+      "address": "",
+      "district": "Śródmieście",
+      "type": "Niepubliczna",
+      "adult": true,
+      "coords": null,
+      "coordSource": null,
+      "addressSource": null,
+      "website": null,
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 38,
+          "name": "Liceum Ogólnokształcące Dla Dorosłych Magnus We Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/5409/Liceum-Ogolnoksztalcace-Dla-Doroslych-Magnus-We-Wroclawiu",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 64.29,
+          "polish": 49.25,
+          "math": 31.75,
+          "english": 62.58,
+          "score": 175.73
+        },
+        "wasza": {
+          "rank": 29,
+          "name": "Liceum dla Dorosłych Magnus",
+          "url": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 35.32,
+          "national": 1181
+        }
+      }
+    },
+    {
+      "id": "wroclaw-roe",
+      "name": "Regionalny Ośrodek Edukacji Liceum",
+      "address": "ul. Wagonowa 12, Wrocław",
+      "district": "Fabryczna",
+      "type": "Niepubliczna",
+      "adult": false,
+      "coords": [
+        51.111613,
+        16.988809
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/regionalny-osrodek-edukacji-liceum-wroclaw-19316",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/regionalny-osrodek-edukacji-liceum-wroclaw-19316",
+      "website": "http://www.roe.pl",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 39,
+          "name": "Regionalny Ośrodek Edukacji Liceum Ogólnokształcące we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/5058/Regionalny-Osrodek-Edukacji-Liceum-Ogolnoksztalcace",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 47.76,
+          "polish": 45.7,
+          "math": 24.36,
+          "english": 66.86,
+          "score": 160.8
+        },
+        "wasza": {
+          "rank": 38,
+          "name": "Regionalny Ośrodek Edukacji Liceum",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/regionalny-osrodek-edukacji-liceum-wroclaw-19316",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 25.29,
+          "national": 1718
+        }
+      }
+    },
+    {
+      "id": "wroclaw-adult-i",
+      "name": "Liceum dla Dorosłych nr I",
+      "address": "ul. Swobodna 73, Wrocław",
+      "district": "Krzyki",
+      "type": "Publiczna",
+      "adult": true,
+      "coords": [
+        51.100556,
+        17.022739
+      ],
+      "coordSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-dla-doroslych-nr-i-wroclaw-61233",
+      "addressSource": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-dla-doroslych-nr-i-wroclaw-61233",
+      "website": "http://www.cku.wroc.pl",
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 40,
+          "name": "Liceum Ogólnokształcące Dla Dorosłych Nr I we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3581/Liceum-Ogolnoksztalcace-Dla-Doroslych-Nr-I",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 44.07,
+          "polish": 44.33,
+          "math": 27.75,
+          "english": 62.24,
+          "score": 156.36
+        },
+        "wasza": {
+          "rank": 36,
+          "name": "Liceum dla Dorosłych nr I",
+          "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-dla-doroslych-nr-i-wroclaw-61233",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 27.66,
+          "national": 1619
+        }
+      }
+    },
+    {
+      "id": "wroclaw-adult-zak",
+      "name": "Liceum dla Dorosłych ŻAK",
+      "address": "",
+      "district": "Stare Miasto",
+      "type": "Niepubliczna",
+      "adult": true,
+      "coords": null,
+      "coordSource": null,
+      "addressSource": null,
+      "website": null,
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 41,
+          "name": "Liceum Ogólnokształcące Dla Dorosłych \"żak\" We Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/3659/Liceum-Ogolnoksztalcace-Dla-Doroslych-zak-We-Wroclawiu",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 45.0,
+          "polish": 40.14,
+          "math": 24.45,
+          "english": 46.52,
+          "score": 133.61
+        },
+        "wasza": {
+          "rank": 41,
+          "name": "Liceum dla Dorosłych ŻAK",
+          "url": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 21.05,
+          "national": 1896
+        }
+      }
+    },
+    {
+      "id": "wroclaw-adult-novum",
+      "name": "Liceum dla Dorosłych Novum",
+      "address": "",
+      "district": "Stare Miasto",
+      "type": "Niepubliczna",
+      "adult": true,
+      "coords": null,
+      "coordSource": null,
+      "addressSource": null,
+      "website": null,
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 42,
+          "name": "Liceum Ogólnokształcące Dla Dorosłych \"novum we Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/3657/Liceum-Ogolnoksztalcace-Dla-Doroslych-novum",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 31.25,
+          "polish": 43.79,
+          "math": 20.8,
+          "english": 51.88,
+          "score": 132.1
+        },
+        "wasza": {
+          "rank": 40,
+          "name": "Liceum dla Dorosłych Novum",
+          "url": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 22.42,
+          "national": 1849
+        }
+      }
+    },
+    {
+      "id": "wroclaw-adult-cosinus",
+      "name": "Zaoczne Liceum Cosinus",
+      "address": "",
+      "district": "Krzyki",
+      "type": "Niepubliczna",
+      "adult": true,
+      "coords": null,
+      "coordSource": null,
+      "addressSource": null,
+      "website": null,
+      "examYear": 2025,
+      "profiles": [],
+      "profileYear": "Rok oferty niepotwierdzony",
+      "profileSource": "",
+      "tags": [],
+      "rankings": {
+        "oto": {
+          "rank": 43,
+          "name": "Zaoczne Liceum Ogólnokształcące \"cosinus\" We Wrocławiu",
+          "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/4021/Zaoczne-Liceum-Ogolnoksztalcace-cosinus-We-Wroclawiu",
+          "sourceUrl": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+          "passRate": 25.23,
+          "polish": 37.14,
+          "math": 22.78,
+          "english": 51.99,
+          "score": 124.53
+        },
+        "wasza": {
+          "rank": 42,
+          "name": "Zaoczne Liceum Cosinus",
+          "url": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "sourceUrl": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+          "score": 21.03,
+          "national": 1899
+        }
+      }
+    }
+  ]
+}

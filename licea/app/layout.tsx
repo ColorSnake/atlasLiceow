@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Atlas liceów Krakowa",
-  description: "Rankingi liceów, mapa, historia wyników i eksport danych.",
+  title: "Atlas liceów — miasta Polski",
+  description: "Kraków i Wrocław: mapa liceów, rankingi, zdawalność matur, historia wyników i eksport danych.",
   other: {
 
   },

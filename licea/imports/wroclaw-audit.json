@@ -1,0 +1,597 @@
+{
+  "schemaVersion": 1,
+  "city": "wroclaw",
+  "rankingYear": 2026,
+  "examYear": 2025,
+  "fetched": "2026-11-08",
+  "counts": {
+    "schools": 43,
+    "mapped": 35,
+    "profiles": 24,
+    "sources": {
+      "oto": 43,
+      "wasza": 42,
+      "pers": 23
+    },
+    "passRates": 43
+  },
+  "identityRules": "Explicit publisher ID/name maps in scripts/build_wroclaw.py; no fuzzy matching. The two Ala schools, public LO I and adult LO I are separate.",
+  "limitations": [
+    "Only edition 2026 is imported for Wrocław. Perspektywy historical positions 2023–2025 remain publisher history, not independently imported snapshots.",
+    "Missing and conflicting coordinates remain null; no guessed markers or automatic geocoding.",
+    "WE foundation school coordinates 51.120058,17.037126 rejected because they do not match Robotnicza 36-38 confirmed by municipal POI.",
+    "Published address and coordinates describe the source snapshot, not guaranteed historical locations or entrance positions.",
+    "WaszaEdukacja cards show matura2026; displayed examination percentages and pass rates in this dataset exclusively use OTO matura2025.",
+    "The OTO label Spoleczne Liceum Ogolnoksztalcace is identified as Ala by the linked school card title; art-school Ala is a distinct row.",
+    "ALOPWr history 2025=11, 2024=18, 2023=9 is confirmed by the primary Perspektywy 2026 PDF (columns 2025/2024/2023) and the official school results page. The city article dated 2026-01-14 incorrectly says its 2025 place was 8; that statement was not used.",
+    "III LO has score 73.42 and olympiad indicator 19.23 in the cached current publisher HTML, versus 73.36 and 19.00 in the primary 2026 PDF. Place 18= and history 2025=8, 2024=6, 2023=6 agree. This snapshot uses the HTML values fetched on 2026-11-08; PDF values are not mixed into the record."
+  ],
+  "missingCoordinates": [
+    {
+      "id": "wroclaw-muzyczne-szymanowski",
+      "name": "Ogólnokształcąca Szkoła Muzyczna II St. im. Karola Szymanowskiego",
+      "address": "ul. marsz. Józefa Piłsudskiego 25, Wrocław"
+    },
+    {
+      "id": "wroclaw-cogito",
+      "name": "Liceum Cogito z Oddziałami Dwujęzycznymi",
+      "address": ""
+    },
+    {
+      "id": "wroclaw-fundacja-jadwigi",
+      "name": "Niepubliczne Liceum Fundacji Królowej Świętej Jadwigi",
+      "address": "ul. Robotnicza 36-38, Wrocław"
+    },
+    {
+      "id": "wroclaw-plastyczne-ala",
+      "name": "Społeczne Liceum Sztuk Plastycznych Ala",
+      "address": ""
+    },
+    {
+      "id": "wroclaw-adult-magnus",
+      "name": "Liceum dla Dorosłych Magnus",
+      "address": ""
+    },
+    {
+      "id": "wroclaw-adult-zak",
+      "name": "Liceum dla Dorosłych ŻAK",
+      "address": ""
+    },
+    {
+      "id": "wroclaw-adult-novum",
+      "name": "Liceum dla Dorosłych Novum",
+      "address": ""
+    },
+    {
+      "id": "wroclaw-adult-cosinus",
+      "name": "Zaoczne Liceum Cosinus",
+      "address": ""
+    }
+  ],
+  "pages": [
+    {
+      "file": "oto.html",
+      "url": "https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026",
+      "fetched": "2026-11-08",
+      "sha256": "de14614ec23379ea852deeb8c9b6ecc75ec1fa73bfbca4e6a36b782e092c32e5"
+    },
+    {
+      "file": "wasza.html",
+      "url": "https://waszaedukacja.pl/ranking/wroclaw/licea",
+      "fetched": "2026-11-08",
+      "sha256": "026219fb279c3f479f490c3c530315c83c42ce273caf4d1752e19f5f1705a0f2"
+    },
+    {
+      "file": "pers.html",
+      "url": "https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/",
+      "fetched": "2026-11-08",
+      "sha256": "5ae9ec2aec95cf10365f86b863a1a5b39197f7b57386e7928308e15cd7bbe537"
+    },
+    {
+      "file": "oto-0.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/4846/Akademickie-Liceum-Ogolnoksztalcace-Politechniki-Wroclawskiej",
+      "fetched": "2026-11-08",
+      "sha256": "b3d4ba7641383c21375bac62e4b0179f78865b7c0d99ca7a960008e292470f69"
+    },
+    {
+      "file": "oto-1.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/351/III-LO-im-Adama-Mickiewicza",
+      "fetched": "2026-11-08",
+      "sha256": "ac2a25c3e57e6ac6b2a487d82f63d2a24c2e6d4923f9b9059acc08bb6395fba5"
+    },
+    {
+      "file": "oto-2.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/353/V-LO-im-gen-Jakuba-Jasinskiego",
+      "fetched": "2026-11-08",
+      "sha256": "3ca4cc8d051f64f4667d7e72084258fd338f6269d6ec2b3aa5bd3127035e83f1"
+    },
+    {
+      "file": "oto-3.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/359/XII-LO-im-Boleslawa-Chrobrego",
+      "fetched": "2026-11-08",
+      "sha256": "db39a582af40e45a61fd287316a716560611b1cab309099c230630bedb71e3c3"
+    },
+    {
+      "file": "oto-4.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/361/XIV-LO-im-Polonii-Belgijskiej",
+      "fetched": "2026-11-08",
+      "sha256": "4c085161132d180e62a482f9ecbdd13a2d23e8984c196918fb1f953fdb754d78"
+    },
+    {
+      "file": "oto-5.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/357/IX-LO-im-Juliusza-Slowackiego",
+      "fetched": "2026-11-08",
+      "sha256": "d9f5e7d06ba2e85e5511a5dfd71fc61a852c11d84558a66f32fa3603fb58773f"
+    },
+    {
+      "file": "oto-6.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/360/XIII-LO-im-Aleksandra-Fredry",
+      "fetched": "2026-11-08",
+      "sha256": "94e2a6320a2c0992536eb7cc42088ac970594f8e5e1b24302328a98ca4f28b9f"
+    },
+    {
+      "file": "oto-7.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/356/VIII-LO-im-Boleslawa-Krzywoustego",
+      "fetched": "2026-11-08",
+      "sha256": "a98057ec1348b4952fe6943bc289b5dc3b909ad1700029883c26aeb7faa4a48b"
+    },
+    {
+      "file": "oto-8.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3067/XVI-LO",
+      "fetched": "2026-11-08",
+      "sha256": "bd8c7da637f536939baceb24f1c6225331017c3572d99901be201e01399f7b6d"
+    },
+    {
+      "file": "oto-9.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/354/VI-LO-im-Boleslawa-Prusa",
+      "fetched": "2026-11-08",
+      "sha256": "5a7bc98130aec47fe1df258ba5f67066ef79619b4b6d0855c983a1ac4a86f967"
+    },
+    {
+      "file": "oto-10.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/355/VII-LO-im-Krzysztofa-Kamila-Baczynskiego",
+      "fetched": "2026-11-08",
+      "sha256": "d9a30656b53272335c44eafe6daa9f2a94f4dd0a40db00050d672baab5c0fa84"
+    },
+    {
+      "file": "oto-11.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3061/I-LO-im-Danuty-Siedzikowny-Inki",
+      "fetched": "2026-11-08",
+      "sha256": "2943271cb8a7d1a1a061e7bb9dbce740be1f0775974e9e0c3e9060401f6e43d6"
+    },
+    {
+      "file": "oto-12.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/352/IV-LO-im-Stefana-Zeromskiego",
+      "fetched": "2026-11-08",
+      "sha256": "0f9d8df1d1349e64f1ab83d70e4c2e33fdd866f9a237e932e3728907695a22f4"
+    },
+    {
+      "file": "oto-13.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/6371/Ogolnoksztalcaca-Szkola-Muzyczna-II-St-im-Karola-Szymanowskiego-We-Wroclawiu",
+      "fetched": "2026-11-08",
+      "sha256": "9a82d4024e6a17fabeff62f3d97964725db8928bf5ff23e8164bdfd688eec342"
+    },
+    {
+      "file": "oto-14.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/358/X-LO-im-Stefanii-Sempolowskiej",
+      "fetched": "2026-11-08",
+      "sha256": "4926d94ca1eb03528b8d75f4556f3516b9d96b28ea9ee06ea907eec8f8f4058a"
+    },
+    {
+      "file": "oto-15.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/350/II-LO-im-Piastow-Slaskich",
+      "fetched": "2026-11-08",
+      "sha256": "e7d641037a50764f71231deb46b60d98456fadbe66d9be372c6898876ddbd986"
+    },
+    {
+      "file": "oto-16.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/362/XVII-LO-im-Agnieszki-Osieckiej",
+      "fetched": "2026-11-08",
+      "sha256": "5b78a2cd4e5d6e6a152223df67091a5c0971aea761517a22d4ddf205e4417f61"
+    },
+    {
+      "file": "oto-17.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3063/Publiczne-Liceum-Salezjanskie",
+      "fetched": "2026-11-08",
+      "sha256": "a65ec021526f91d1bbe0297ec443451ffa48f942e0b69577e71c3d692ef730e1"
+    },
+    {
+      "file": "oto-18.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3062/LO-Siostr-Urszulanek",
+      "fetched": "2026-11-08",
+      "sha256": "a7da3553cddb233e8e83d6c6d3a3fc665a94d12713b0695fb17556fce4d31cfb"
+    },
+    {
+      "file": "oto-19.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/836/XI-LO",
+      "fetched": "2026-11-08",
+      "sha256": "d4504d6118f04461452c220d628eac7e485bbad9fec5c25a9a016a7191b6acd0"
+    },
+    {
+      "file": "oto-20.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/5666/Liceum-Ogolnoksztalcace-Cogito-Z-Oddzialami-Dwujezycznymi-We-Wroclawiu",
+      "fetched": "2026-11-08",
+      "sha256": "e10b2d319630424fe28b64fe6d4c9ba7acf39a9a6186271495d086da57621a2c"
+    },
+    {
+      "file": "oto-21.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3065/Liceum-Sztuk-Plastycznych",
+      "fetched": "2026-11-08",
+      "sha256": "baae0accf0f76b3b80df41071194935ce8fd96af99db0b97a4b4bc8e8bf5f365"
+    },
+    {
+      "file": "oto-22.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/5297/Niepubliczne-Liceum-Ogolnoksztalcace-Fundacji-Krolowej-Swietej-Jadwigi-We-Wroclawiu",
+      "fetched": "2026-11-08",
+      "sha256": "5b7a57fd4819bfae8d6510a0f3d606dcea4b3569d8cfbb377cefdff56ede6ce8"
+    },
+    {
+      "file": "oto-23.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3064/XXIV-LO",
+      "fetched": "2026-11-08",
+      "sha256": "7dc890dddf7d3e5f31c8f707aea09087ee54a5d118732c19ef64653a4c56dfa2"
+    },
+    {
+      "file": "oto-24.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/5336/Liceum-Ogolnoksztalcace-Dialogu-Kultur-Etz-Chaim",
+      "fetched": "2026-11-08",
+      "sha256": "78da6a1f5d964d14f912ea93692ace543b561fb8baffd8ff453e1f9d9bf0f3c1"
+    },
+    {
+      "file": "oto-25.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3337/Spoleczne-Liceum-Ogolnoksztalcace",
+      "fetched": "2026-11-08",
+      "sha256": "d00b7a830e748b9ac06192a82a33c77a94e794d53f292c5df93002cf27a97bb1"
+    },
+    {
+      "file": "oto-26.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3066/XXX-LO",
+      "fetched": "2026-11-08",
+      "sha256": "d7d357d769bd89023228fe328ae9fe83c9818e5cda5105a5ffe93c9d9c56deaf"
+    },
+    {
+      "file": "oto-27.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/3197/Spoleczne-Liceum-Ogolnoksztalcace-Autorska-Szkola-Samorozwoju-Assa",
+      "fetched": "2026-11-08",
+      "sha256": "69990bbdffaadb18cb9a6a9b9a1ab2b1fb0e15ca55296216b4905514d531240b"
+    },
+    {
+      "file": "oto-28.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/4601/Liceum-Sportowe-Gimbasket",
+      "fetched": "2026-11-08",
+      "sha256": "4f5320641fe2ac5d962cb49c9c46a3db2584cbd8809adbc933f5dd9cf8863f94"
+    },
+    {
+      "file": "oto-29.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/4618/Spoleczne-Integracyjne-Liceum-Ogolnoksztalcace-amigo",
+      "fetched": "2026-11-08",
+      "sha256": "d15488a373df9653a3215f2a31977f4999fae3e1f5f13ba0caf0244685750b29"
+    },
+    {
+      "file": "oto-30.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/6414/Spoleczne-Liceum-Sztuk-Plastycznych-Ala-We-Wroclawiu",
+      "fetched": "2026-11-08",
+      "sha256": "8c7fdfc7a8a2374b9d574a9a4883f91e38afeb1b70fb27eb0c1fa668159d4e93"
+    },
+    {
+      "file": "oto-31.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3180/XV-LO-im-Mjr-Piotra-Wysockiego",
+      "fetched": "2026-11-08",
+      "sha256": "4e1a37bcd26d5495bfbcf68d06fe75a6596b89a23445c0401935b2aa8d53657c"
+    },
+    {
+      "file": "oto-32.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/5305/Liceum-Ogolnoksztalcace-Edukacja",
+      "fetched": "2026-11-08",
+      "sha256": "fe1b1375530307e20cc00de5302be9dd12d8fcad5ba0b734dfaa31056ef357a2"
+    },
+    {
+      "file": "oto-33.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/3954/Liceum-Ogolnoksztalcace-Mistrzostwa-Sportowego-Junior-We-Wroclawiu",
+      "fetched": "2026-11-08",
+      "sha256": "a28d5fdfe794ecf0822c6322fc7b6b48f26cdd60707c41393b358ac2cd49ed19"
+    },
+    {
+      "file": "oto-34.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/3440/Abor-Prywatne-Liceum-Ogolnoksztalcace-We-Wroclawiu",
+      "fetched": "2026-11-08",
+      "sha256": "687c0d1910f7a816c8254f7f2cfb1cee92d8add3470c0c94ce0668274319bd82"
+    },
+    {
+      "file": "oto-35.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/5160/Husarz-Glowna-Wojskowa-Szkola-Srednia-We-Wroclawiu-Liceum-Ogolnoksztalcace",
+      "fetched": "2026-11-08",
+      "sha256": "471c20448d901486f99c749f1573ae5132e9a12fe7b46164564e19ec2f865c88"
+    },
+    {
+      "file": "oto-36.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/5175/Liceum-Sluzb-Mundurowych",
+      "fetched": "2026-11-08",
+      "sha256": "d998e178d3e5da8a81877854844754e64221d9ee25e323f3eded6424302b8040"
+    },
+    {
+      "file": "oto-37.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/5409/Liceum-Ogolnoksztalcace-Dla-Doroslych-Magnus-We-Wroclawiu",
+      "fetched": "2026-11-08",
+      "sha256": "04005af3db40a1d31add4a88cbf4a3e1c3628bd5a6e676c32b9e7f312ec9eb65"
+    },
+    {
+      "file": "oto-38.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/5058/Regionalny-Osrodek-Edukacji-Liceum-Ogolnoksztalcace",
+      "fetched": "2026-11-08",
+      "sha256": "f21a17c345d2d44853d8b055aa5dc2bd7e4d81a16979ea6237804a7f7a310a77"
+    },
+    {
+      "file": "oto-39.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-publiczne-i-prywatne-we-Wroclawiu-wyszukiwarka/3581/Liceum-Ogolnoksztalcace-Dla-Doroslych-Nr-I",
+      "fetched": "2026-11-08",
+      "sha256": "67862478a667b56e9fef295b151a251dc98c717eb22fd9c89a2fc49c2166f8db"
+    },
+    {
+      "file": "oto-40.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/3659/Liceum-Ogolnoksztalcace-Dla-Doroslych-zak-We-Wroclawiu",
+      "fetched": "2026-11-08",
+      "sha256": "87e894037880ec7650f7eac695afd08c69efddc9de7cec42a1da8cf601f48ac2"
+    },
+    {
+      "file": "oto-41.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/3657/Liceum-Ogolnoksztalcace-Dla-Doroslych-novum",
+      "fetched": "2026-11-08",
+      "sha256": "77a18c1cb2b229e9ff43ce073feced61192773eace00ba1465ed993d58cc878c"
+    },
+    {
+      "file": "oto-42.html",
+      "url": "https://www.otouczelnie.pl/artykul/210/Licea-we-Wroclawiu/4021/Zaoczne-Liceum-Ogolnoksztalcace-cosinus-We-Wroclawiu",
+      "fetched": "2026-11-08",
+      "sha256": "de86a5c2f29732690e306a040c67d156824378720cfe287195841808b66e9753"
+    },
+    {
+      "file": "wasza-0.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/akademickie-liceum-politechniki-wroclawskiej-wroclaw-1409",
+      "fetched": "2026-11-08",
+      "sha256": "458765fd4730bf4475c1e12a4cb9af23abec4f908c58d293e3c0af5baa6e239f"
+    },
+    {
+      "file": "wasza-1.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/iii-liceum-im-adama-mickiewicza-wroclaw-86",
+      "fetched": "2026-11-08",
+      "sha256": "776bd9944619dcf61d957d75da98b9635ed2cff71d06c0b1dce32a9ed1fa2dc8"
+    },
+    {
+      "file": "wasza-2.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/xii-liceum-im-boleslawa-chrobrego-wroclaw-95",
+      "fetched": "2026-11-08",
+      "sha256": "1ed27a1ba61f83c32d64601c5fcc424c7775419e2149f878d478a113038232e6"
+    },
+    {
+      "file": "wasza-3.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/v-liceum-im-gen-jakuba-jasinskiego-wroclaw-89",
+      "fetched": "2026-11-08",
+      "sha256": "5521812246804c54163d29130353cb4901f8ec1f64e311d7105b65a8fd9dcdec"
+    },
+    {
+      "file": "wasza-4.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/xiv-liceum-im-polonii-belgijskiej-wroclaw-286",
+      "fetched": "2026-11-08",
+      "sha256": "26592282abad114afa27327cd4299fb4dcbe0501f362e472c967d1319e2f04c2"
+    },
+    {
+      "file": "wasza-5.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/xiii-liceum-im-aleksandra-fredry-wroclaw-96",
+      "fetched": "2026-11-08",
+      "sha256": "a1da7f26f4d3127241f084aab830b02d52dc1df206568decb98095d59df85d8a"
+    },
+    {
+      "file": "wasza-6.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/viii-liceum-im-boleslawa-krzywoustego-wroclaw-92",
+      "fetched": "2026-11-08",
+      "sha256": "ebfefa45b5b4fd535da339d0bc163d86f9bd98273b8ebe51bda146bc7cc24efa"
+    },
+    {
+      "file": "wasza-7.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-siostr-urszulanek-unii-rzymskiej-wroclaw-18877",
+      "fetched": "2026-11-08",
+      "sha256": "10bc521083146a9f006d9afd6b73002de57867e3b3d386bbb32820b63b64fb7a"
+    },
+    {
+      "file": "wasza-8.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/ix-liceum-im-juliusza-slowackiego-wroclaw-88",
+      "fetched": "2026-11-08",
+      "sha256": "2fcfaf26f55cbd223eb49ca22bae652fe3602be1f627813d06f8e786f47ca8d0"
+    },
+    {
+      "file": "wasza-9.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/iv-liceum-im-stefana-zeromskiego-wroclaw-87",
+      "fetched": "2026-11-08",
+      "sha256": "55d72d89b0922be7b7479039a7b74567923b38eb0c9e01c0ed59f2bbb655f910"
+    },
+    {
+      "file": "wasza-10.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/vii-liceum-im-k-k-baczynskiego-wroclaw-91",
+      "fetched": "2026-11-08",
+      "sha256": "d699b497ccdc0340730ff0e27537cf5173b3a154349e90b54be9f78857592268"
+    },
+    {
+      "file": "wasza-11.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/i-liceum-wroclaw-84",
+      "fetched": "2026-11-08",
+      "sha256": "bee54fc22816345fec7f38e0e3a4a4535ee8393bd0dc6080ba13276624aeb530"
+    },
+    {
+      "file": "wasza-12.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/xvi-liceum-wroclaw-98",
+      "fetched": "2026-11-08",
+      "sha256": "9adc68de687a03453b95ab0696898895261751607f6878d2f6020718e3e77025"
+    },
+    {
+      "file": "wasza-13.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/xi-liceum-im-stanislawa-konarskiego-wroclaw-94",
+      "fetched": "2026-11-08",
+      "sha256": "0811fb3f44dd7bb47a888fc7fe60619d14f670aff4f6d4a5bcd14dcd231f2054"
+    },
+    {
+      "file": "wasza-14.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/x-liceum-im-stefanii-sempolowskiej-wroclaw-93",
+      "fetched": "2026-11-08",
+      "sha256": "034c6aa66593b24e7cb0bf2a94ab8cc92b7bd67b60d5da89fbada968a0c2fc44"
+    },
+    {
+      "file": "wasza-15.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-salezjanskie-wroclaw-18880",
+      "fetched": "2026-11-08",
+      "sha256": "6854e5f4a7abaa0fc28c6cf19710bc2d65e5e44eb51594ff0ca037dbca5e2844"
+    },
+    {
+      "file": "wasza-16.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/vi-liceum-im-boleslawa-prusa-wroclaw-90",
+      "fetched": "2026-11-08",
+      "sha256": "77888db45b3f3b1ea1eef135665c8ce0da4f2615917bd57d1063fb14c35842f7"
+    },
+    {
+      "file": "wasza-17.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/xvii-liceum-im-agnieszki-osieckiej-wroclaw-99",
+      "fetched": "2026-11-08",
+      "sha256": "3e2a7a6bed873818d07f7fb85dd60581b996cb50fe294190f4112d4b01e711ee"
+    },
+    {
+      "file": "wasza-18.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-dialogu-kultur-etz-chaim-19538",
+      "fetched": "2026-11-08",
+      "sha256": "bc1e01fff4081703bc0a3aec683c941ac1061a5f40d71b17ed27bccaea656baf"
+    },
+    {
+      "file": "wasza-19.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxx-liceum-z-oddzialami-integracyjnymi-wroclaw-102",
+      "fetched": "2026-11-08",
+      "sha256": "1f438b97579ce6a9aa206fac7795acb1de1ccf949289225d8ab09b1d5e6ea627"
+    },
+    {
+      "file": "wasza-20.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-liceum-ala-wroclaw-19145",
+      "fetched": "2026-11-08",
+      "sha256": "45dbecbfc6a716e80e1d68a77b840ad56d290577d4355d02c12364c5e2034cbb"
+    },
+    {
+      "file": "wasza-21.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sztuk-plastycznych-im-stanislawa-kopystynskiego-wroclaw-61356",
+      "fetched": "2026-11-08",
+      "sha256": "3376a67d3116783157029cb7aa3e049f721bd8c4278bba9525d5f27f2d76d6a9"
+    },
+    {
+      "file": "wasza-22.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/ii-liceum-im-piastow-slaskich-wroclaw-85",
+      "fetched": "2026-11-08",
+      "sha256": "2e1f66380210d6c0549509b7c62ad5c85965802312811dfff85b8cdf10d31e00"
+    },
+    {
+      "file": "wasza-23.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/niepubliczne-liceum-fundacji-krolowej-swietej-jadwigi-we-wroclawiu-wroclaw-19509",
+      "fetched": "2026-11-08",
+      "sha256": "4468ca28981acb11cb423a73b4ebd947ae974ea9f8984859df6dce1ee5136987"
+    },
+    {
+      "file": "wasza-24.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-integracyjne-liceum-amigo-wroclaw-19236",
+      "fetched": "2026-11-08",
+      "sha256": "c73d85e073019db6ff50dcdb72bbbe7707e03d93e9b243f45feb3e63dc06f117"
+    },
+    {
+      "file": "wasza-25.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/xxiv-liceum-wroclaw-100",
+      "fetched": "2026-11-08",
+      "sha256": "5bfecd8f313fa7aea09066c7976a2d93e3b03a3265153717e43071fcb82886d3"
+    },
+    {
+      "file": "wasza-26.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/prywatne-liceum-ogolnoksztalcace-abor-we-wroclawiu-wroclaw-19014",
+      "fetched": "2026-11-08",
+      "sha256": "275ddc4330e2792e7c19e4ed191a8039927045e7e8ec4459a45ef4c6b9be3a47"
+    },
+    {
+      "file": "wasza-29.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-edukacja-wroclaw-19453",
+      "fetched": "2026-11-08",
+      "sha256": "4f768e36854cb9afedb0e4f018f3fccc3602fdc7340b7975727e77ad3824b888"
+    },
+    {
+      "file": "wasza-30.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sportowe-gimbasket-wroclaw-18876",
+      "fetched": "2026-11-08",
+      "sha256": "35abf7c9dcf0062281feac99e2b5543a8a2c99eb1914b14d9f5496757ad0ec25"
+    },
+    {
+      "file": "wasza-31.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/spoleczne-liceum-autorska-szkola-samorozwoju-assa-wroclaw-19141",
+      "fetched": "2026-11-08",
+      "sha256": "0da7daeead373ae9e543908c129b38efdd12056547532e89926ed5adedd4e4af"
+    },
+    {
+      "file": "wasza-32.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/xv-liceum-im-mjr-piotra-wysockiego-wroclaw-97",
+      "fetched": "2026-11-08",
+      "sha256": "c4f3949ad9759bb7fe1fd69b94c2ae1ff7964c07eba013a13c60dd9ffc6af3c8"
+    },
+    {
+      "file": "wasza-33.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-mistrzostwa-sportowego-junior-we-wroclawiu-wroclaw-19137",
+      "fetched": "2026-11-08",
+      "sha256": "70019a0cb7a01b491bd990001c38396558851178867f95c827a3af2cd651d6d8"
+    },
+    {
+      "file": "wasza-34.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-husarz-glowna-wojskowa-szkola-srednia-we-wroclawiu-wroclaw-19381",
+      "fetched": "2026-11-08",
+      "sha256": "c90459e1b76d1e5146651607c7ca1eed00d9fef2c84113fe7f3dc2e5ed3517bd"
+    },
+    {
+      "file": "wasza-35.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-dla-doroslych-nr-i-wroclaw-61233",
+      "fetched": "2026-11-08",
+      "sha256": "60bc9f5f2f5f09d8dec615397b71f7df2db2bdd6903721306d3b22e06b4bdeac"
+    },
+    {
+      "file": "wasza-36.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/liceum-sluzb-mundurowych-wroclaw-18881",
+      "fetched": "2026-11-08",
+      "sha256": "c9b9516eee84081182d39a8baf30240ede275915d0b595db88975ed00ef5d148"
+    },
+    {
+      "file": "wasza-37.html",
+      "url": "https://waszaedukacja.pl/ponadgimnazjalne/regionalny-osrodek-edukacji-liceum-wroclaw-19316",
+      "fetched": "2026-11-08",
+      "sha256": "2d2722ac799f797263c8f44aeb92f16cc69ed513711170f82a6aeb3153c79683"
+    },
+    {
+      "file": "official-foundation.html",
+      "url": "https://geoportal.wroclaw.pl/poi/poi/24276",
+      "fetched": "2026-11-08",
+      "sha256": "d02aa099a87731a476a4b00672975b1006d6117a0a7f0e6bc143843023073207"
+    },
+    {
+      "file": "official-music.html",
+      "url": "https://www.gov.pl/web/osmwroclaw/dane-kontaktowe",
+      "fetched": "2026-11-08",
+      "sha256": "20e2f03523f535a037a01b1b2ebaa257a94fd10022f3538849923917bb95ba29"
+    }
+  ],
+  "supplementalSources": [
+    {
+      "file": "pers-primary-2026.pdf",
+      "url": "https://licea.perspektywy.pl/pdf/ranking-licea-2026.pdf",
+      "fetched": "2026-11-08",
+      "sha256": "7d6b61f004a618f48184d65eb2d9990cb98a5b30b116dfd10ca5ee2213887f79"
+    },
+    {
+      "file": "official-pwr-history.html",
+      "url": "https://liceum.pwr.edu.pl/alo/sukcesy/wyniki-szkoly/",
+      "fetched": "2026-11-08",
+      "sha256": "c8bf97fc39ee91f246acb137c175de1a8d2965d0a8f2b1330acfe2febff16c19"
+    },
+    {
+      "file": "city-pers-article.html",
+      "url": "https://www.wroclaw.pl/dla-mieszkanca/ranking-perspektyw-2026-najlepsze-licea-i-technika-we-wroclawiu",
+      "fetched": "2026-11-08",
+      "sha256": "3d0624f278e28ef8a019e25f39df8ebd7038189d5be2f3aaa6ed75e738436592"
+    }
+  ]
+}

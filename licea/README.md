@@ -1,8 +1,8 @@
-# Atlas liceów Krakowa
+# Atlas liceów — Kraków i Wrocław
 
 Atlas z mapą Leaflet i historią miejsc. Interfejs HTML/JavaScript znajduje się w `public/atlas`, a serwer Vinext udostępnia tylko odczyt opublikowanych plików. Aplikacja nie wymaga logowania ani bazy Cloudflare D1.
 
-**Obsługa roczników:** dane od 2017 do 2026, wykresy miejsc i eksport CSV oraz JSON. Nowe dane dodaje się lokalnie przez `scripts/datasets.py` i publikuje commitem w GitHub. Import przez stronę oraz jego endpointy zostały usunięte. Instrukcja i format: [DANE.md](DANE.md).
+**Obsługa miast i roczników:** Kraków 2017–2026, Wrocław 2026, wykresy miejsc i eksport CSV oraz JSON. Zdawalność matury jest widoczna na liście i w karcie szkoły, z osobnym rokiem egzaminu; nieznana wartość nie jest zerem. Nowe dane dodaje się lokalnie przez `scripts/datasets.py` i publikuje commitem w GitHub. Import przez stronę oraz jego endpointy zostały usunięte. Instrukcja i format: [DANE.md](DANE.md).
 
 ## Uruchomienie
 
@@ -16,7 +16,7 @@ npm start -- --port 8765
 
 Wejdź na http://127.0.0.1:8765/. Migracja bazy nie jest potrzebna. Bez serwera można otworzyć `public/atlas/index.html` do przeglądania opublikowanych danych i eksportu. Mapa wymaga połączenia z OpenStreetMap.
 
-## Zakres
+## Zakres Krakowa
 
 - 72 szkoły z zestawienia otouczelnie 2026, w tym szkoły dla dorosłych (domyślnie ukryte).
 - 70 dopasowanych pozycji WaszaEdukacja 2026; 44 z Perspektyw 2026.
@@ -32,7 +32,7 @@ WaszaEdukacja i otouczelnie podają miejsca w Krakowie. Perspektywy podają **or
 
 Wyniki przedmiotowe w panelu pochodzą z **matury 2025**, wykorzystanej w rankingu otouczelnie 2026. Nie mieszamy ich z maturą 2026. Punktów różnych wydawców nie należy porównywać bezpośrednio. Kategoria profilu jest wyprowadzona z nazwy opublikowanej klasy i nie jest oceną jakości nauczania.
 
-## Źródła
+## Źródła Krakowa
 
 - [WaszaEdukacja](https://waszaedukacja.pl/ranking/krakow/licea): miejsca, punkty; karty szkół: adresy, współrzędne, profile 2026/2027, status publiczności i strony WWW.
 - [otouczelnie](https://www.otouczelnie.pl/ranking/208/Ranking-liceow-w-Krakowie-2026): tabela 72 szkół, miejsca, punkty, wyniki i zdawalność matury 2025; pomocniczo karty adresów i profili (bez potwierdzonego roku, jeśli źródło go nie podaje).
@@ -42,10 +42,18 @@ Wyniki przedmiotowe w panelu pochodzą z **matury 2025**, wykorzystanej w rankin
 
 Dodatkowo przeanalizowano [egzamin.pl](https://egzamin.pl/licea/krakow/), który publikuje ranking na podstawie średniej trzech matur podstawowych 2026. Nie włączono tych liczb do porównania edycji opartych na maturze 2025. OKE/CKE to źródła wyników egzaminacyjnych, nie samodzielne rankingi.
 
+## Wrocław i kolejne miasta
+
+Wybór miasta przełącza szkoły, mapę, roczniki, metodologię, historię i eksport. Bezpośredni odnośnik: `/atlas/?city=wroclaw`. Początkowa edycja Wrocławia korzysta z [WaszaEdukacja](https://waszaedukacja.pl/ranking/wroclaw/licea), [otouczelnie](https://www.otouczelnie.pl/ranking/210/Ranking-liceow-we-Wroclawiu-2026) i krajowego rankingu [Perspektywy 2026](https://licea.perspektywy.pl/rankingi/ranking-glowny-liceow/). Audyt, ograniczenia i metody dopasowania są w `imports/wroclaw-audit.json`, a odtworzenie z cache obsługuje `scripts/build_wroclaw.py`.
+
+Matura 2025 z otouczelnie nie jest mieszana z wynikami 2026 na dzisiejszych kartach WaszaEdukacja. Punktów między wydawcami ani migawkami o różnej metodologii nie porównujemy bezpośrednio. Niepotwierdzone adresy, profile i współrzędne pozostają brakami. Konfiguracja kolejnych miast i plan szkół podstawowych: [ROZWOJ.md](../docs/ROZWOJ.md).
+
 ## Pliki i odtwarzanie danych
 
 - `public/atlas/data/rankings-2026.json`: niezależna migawka rocznika; przyszłe edycje mają własne pliki `rankings-ROK.json`.
 - `public/atlas/data/index.json`: katalog dostępnych roczników.
+- `public/atlas/data/wroclaw/rankings-2026.json`: odrębna edycja Wrocławia; nowe miasta używają katalogu z własnym identyfikatorem.
+- `cities.json`: konfiguracja miast; interfejs pokazuje tylko miasta posiadające poprawne dane.
 - `dist/`: gotowa aplikacja; generowany `data.json` zawiera najnowszy rocznik, a `data.js` wszystkie roczniki i umożliwia działanie także po otwarciu pliku HTML.
 - `school_overrides.json`: udokumentowane korekty i informacje ze źródeł oficjalnych.
 - `scripts/`: pobieranie, ekstrakcja, łączenie i weryfikacja danych. To narzędzia do ręcznej aktualizacji, nie automatyczny scraper uruchamiany u odwiedzającego.

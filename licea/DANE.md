@@ -2,7 +2,11 @@
 
 ## Co jest przechowywane
 
-Każdy rok ma niezależną migawkę szkół w `public/atlas/data/rankings-ROK.json`. Stabilne `id` szkoły powinno być takie samo w kolejnych latach. Dla importowanych archiwów historyczne są wyniki rankingowe i matury. Adresy i współrzędne pochodzą z bazy 2026 (pole `metadataAsOf`), a nie ze zweryfikowanych historycznych lokalizacji. Historyczne profile klas pozostają puste. Aplikacja oznacza to przy wyborze roku i w karcie szkoły.
+Każda para miasto–rok ma niezależną migawkę. Kraków zachowuje ścieżkę `public/atlas/data/rankings-ROK.json`, a Wrocław używa `public/atlas/data/wroclaw/rankings-ROK.json`. Stabilne `id` szkoły powinno być takie samo w kolejnych latach jej miasta; identyfikatory Wrocławia mają prefiks `wroclaw-`. Dane i historia nigdy nie łączą się między miastami.
+
+Plik nowego miasta zawiera `city` (np. `wroclaw`) i `schoolType: "liceum"`. Brak tych pól w oryginalnych plikach oznacza Kraków i liceum — nie trzeba przepisywać starych migawek. Miasto musi być zarejestrowane w `cities.json`. Walidacja współrzędnych korzysta z prostokątnego zakresu przypisanego do tego miasta, nie z jednego zakresu Krakowa. To filtr błędów geograficznych, nie dowód poprawności adresu.
+
+Dla archiwów Krakowa historyczne są wyniki rankingowe i matury. Adresy i współrzędne pochodzą z bazy 2026 (`metadataAsOf`), a nie ze zweryfikowanych historycznych lokalizacji. Historyczne profile pozostają puste. Wrocław rozpoczyna się od 2026; brakujących edycji nie uzupełniamy fikcyjnymi wynikami.
 
 ## Pakiet historyczny 2017–2025
 
@@ -50,10 +54,10 @@ Zachowaj kopię i przejrzyj zmiany przed zastąpieniem istniejącej edycji. Wali
 
 ## Pliki generowane
 
-- `public/atlas/data/index.json`: dostępne lata i rok domyślny.
-- `public/atlas/data.js`: pakiet wszystkich roczników dla przeglądarki; dzięki niemu aplikacja działa też po otwarciu HTML bez serwera.
+- `public/atlas/data/index.json`: katalog dostępnych miast i lata miasta domyślnego; osobne katalogi miast mają własny `index.json`.
+- `public/atlas/data.js`: `window.SCHOOL_CATALOG` z miastami i rocznikami, a także zgodne ze starszą wersją aliasy domyślnego miasta; dzięki temu aplikacja działa też po otwarciu HTML bez serwera.
 - `public/atlas/data.json`: kopia najnowszego rocznika, zachowana dla zgodności i wygodnej analizy.
-- `server/seed.json`: te same roczniki dla API odczytu; importer aktualizuje go automatycznie.
+- `server/seed.json`: ten sam katalog miast i roczników dla API odczytu; importer aktualizuje go automatycznie.
 
 Nie edytuj tych plików ręcznie. Po ręcznej korekcie plików rocznych można uruchomić `python scripts/datasets.py build`. Zalecany jest jednak import, który domyślnie chroni istniejące roczniki. Dodaj plik rocznika i wszystkie pliki generowane do jednego commita. Nowa wersja danych pojawi się publicznie dopiero po wdrożeniu tego commita przez Cloudflare.
 
@@ -61,13 +65,13 @@ Nie edytuj tych plików ręcznie. Po ręcznej korekcie plików rocznych można u
 
 Zakładka **Dane · eksport** pozwala pobrać opublikowany rocznik jako CSV albo JSON. Na stronie nie ma logowania, formularza importu, podglądu zmian ani przycisku zapisu.
 
-Endpointy `/api/import/preview`, `/api/import/prepare` i `/api/import/commit` zostały usunięte. Wywołanie ich bezpośrednio również nie aktualizuje danych. `GET /api/datasets` zwraca tylko roczniki dołączone w `server/seed.json`.
+Endpointy `/api/import/preview`, `/api/import/prepare` i `/api/import/commit` zostały usunięte. Wywołanie ich bezpośrednio również nie aktualizuje danych. `GET /api/datasets` zwraca `{catalog, revisions: {}}`. `catalog` zawiera `defaultCity`, metadane `cities` oraz `datasetsByCity[miasto][rok]`, wyłącznie z plików opublikowanych w Git.
 
 Nowe roczniki i poprawki wprowadza się lokalnie przez `scripts/datasets.py`, przegląda w Git i wysyła do repozytorium. Szczegółowa lista poleceń: [coroczna aktualizacja](../docs/URUCHOMIENIE.md#coroczna-aktualizacja-danych).
 
 Pliki wersjonowane w Git są jedynym źródłem opublikowanych danych. Aplikacja nie odczytuje ani nie zapisuje D1, a dawne rekordy bazy nie przesłaniają nowych plików. Istniejąca baza i jej zawartość nie są kasowane. Przed przejściem na ten model sprawdzono, że publiczne roczniki odpowiadają plikom repozytorium; lokalna kopia odpowiedzi pozostała w ignorowanym katalogu `research/`.
 
-Eksport CSV obejmuje wszystkie szkoły i wszystkie źródła danego roku, niezależnie od filtrów mapy: jeden wiersz na parę szkoła–wydawca. Format: UTF-8 z BOM, średnik, CRLF, cudzysłowy; wartości mogące zostać potraktowane jako formuła są poprzedzane apostrofem. Eksport JSON zachowuje pełny zestaw danych.
+Eksport CSV obejmuje wszystkie szkoły i źródła wybranego miasta oraz roku, niezależnie od filtrów mapy: jeden wiersz na parę szkoła–wydawca. Zawiera miasto, typ szkoły, rok matury i zdawalność. Format: UTF-8 z BOM, średnik, CRLF, cudzysłowy; wartości mogące zostać potraktowane jako formuła są poprzedzane apostrofem. JSON zachowuje pełny zestaw wybranego miasta i roku. Nazwa pobranego pliku zawiera identyfikator miasta.
 
 Projekt korzysta z szablonu Vinext i integracji Sites. `npm run dev` uruchamia podgląd, `npm run build` tworzy wynik w `dist`, `npm start` uruchamia zbudowany Worker lokalnie. D1 i migracja SQL nie są potrzebne. Wymagany Node >=22.13. Kopie HTML w `research/history` służą do lokalnych narzędzi i nie trafiają do publikacji.
 

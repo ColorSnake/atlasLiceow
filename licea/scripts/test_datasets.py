@@ -6,6 +6,51 @@ import unittest
 from datasets import DIST, import_snapshot, import_batch, read_snapshots, validate
 
 class DatasetTests(unittest.TestCase):
+    def wroclaw_fixture(self):
+        data=copy.deepcopy(self.original)
+        data.update(city='wroclaw',schoolType='liceum')
+        data['schools']=data['schools'][:1]
+        data['schools'][0]['coords']=[51.11,17.03]
+        return data
+
+    def test_same_year_in_two_cities_preserves_existing_snapshot(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);dist=root/'dist';dist.mkdir()
+            first=root/'krakow.json';first.write_text(json.dumps(self.original),encoding='utf-8')
+            import_snapshot(first,dist=dist)
+            before=(dist/'data/rankings-2026.json').read_bytes()
+            second=root/'wroclaw.json';second.write_text(json.dumps(self.wroclaw_fixture()),encoding='utf-8')
+            import_snapshot(second,dist=dist)
+            self.assertEqual(before,(dist/'data/rankings-2026.json').read_bytes())
+            self.assertEqual(len(read_snapshots(dist/'data','krakow')['2026']['schools']),72)
+            self.assertEqual(len(read_snapshots(dist/'data/wroclaw','wroclaw')['2026']['schools']),1)
+            bundle=(dist/'data.js').read_text(encoding='utf-8')
+            catalog=json.JSONDecoder().raw_decode(bundle.split(' = ',1)[1])[0]
+            self.assertEqual(set(catalog['datasetsByCity']),{'krakow','wroclaw'})
+            self.assertEqual(catalog['defaultCity'],'krakow')
+            with self.assertRaises(ValueError):import_snapshot(second,dist=dist)
+            with self.assertRaises(ValueError):read_snapshots(dist/'data/wroclaw','krakow')
+
+    def test_city_specific_coordinates_and_unregistered_city(self):
+        data=self.wroclaw_fixture();validate(data)
+        for city,coords in [('krakow',[51.11,17.03]),('wroclaw',[50.06,19.96]),('not-registered',None)]:
+            changed=copy.deepcopy(data);changed['city']=city;changed['schools'][0]['coords']=coords
+            with self.assertRaises(ValueError):validate(changed)
+        data['schoolType']='podstawowa'
+        with self.assertRaises(ValueError):validate(data)
+
+    def test_mixed_city_batch_validates_before_writes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);dist=root/'dist';dist.mkdir();file=root/'batch.json'
+            batch={'schemaVersion':1,'datasets':[self.original,self.wroclaw_fixture()]}
+            batch['datasets'][1]['schools'][0]['rankings']['oto']['passRate']=101
+            file.write_text(json.dumps(batch),encoding='utf-8')
+            with self.assertRaises(ValueError):import_batch(file,dist=dist)
+            self.assertFalse((dist/'data').exists())
+            batch['datasets'][1]['schools'][0]['rankings']['oto']['passRate']=None
+            file.write_text(json.dumps(batch),encoding='utf-8');import_batch(file,dist=dist)
+            self.assertIsNone(read_snapshots(dist/'data/wroclaw','wroclaw')['2026']['schools'][0]['rankings']['oto']['passRate'])
+
     def test_batch_validates_before_writing_and_is_idempotent(self):
         batch=json.loads((DIST.parent.parent/'imports/historical-batch.json').read_text(encoding='utf-8'))
         with tempfile.TemporaryDirectory() as tmp:

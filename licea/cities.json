@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "schoolType": "liceum",
+  "defaultCity": "krakow",
+  "cities": [
+    {"id": "krakow", "name": "Kraków", "genitive": "Krakowa", "scope": "w Krakowie", "center": [50.066, 19.965], "zoom": 12, "bounds": [49.9, 19.7, 50.2, 20.3]},
+    {"id": "wroclaw", "name": "Wrocław", "genitive": "Wrocławia", "scope": "we Wrocławiu", "center": [51.11, 17.035], "zoom": 12, "bounds": [51.0, 16.8, 51.25, 17.25]}
+  ]
+}

@@ -8,6 +8,18 @@ import re
 
 ROOT = Path(__file__).absolute().parent.parent
 DIST = ROOT / 'public' / 'atlas'
+CITY_REGISTRY = ROOT / 'cities.json'
+DEFAULT_CITY = 'krakow'
+
+def registered_cities():
+    return {city['id']: city for city in json.loads(CITY_REGISTRY.read_text(encoding='utf-8'))['cities']}
+
+def city_id(data):
+    # Original Kraków snapshots remain byte-for-byte unchanged.
+    return data.get('city', DEFAULT_CITY)
+
+def city_directory(dist, city):
+    return dist / 'data' if city == DEFAULT_CITY else dist / 'data' / city
 
 def validate(data):
     def require(condition, message):
@@ -19,6 +31,10 @@ def validate(data):
         return type(value) in (int, float) and math.isfinite(value)
     require(isinstance(data, dict), 'Zestaw musi być obiektem JSON.')
     require(data.get('schemaVersion') == 1, 'Nieobsługiwana schemaVersion (wymagana: 1).')
+    city = city_id(data)
+    require(isinstance(city, str) and city in registered_cities(), 'Nieznane miasto. Dodaj je najpierw do cities.json.')
+    require(data.get('schoolType', 'liceum') == 'liceum', 'Nieobsługiwany typ szkoły. Dane szkół podstawowych wymagają osobnego modelu.')
+    min_lat, min_lon, max_lat, max_lon = registered_cities()[city]['bounds']
     require(year(data.get('rankingYear')), 'Nieprawidłowy rankingYear.')
     require(data.get('examYear') is None or year(data['examYear']), 'Nieprawidłowy examYear.')
     datetime.date.fromisoformat(data['updated'])
@@ -46,7 +62,7 @@ def validate(data):
         require('examYear' in s and (s['examYear'] is None or year(s['examYear'])), f'{s["id"]}: brak/nieprawidłowy examYear.')
         require(s['examYear'] == data.get('examYear') or data.get('examYear') is None, f'{s["id"]}: examYear sprzeczny z rokiem całego zestawu.')
         coords = s.get('coords')
-        require(coords is None or (isinstance(coords, list) and len(coords) == 2 and all(number(c) for c in coords) and 49.9 < coords[0] < 50.2 and 19.7 < coords[1] < 20.3), f'{s["id"]}: współrzędne poza Krakowem lub zły format.')
+        require(coords is None or (isinstance(coords, list) and len(coords) == 2 and all(number(c) for c in coords) and min_lat < coords[0] < max_lat and min_lon < coords[1] < max_lon), f'{s["id"]}: współrzędne poza obszarem miasta {city} lub zły format.')
         require(isinstance(s.get('rankings'), dict), f'{s["id"]}: brak rankings.')
         for key, rank in s['rankings'].items():
             if rank is None:
@@ -64,10 +80,12 @@ def validate(data):
                     require(str(position) == '-' or re.fullmatch(r'[1-9]\d*=?', str(position)) is not None, f'{s["id"]}: nieprawidłowe miejsce historyczne.')
     return data
 
-def read_snapshots(directory):
+def read_snapshots(directory, city=None):
     result = {}
     for file in sorted(directory.glob('rankings-*.json')):
         data = validate(json.loads(file.read_text(encoding='utf-8')))
+        if city is not None and city_id(data) != city:
+            raise ValueError(f'Miasto w pliku nie odpowiada katalogowi: {file}')
         y = str(data['rankingYear'])
         if file.name != f'rankings-{y}.json' or y in result:
             raise ValueError(f'Nazwa pliku nie odpowiada rankingYear: {file.name}')
@@ -79,57 +97,73 @@ def write_json(path, data):
     temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2, allow_nan=False) + '\n', encoding='utf-8')
     temporary.replace(path)
 
-def rebuild(dist=DIST, snapshots=None):
-    snapshots = snapshots if snapshots is not None else read_snapshots(dist / 'data')
-    if not snapshots:
+def rebuild(dist=DIST, snapshots=None, city=DEFAULT_CITY):
+    cities = registered_cities()
+    by_city = {key: (snapshots if key == city and snapshots is not None else read_snapshots(city_directory(dist, key), key)) for key in cities}
+    by_city = {key: value for key, value in by_city.items() if value}
+    if not by_city:
         raise ValueError('Brak roczników.')
+    configured_default = json.loads(CITY_REGISTRY.read_text(encoding='utf-8')).get('defaultCity', DEFAULT_CITY)
+    default_city = configured_default if configured_default in by_city else next(iter(by_city))
+    snapshots = by_city[default_city]
     latest = max(snapshots, key=int)
+    catalog = {'schemaVersion': 1, 'schoolType': 'liceum', 'defaultCity': default_city,
+               'cities': [cities[key] for key in by_city], 'datasetsByCity': by_city}
     # Bundle enables direct file:// use, without fetch/CORS or a backend.
-    bundle = 'window.SCHOOL_DATASETS = ' + json.dumps(snapshots, ensure_ascii=False, allow_nan=False) + ';\n'
+    bundle = 'window.SCHOOL_CATALOG = ' + json.dumps(catalog, ensure_ascii=False, allow_nan=False) + ';\n'
+    bundle += f'window.SCHOOL_DATASETS = window.SCHOOL_CATALOG.datasetsByCity["{default_city}"];\n'
     bundle += f'window.SCHOOL_DATA = window.SCHOOL_DATASETS["{latest}"];\n'
     temporary = dist / 'data.js.tmp'
     temporary.write_text(bundle, encoding='utf-8')
     temporary.replace(dist / 'data.js')
     write_json(dist / 'data.json', snapshots[latest])
-    write_json(dist / 'data' / 'index.json', {'schemaVersion': 1, 'defaultYear': int(latest), 'years': sorted(map(int, snapshots), reverse=True)})
+    index = {'schemaVersion': 1, 'defaultCity': default_city, 'cities': catalog['cities'], 'defaultYear': int(latest), 'years': sorted(map(int, snapshots), reverse=True)}
+    write_json(dist / 'data' / 'index.json', index)
+    for key, annual in by_city.items():
+        if key != DEFAULT_CITY:
+            write_json(city_directory(dist, key) / 'index.json', {'schemaVersion': 1, 'city': key, 'defaultYear': max(map(int, annual)), 'years': sorted(map(int, annual), reverse=True)})
     if dist == DIST and (ROOT / 'server').exists():
-        write_json(ROOT / 'server' / 'seed.json', snapshots)
+        write_json(ROOT / 'server' / 'seed.json', catalog)
 
 def import_snapshot(filename, replace=False, dist=DIST):
     data = validate(json.loads(Path(filename).read_text(encoding='utf-8')))
-    folder = dist / 'data'
-    snapshots = read_snapshots(folder)
+    city = city_id(data)
+    folder = city_directory(dist, city)
+    snapshots = read_snapshots(folder, city)
     y = str(data['rankingYear'])
     if y in snapshots and not replace:
         raise ValueError(f'Rocznik {y} już istnieje. Użyj --replace tylko przy świadomej korekcie tego rocznika.')
     snapshots[y] = data
     folder.mkdir(parents=True, exist_ok=True)
     write_json(folder / f'rankings-{y}.json', data)
-    rebuild(dist, snapshots)
-    return y
+    rebuild(dist, snapshots, city)
+    return f'{city}/{y}'
 
 def import_batch(filename, replace=False, dist=DIST):
     batch = json.loads(Path(filename).read_text(encoding='utf-8'))
     if batch.get('schemaVersion') != 1 or not isinstance(batch.get('datasets'), list) or not batch['datasets']:
         raise ValueError('Nieprawidłowy pakiet datasets.')
-    snapshots = read_snapshots(dist / 'data')
+    all_snapshots = {city: read_snapshots(city_directory(dist, city), city) for city in registered_cities()}
     incoming = {}
     for raw in batch['datasets']:
         data = validate(raw)
-        y = str(data['rankingYear'])
-        if y in incoming:
+        city, y = city_id(data), str(data['rankingYear'])
+        identity = (city, y)
+        snapshots = all_snapshots[city]
+        if identity in incoming:
             raise ValueError(f'Powtórzony rocznik {y}.')
         if y in snapshots and snapshots[y] != data and not replace:
             raise ValueError(f'Rocznik {y} już istnieje i ma inne dane. Wymagane --replace.')
-        incoming[y] = data
+        incoming[identity] = data
     # Validate the whole batch and every conflict before writing any snapshot.
     (dist / 'data').mkdir(parents=True, exist_ok=True)
-    for y, data in incoming.items():
-        if snapshots.get(y) != data:
-            write_json(dist / 'data' / f'rankings-{y}.json', data)
-    snapshots.update(incoming)
-    rebuild(dist, snapshots)
-    return ', '.join(sorted(incoming))
+    for (city, y), data in incoming.items():
+        folder = city_directory(dist, city)
+        folder.mkdir(parents=True, exist_ok=True)
+        if all_snapshots[city].get(y) != data:
+            write_json(folder / f'rankings-{y}.json', data)
+    rebuild(dist)
+    return ', '.join(f'{city}/{y}' for city, y in sorted(incoming))
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Dodaj i sprawdź rocznik rankingu.')
@@ -143,7 +177,8 @@ if __name__ == '__main__':
             print('Zaimportowano:', (import_batch if args.command == 'import-batch' else import_snapshot)(args.file, args.replace))
         elif args.command == 'validate':
             if args.file: validate(json.loads(Path(args.file).read_text(encoding='utf-8')))
-            else: read_snapshots(DIST / 'data')
+            else:
+                for city in registered_cities(): read_snapshots(city_directory(DIST, city), city)
             print('Dane poprawne.')
         else:
             rebuild()
